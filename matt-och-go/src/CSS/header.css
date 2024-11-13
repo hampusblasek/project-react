@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 60px;
+    margin-top: 0px;
+}
+nav {
+  
+}
+.link{
+    margin-right: 90px;
+}
+.logo{
+    width: 50%;
+    margin-left: 20px;
+}
+.nav-box{
+    width: 50%;
+
+}
