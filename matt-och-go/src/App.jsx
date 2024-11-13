@@ -5,6 +5,7 @@ import { Categories } from "./Pages/category";
 import { SavedRecipes } from "./Pages/save";
 import { AboutUs } from "./Pages/about-us";
 import { Header } from "./Components/Header";
+import { Footer } from "./Components/Footer";
 import {
   BrowserRouter,
   Link,
@@ -40,6 +41,7 @@ function Layout() {
     <div className="body-container">
       <Header />
       <Outlet />
+      <Footer />
     </div>
     </>
   );

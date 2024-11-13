@@ -1,8 +1,13 @@
+import "../CSS/recipe.css";
+
 export function RecipePage(){
 
     return(
         <>
-        Se ditt Recept
+        <div className="recipe-container">
+        
+
+        </div>
         </>
     )
 }
