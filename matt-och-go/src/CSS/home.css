@@ -1,5 +1,30 @@
-.home-container{
-    width: 100%;
-    height: 1000px;
-    background-color: beige;
+.home-container {
+  width: 100%;
+  height: auto;
+  background-color: beige;
+}
+.hero {
+  width: 100%;
+  height: 600px;
+  background-image: url("/fruit.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text {
+  color: white;
+  font-size: 70px;
+}
+.quick-box{
+
+}
+.hot-box{
+
+}
+.cold-box{
+
+}
+.drink-box{
+
 }
