@@ -20,7 +20,7 @@ export function Drinks({ recipes, setRecData }) {
       <div className="drink-box">
         {drinkList.map((food) => (
           <div>
-            <div onClick={() => seeRecipe(food.id)} className="card-box">
+            <div onClick={() => seeRecipe(food.id)} className="card-box-last">
               <img src={food.image} width="300" alt="" />
               <p className="card-title">{food.name}</p>
               <div className="card-img-box">

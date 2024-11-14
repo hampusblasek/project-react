@@ -26,7 +26,7 @@ export function Under40({ recipes, setRecData, recData }) {
     <>
       <div className="quick-box">
         <a className="a-title">
-          <h3>Visa mer</h3>
+          <h3>Visa alla</h3>
         </a>
         {fastSlice.map((food) => (
           <div>

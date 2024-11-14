@@ -25,7 +25,7 @@ export function EasyCook({ recipes, setRecData }) {
     <>
       <div className="easy-box">
         <a className="a-title">
-          <h3>Visa mer</h3>
+          <h3>Visa alla</h3>
         </a>
         {easySlice.map((food) => (
           <div>
