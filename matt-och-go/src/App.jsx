@@ -21,10 +21,7 @@ import "./App.css";
 
 function App() {
   const [recipes, setRecipes] = useState([]);
-  const [fast, setFast] = useState([]);
-  const [easy, setEasy] = useState([]);
-  const [after, setAfter] = useState([]);
-  const [drink, setDrink] = useState([]);
+  const [recData, setRecData] = useState({})
 
   useEffect(() => {
     getRecipes().then(setRecipes);
@@ -41,16 +38,13 @@ function App() {
                 <HomePage
                   recipes={recipes}
                   setRecipes={setRecipes}
-                  fast={fast}
-                  setFast={setFast}
-                  easy={easy}
-                  setEasy={setEasy}
-                  after={after}
-                  setAfter={setAfter}
+                  setRecData={setRecData}
+                  recData={recData}
+                 
                 />
               }
             ></Route>
-            <Route path="recipe" element={<RecipePage />}></Route>
+            <Route path="recipe" element={<RecipePage recipes={recipes} recData={recData} />}></Route>
             <Route path="category" element={<Categories />}></Route>
             <Route path="saved-recipes" element={<SavedRecipes />}></Route>
             <Route path="about-us" element={<AboutUs />}></Route>

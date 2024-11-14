@@ -1,17 +1,12 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import { Under40 } from "../Components/Under40";
+import { EasyCook } from "../Components/EasyCook";
+import { AfterFood } from "../Components/After";
+import { Drinks } from "../Components/Drinks";
 import "../CSS/home.css";
 
-export function HomePage({
-  recipes,
-  setRecipes,
-  fast,
-  setFast,
-  easy,
-  setEasy,
-  after,
-  setAfter,
-}) {
+export function HomePage({ recipes, setRecData, recData }) {
   /* useEffect(() => {
     setFast(
       recipes.filter(
@@ -20,32 +15,9 @@ export function HomePage({
     );
   }, []); */
 
-   /* useEffect(() => {
+  /* useEffect(() => {
     setEasy(recipes.filter((value) => value.difficulty === "Easy"));
   }, []); */
-  const fastList = [];
-  for (let recipe of recipes) {
-    if (recipe.cookTimeMinutes + recipe.prepTimeMinutes < 40) {
-      fastList.push(recipe);
-    }
-    console.log(fastList);
-  } 
-
-  const easyList = [];
-  for (let recipe of recipes) {
-    if (recipe.difficulty.includes("Easy")) {
-      easyList.push(recipe);
-    }
-    console.log(easyList);
-  } 
-  
-  const afterList = [];
-  for (let recipe of recipes) {
-    if (recipe.mealType.includes("Dessert")) {
-      afterList.push(recipe);
-    }
-    console.log(afterList);
-  } 
 
   return (
     <>
@@ -53,41 +25,17 @@ export function HomePage({
         <div className="hero">
           <h2 className="hero-text">Vad är du sugen på?</h2>
         </div>
-        <h2>Något snabblagat</h2>
-        <div className="quick-box">
-          {fastList.map((food) => (
-            <div key={food.id}>
-              <div>
-                <img src={food.image} width="300" alt="" />
-                  <p>{food.name}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <h2>Något Lättlagat</h2>
-        <div className="easy-box">
-          {easyList.map((food) => (
-            <div>
-              <div>
-                <img src={food.image} width="300" alt="" />
-                  <p>{food.name}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <h2>Efter maten</h2>
-        <div className="cold-box">
-          {afterList.map((food) => (
-            <div>
-              <div>
-                <img src={food.image} width="300" alt="" />
-                  <p>{food.name}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <h2>Något att dricka</h2>
-        <div className="drink-box"></div>
+        <h2 className="h2-title">Färdigt på under 40 min</h2>
+        <Under40 recipes={recipes} setRecData={setRecData} />
+
+        <h2 className="h2-title">Något Lättlagat</h2>
+        <EasyCook recipes={recipes} setRecData={setRecData} />
+
+        <h2 className="h2-title">Efter maten</h2>
+        <AfterFood recipes={recipes} setRecData={setRecData} />
+
+        <h2 className="h2-title">Något att dricka</h2>
+        <Drinks recipes={recipes} setRecData={setRecData} />
       </div>
     </>
   );

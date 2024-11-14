@@ -1,5 +1,5 @@
-.body-container{
-    max-width: 1400px;
-    margin: 0 auto;
-    background-color: aqua;
+.body-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: "Roboto Flex", sans-serif;
 }
