@@ -3,3 +3,34 @@
     height: 1000px;
     background-color: beige;
 }
+.recipe-box{
+    display: flex;
+
+}
+.rec-img{
+    width:60%;
+    height: 600px;
+
+}
+.rec-info{
+    background-color: rgba(238, 238, 238, 0.502);
+    width:40%;
+    height: 840px;
+
+}
+.food-img{
+    width: 100%;
+}
+.food-icon{
+    width: 50px;
+}
+.rec-title{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 45px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
