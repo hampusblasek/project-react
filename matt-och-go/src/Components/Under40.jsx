@@ -1,9 +1,23 @@
-import { RecipePage } from "../Pages/recipe";
 import { Navigate, useNavigate } from "react-router-dom";
 import "../CSS/home.css";
 
 export function Under40({ recipes, setRecData, recData }) {
   const navigate = useNavigate();
+
+  const levelImg = (food) => {
+    const img = "";
+    if (food === "Easy") {
+      img = "/easy.svg";
+      return img;
+    } else if (food == "Medium") {
+      img = "/medium.svg";
+      return img;
+    } else {
+      img = "/hard.svg";
+      return img;
+    }
+    return
+  };
 
   const seeRecipe = (id) => {
     setRecData({ recipeId: id });
@@ -48,7 +62,8 @@ export function Under40({ recipes, setRecData, recData }) {
                 <p className="card-time">
                   {food.cookTimeMinutes + food.prepTimeMinutes} minuter
                 </p>
-                <img className="card-icon" src="/hard.svg" alt="" />
+                {/* <img className="card-icon" src={() => levelImg(food.difficulty)} alt="" /> */}
+                <img className="card-icon" src="/hard.svg" alt="" /> 
                 <p>{food.difficulty}</p>
               </div>
             </div>
