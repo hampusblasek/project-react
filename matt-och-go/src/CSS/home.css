@@ -1,7 +1,8 @@
 .home-container {
   width: 100%;
   height: auto;
-  background-color: rgba(224, 224, 224, 0.502);
+  background-color: rgba(196, 196, 196, 0.491);
+  /* background-color: rgba(224, 224, 224, 0.502); */
 }
 .hero {
   width: 100%;

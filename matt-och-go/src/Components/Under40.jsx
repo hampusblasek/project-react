@@ -4,7 +4,7 @@ import "../CSS/home.css";
 export function Under40({ recipes, setRecData, recData }) {
   const navigate = useNavigate();
 
-  const levelImg = (food) => {
+  /* const levelImg = (food) => {
     const img = "";
     if (food === "Easy") {
       img = "/easy.svg";
@@ -17,7 +17,7 @@ export function Under40({ recipes, setRecData, recData }) {
       return img;
     }
     return
-  };
+  }; */
 
   const seeRecipe = (id) => {
     setRecData({ recipeId: id });
