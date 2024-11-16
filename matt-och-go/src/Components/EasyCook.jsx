@@ -1,14 +1,9 @@
-import { useNavigate } from "react-router-dom";
 import "../CSS/home.css";
+import { Cards } from "./cards";
+import { useState } from "react";
 
 export function EasyCook({ recipes, setRecData }) {
-  const navigate = useNavigate();
-
-  const seeRecipe = (id) => {
-    setRecData({ recipeId: id });
-    navigate("recipe");
-  };
-
+  const [isPressed, setIsPressed] = useState(false);
   const easyList = [];
   for (let recipe of recipes) {
     if (
@@ -19,41 +14,33 @@ export function EasyCook({ recipes, setRecData }) {
       easyList.push(recipe);
     }
   }
-  const easySlice = easyList.slice(0, 8);
+  const easySlice = easyList.slice(0, 4);
 
-  return (
-    <>
-      <div className="easy-box">
-        <a className="a-title">
-          <h3>Visa alla</h3>
-        </a>
-        {easySlice.map((food) => (
-          <div>
-            <div onClick={() => seeRecipe(food.id)} className="card-box">
-              <img src={food.image} width="300" alt="" />
-              <p className="card-title">{food.name}</p>
-              <div className="card-img-box">
-                <img className="img-star" src="/star.svg" alt="En stjärna" />
-                <p>
-                  <span>{food.rating}</span> (<span>{food.reviewCount}</span>)
-                </p>
-              </div>
-              <div className="card-bottom">
-                <img
-                  className="card-icon"
-                  src="/time-green.svg"
-                  alt="En klocka"
-                />
-                <p className="card-time">
-                  {food.cookTimeMinutes + food.prepTimeMinutes} minuter
-                </p>
-                <img className="card-icon" src="/hard.svg" alt="" />
-                <p>{food.difficulty}</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </>
-  );
+  if (isPressed) {
+    return (
+      <>
+        <div className="easy-box">
+          <a onClick={() => setIsPressed(!isPressed)} className="a-title">
+            <h3>Visa färre</h3>
+          </a>
+          {easyList.map((food) => (
+            <Cards food={food} setRecData={setRecData} />
+          ))}
+        </div>
+      </>
+    );
+  } else {
+    return (
+      <>
+        <div className="easy-box">
+          <a onClick={() => setIsPressed(!isPressed)} className="a-title">
+            <h3>Visa alla</h3>
+          </a>
+          {easySlice.map((food) => (
+            <Cards food={food} setRecData={setRecData} />
+          ))}
+        </div>
+      </>
+    );
+  }
 }

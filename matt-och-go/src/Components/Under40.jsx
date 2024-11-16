@@ -1,9 +1,9 @@
-import { Navigate, useNavigate } from "react-router-dom";
+import { Cards } from "./cards";
 import "../CSS/home.css";
+import { useState } from "react";
 
-export function Under40({ recipes, setRecData, recData }) {
-  const navigate = useNavigate();
-
+export function Under40({ recipes, setRecData }) {
+  const [isPressed, setIsPressed] = useState(false);
   /* const levelImg = (food) => {
     const img = "";
     if (food === "Easy") {
@@ -19,11 +19,6 @@ export function Under40({ recipes, setRecData, recData }) {
     return
   }; */
 
-  const seeRecipe = (id) => {
-    setRecData({ recipeId: id });
-    navigate("recipe");
-  };
-
   const fastList = [];
   for (let recipe of recipes) {
     if (
@@ -34,42 +29,37 @@ export function Under40({ recipes, setRecData, recData }) {
       fastList.push(recipe);
     }
   }
-  const fastSlice = fastList.slice(0, 8);
+  const fastSlice = fastList.slice(0, 4);
 
-  return (
-    <>
-      <div className="quick-box">
-        <a className="a-title">
-          <h3>Visa alla</h3>
-        </a>
-        {fastSlice.map((food) => (
-          <div>
-            <div onClick={() => seeRecipe(food.id)} className="card-box">
-              <img src={food.image} width="300" alt="" />
-              <p className="card-title">{food.name}</p>
-              <div className="card-img-box">
-                <img className="img-star" src="/star.svg" alt="En stjärna" />
-                <p>
-                  <span>{food.rating}</span> (<span>{food.reviewCount}</span>)
-                </p>
-              </div>
-              <div className="card-bottom">
-                <img
-                  className="card-icon"
-                  src="/time-green.svg"
-                  alt="En klocka"
-                />
-                <p className="card-time">
-                  {food.cookTimeMinutes + food.prepTimeMinutes} minuter
-                </p>
-                {/* <img className="card-icon" src={() => levelImg(food.difficulty)} alt="" /> */}
-                <img className="card-icon" src="/hard.svg" alt="" /> 
-                <p>{food.difficulty}</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </>
-  );
+  if (isPressed) {
+    console.log(isPressed);
+    
+    return (
+      <>
+        <div className="quick-box">
+          <a onClick={() => setIsPressed(!isPressed)} className="a-title">
+            <h3>Visa färre</h3>
+          </a>
+          {fastList.map((food) => (
+            <Cards food={food} setRecData={setRecData} />
+          ))}
+        </div>
+      </>
+    );
+  } else {
+    console.log(isPressed);
+    
+    return (
+      <>
+        <div className="quick-box">
+          <a onClick={() => setIsPressed(!isPressed)} className="a-title">
+            <h3>Visa alla</h3>
+          </a>
+          {fastSlice.map((food) => (
+            <Cards food={food} setRecData={setRecData} />
+          ))}
+        </div>
+      </>
+    );
+  }
 }

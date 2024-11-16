@@ -43,6 +43,7 @@
   justify-content: center;
   gap: 30px;
   margin-top: 50px;
+  padding-bottom: 80px;
 }
 .card-box {
   background-color: rgba(226, 226, 226, 0.753);
@@ -73,6 +74,7 @@
   width: 90%;
   text-align: end;
   margin: 0;
+  cursor: pointer;
 }
 h3 {
   margin: 0;
