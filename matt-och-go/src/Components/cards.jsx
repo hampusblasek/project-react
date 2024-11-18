@@ -8,6 +8,21 @@ export function Cards({ food, setRecData }) {
     navigate("recipe");
   };
 
+  /* const levelImg = (food) => {
+    const img = "";
+    if (food === "Easy") {
+      img = "/easy.svg";
+      return img;
+    } else if (food == "Medium") {
+      img = "/medium.svg";
+      return img;
+    } else {
+      img = "/hard.svg";
+      return img;
+    }
+    return
+  }; */
+
   return (
     <>
       <div>

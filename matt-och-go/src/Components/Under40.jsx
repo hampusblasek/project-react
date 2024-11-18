@@ -4,20 +4,6 @@ import { useState } from "react";
 
 export function Under40({ recipes, setRecData }) {
   const [isPressed, setIsPressed] = useState(false);
-  /* const levelImg = (food) => {
-    const img = "";
-    if (food === "Easy") {
-      img = "/easy.svg";
-      return img;
-    } else if (food == "Medium") {
-      img = "/medium.svg";
-      return img;
-    } else {
-      img = "/hard.svg";
-      return img;
-    }
-    return
-  }; */
 
   const fastList = [];
   for (let recipe of recipes) {
@@ -33,7 +19,7 @@ export function Under40({ recipes, setRecData }) {
 
   if (isPressed) {
     console.log(isPressed);
-    
+
     return (
       <>
         <div className="quick-box">
@@ -48,7 +34,7 @@ export function Under40({ recipes, setRecData }) {
     );
   } else {
     console.log(isPressed);
-    
+
     return (
       <>
         <div className="quick-box">

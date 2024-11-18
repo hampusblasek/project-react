@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { HomePage } from "./Pages/home";
-import { RecipePage } from "./Pages/recipe";
-import { Categories } from "./Pages/category";
+import { RecipePage } from "./Pages/Recipe";
+import { Categories } from "./Pages/Category";
 import { SavedRecipes } from "./Pages/save";
 import { AboutUs } from "./Pages/about-us";
 import { Header } from "./Components/Header";
@@ -21,7 +21,9 @@ import "./App.css";
 
 function App() {
   const [recipes, setRecipes] = useState([]);
-  const [recData, setRecData] = useState({})
+  const [recData, setRecData] = useState({});
+  const [catData, setCatData] = useState([]);
+  const [title, setTitle] = useState("");
 
   useEffect(() => {
     getRecipes().then(setRecipes);
@@ -40,12 +42,26 @@ function App() {
                   setRecipes={setRecipes}
                   setRecData={setRecData}
                   recData={recData}
-                 
                 />
               }
             ></Route>
-            <Route path="recipe" element={<RecipePage recipes={recipes} recData={recData} />}></Route>
-            <Route path="category" element={<Categories />}></Route>
+            <Route
+              path="recipe"
+              element={<RecipePage recipes={recipes} recData={recData} />}
+            ></Route>
+            <Route
+              path="category"
+              element={
+                <Categories
+                  recipes={recipes}
+                  setCatData={setCatData}
+                  catData={catData}
+                  setTitle={setTitle}
+                  title={title}
+                  setRecData={setRecData}
+                />
+              }
+            ></Route>
             <Route path="saved-recipes" element={<SavedRecipes />}></Route>
             <Route path="about-us" element={<AboutUs />}></Route>
           </Route>
