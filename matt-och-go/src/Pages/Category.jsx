@@ -1,10 +1,11 @@
 import "../CSS/category.css";
 import { Cards } from "../Components/cards";
 import { useRecoilState } from "recoil";
-import { recipeState } from "../App";
+import { recipeState, recDataState } from "../App";
 
 export function Categories({ setCatData, catData, setTitle, title, levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
+  const [recData, setRecData] = useRecoilState(recDataState);
   const catList = [];
   for (let recipe of recipes) {
     if (!catList.includes(recipe.cuisine)) {
