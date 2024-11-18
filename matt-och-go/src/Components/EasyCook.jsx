@@ -20,9 +20,10 @@ export function EasyCook({ recipes, setRecData, levelImg }) {
     return (
       <>
         <div className="easy-box">
-          <a onClick={() => setIsPressed(!isPressed)} className="a-title">
-            <h3>Visa färre</h3>
-          </a>
+          <h3 onClick={() => setIsPressed(!isPressed)} className="a-title">
+            Visa färre
+          </h3>
+
           {easyList.map((food) => (
             <Cards food={food} setRecData={setRecData} levelImg={levelImg} />
           ))}

@@ -8,12 +8,7 @@ import { Header } from "./Components/Header";
 import { Footer } from "./Components/Footer";
 import { useEffect } from "react";
 import { getRecipes } from "./API/api";
-import {
-  BrowserRouter,
-  Outlet,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import "./App.css";
 
 function App() {
@@ -59,7 +54,13 @@ function App() {
             ></Route>
             <Route
               path="/recipe"
-              element={<RecipePage recipes={recipes} recData={recData} levelImg={levelImg} />}
+              element={
+                <RecipePage
+                  recipes={recipes}
+                  recData={recData}
+                  levelImg={levelImg}
+                />
+              }
             ></Route>
             <Route
               path="/category"
@@ -71,6 +72,16 @@ function App() {
                   setTitle={setTitle}
                   title={title}
                   setRecData={setRecData}
+                  levelImg={levelImg}
+                />
+              }
+            ></Route>
+            <Route
+              path="/category/recipe"
+              element={
+                <RecipePage
+                  recipes={recipes}
+                  recData={recData}
                   levelImg={levelImg}
                 />
               }

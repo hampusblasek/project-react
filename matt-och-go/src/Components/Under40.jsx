@@ -21,9 +21,10 @@ export function Under40({ recipes, setRecData, levelImg }) {
     return (
       <>
         <div className="quick-box">
-          <a onClick={() => setIsPressed(!isPressed)} className="a-title">
-            <h3>Visa färre</h3>
-          </a>
+          <h3 onClick={() => setIsPressed(!isPressed)} className="a-title">
+            Visa färre
+          </h3>
+
           {fastList.map((food) => (
             <Cards food={food} setRecData={setRecData} levelImg={levelImg} />
           ))}
