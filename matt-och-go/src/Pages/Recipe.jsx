@@ -1,6 +1,6 @@
 import "../CSS/recipe.css";
 
-export function RecipePage({ recipes, recData }) {
+export function RecipePage({ recipes, recData, levelImg }) {
   const food = recipes.find((recipe) => recipe.id === recData.recipeId);
   console.log(food);
 
@@ -23,7 +23,11 @@ export function RecipePage({ recipes, recData }) {
               </div>
             </div>
             <div className="info-2">
-              <img className="food-icon" src="/hard.svg" alt="" />
+              <img
+                className="food-icon"
+                src={levelImg(food.difficulty)}
+                alt=""
+              />
               <p className="info-2-p">
                 Svårighetsgrad: <span>{food.difficulty}</span>
               </p>

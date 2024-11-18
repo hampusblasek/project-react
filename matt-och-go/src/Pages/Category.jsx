@@ -8,6 +8,7 @@ export function Categories({
   setTitle,
   title,
   setRecData,
+  levelImg
 }) {
   const catList = [];
   for (let recipe of recipes) {
@@ -39,7 +40,7 @@ export function Categories({
         <h1 className="category-title">{title}</h1>
         <div className="cuisine-container">
           {catData.map((food, index) => (
-            <Cards food={food} setRecData={setRecData} />
+            <Cards food={food} setRecData={setRecData} levelImg={levelImg} />
           ))}
         </div>
       </div>

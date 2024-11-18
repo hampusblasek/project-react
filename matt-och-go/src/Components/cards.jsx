@@ -1,6 +1,7 @@
 import { Navigate, useNavigate } from "react-router-dom";
+import "../CSS/cards.css";
 
-export function Cards({ food, setRecData }) {
+export function Cards({ food, setRecData, levelImg }) {
   const navigate = useNavigate();
 
   const seeRecipe = (id) => {
@@ -8,8 +9,8 @@ export function Cards({ food, setRecData }) {
     navigate("recipe");
   };
 
-  /* const levelImg = (food) => {
-    const img = "";
+   /* const levelImg = (food) => {
+    let img = "";
     if (food === "Easy") {
       img = "/easy.svg";
       return img;
@@ -20,14 +21,13 @@ export function Cards({ food, setRecData }) {
       img = "/hard.svg";
       return img;
     }
-    return
   }; */
 
   return (
     <>
       <div>
         <div onClick={() => seeRecipe(food.id)} className="card-box">
-          <img src={food.image} width="300" alt="" />
+          <div className="img-box"><img className="card-img"src={food.image} alt="Bild på maträtt" /></div>
           <p className="card-title">{food.name}</p>
           <div className="card-img-box">
             <img className="img-star" src="/star.svg" alt="En stjärna" />
@@ -40,8 +40,8 @@ export function Cards({ food, setRecData }) {
             <p className="card-time">
               {food.cookTimeMinutes + food.prepTimeMinutes} minuter
             </p>
-            {/* <img className="card-icon" src={() => levelImg(food.difficulty)} alt="" /> */}
-            <img className="card-icon" src="/hard.svg" alt="" />
+            <img className="card-icon" src={levelImg(food.difficulty)} alt="" />
+            {/*  <img className="card-icon" src="/hard.svg" alt="" /> */}
             <p>{food.difficulty}</p>
           </div>
         </div>

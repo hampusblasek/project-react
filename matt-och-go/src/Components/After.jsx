@@ -1,7 +1,7 @@
 import { Cards } from "./cards";
 import "../CSS/home.css";
 
-export function AfterFood({ recipes, setRecData }) {
+export function AfterFood({ recipes, setRecData, levelImg }) {
   const afterList = [];
   for (let recipe of recipes) {
     if (recipe.mealType.includes("Dessert")) {
@@ -13,7 +13,7 @@ export function AfterFood({ recipes, setRecData }) {
     <>
       <div className="cold-box">
         {afterList.map((food) => (
-          <Cards food={food} setRecData={setRecData} />
+          <Cards food={food} setRecData={setRecData} levelImg={levelImg} />
         ))}
       </div>
     </>

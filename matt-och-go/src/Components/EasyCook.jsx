@@ -2,7 +2,7 @@ import "../CSS/home.css";
 import { Cards } from "./cards";
 import { useState } from "react";
 
-export function EasyCook({ recipes, setRecData }) {
+export function EasyCook({ recipes, setRecData, levelImg }) {
   const [isPressed, setIsPressed] = useState(false);
   const easyList = [];
   for (let recipe of recipes) {
@@ -24,7 +24,7 @@ export function EasyCook({ recipes, setRecData }) {
             <h3>Visa färre</h3>
           </a>
           {easyList.map((food) => (
-            <Cards food={food} setRecData={setRecData} />
+            <Cards food={food} setRecData={setRecData} levelImg={levelImg} />
           ))}
         </div>
       </>
@@ -37,7 +37,7 @@ export function EasyCook({ recipes, setRecData }) {
             <h3>Visa alla</h3>
           </a>
           {easySlice.map((food) => (
-            <Cards food={food} setRecData={setRecData} />
+            <Cards food={food} setRecData={setRecData} levelImg={levelImg} />
           ))}
         </div>
       </>

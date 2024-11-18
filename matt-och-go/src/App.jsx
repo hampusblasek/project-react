@@ -29,6 +29,20 @@ function App() {
     getRecipes().then(setRecipes);
   }, []);
 
+  const levelImg = (food) => {
+    let img = "";
+    if (food === "Easy") {
+      img = "/easy.svg";
+      return img;
+    } else if (food == "Medium") {
+      img = "/medium.svg";
+      return img;
+    } else {
+      img = "/hard.svg";
+      return img;
+    }
+  };
+
   return (
     <>
       <BrowserRouter>
@@ -42,12 +56,13 @@ function App() {
                   setRecipes={setRecipes}
                   setRecData={setRecData}
                   recData={recData}
+                  levelImg={levelImg}
                 />
               }
             ></Route>
             <Route
               path="recipe"
-              element={<RecipePage recipes={recipes} recData={recData} />}
+              element={<RecipePage recipes={recipes} recData={recData} levelImg={levelImg} />}
             ></Route>
             <Route
               path="category"
@@ -59,6 +74,7 @@ function App() {
                   setTitle={setTitle}
                   title={title}
                   setRecData={setRecData}
+                  levelImg={levelImg}
                 />
               }
             ></Route>

@@ -2,7 +2,7 @@ import { Cards } from "./cards";
 import "../CSS/home.css";
 import { useState } from "react";
 
-export function Under40({ recipes, setRecData }) {
+export function Under40({ recipes, setRecData, levelImg }) {
   const [isPressed, setIsPressed] = useState(false);
 
   const fastList = [];
@@ -27,7 +27,7 @@ export function Under40({ recipes, setRecData }) {
             <h3>Visa färre</h3>
           </a>
           {fastList.map((food) => (
-            <Cards food={food} setRecData={setRecData} />
+            <Cards food={food} setRecData={setRecData} levelImg={levelImg} />
           ))}
         </div>
       </>
@@ -42,7 +42,7 @@ export function Under40({ recipes, setRecData }) {
             <h3>Visa alla</h3>
           </a>
           {fastSlice.map((food) => (
-            <Cards food={food} setRecData={setRecData} />
+            <Cards food={food} setRecData={setRecData} levelImg={levelImg} />
           ))}
         </div>
       </>
