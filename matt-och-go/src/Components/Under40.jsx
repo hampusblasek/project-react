@@ -18,8 +18,6 @@ export function Under40({ recipes, setRecData, levelImg }) {
   const fastSlice = fastList.slice(0, 4);
 
   if (isPressed) {
-    console.log(isPressed);
-
     return (
       <>
         <div className="quick-box">
@@ -33,8 +31,6 @@ export function Under40({ recipes, setRecData, levelImg }) {
       </>
     );
   } else {
-    console.log(isPressed);
-
     return (
       <>
         <div className="quick-box">

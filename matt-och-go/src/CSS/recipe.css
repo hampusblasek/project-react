@@ -1,15 +1,15 @@
+
 .recipe-container {
   width: 100%;
   height: auto;
-  background-color: rgb(251, 251, 236);
+  background-color: rgba(251, 251, 236, 0.507);
 }
 .recipe-box {
   display: flex;
   height: auto;
 }
 .rec-img {
-  
-  background-color: rgba(207, 207, 207, 0.662); 
+  background-color: rgba(207, 207, 207, 0.662);
   width: 60%;
   height: auto;
 }
@@ -113,11 +113,11 @@
   font-size: 1.1rem;
   margin: 5px 5px;
 }
-.tag-wrapper{
+.tag-wrapper {
   display: flex;
   flex-wrap: wrap;
   padding-left: 20px;
-  width:200px;
+  width: 200px;
 }
 .food-icon-2 {
   width: 55px;

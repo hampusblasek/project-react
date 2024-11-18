@@ -10,12 +10,9 @@ import { useEffect } from "react";
 import { getRecipes } from "./API/api";
 import {
   BrowserRouter,
-  Link,
   Outlet,
   Route,
   Routes,
-  useNavigate,
-  useParams,
 } from "react-router-dom";
 import "./App.css";
 
@@ -61,11 +58,11 @@ function App() {
               }
             ></Route>
             <Route
-              path="recipe"
+              path="/recipe"
               element={<RecipePage recipes={recipes} recData={recData} levelImg={levelImg} />}
             ></Route>
             <Route
-              path="category"
+              path="/category"
               element={
                 <Categories
                   recipes={recipes}

@@ -9,25 +9,13 @@ export function Cards({ food, setRecData, levelImg }) {
     navigate("recipe");
   };
 
-   /* const levelImg = (food) => {
-    let img = "";
-    if (food === "Easy") {
-      img = "/easy.svg";
-      return img;
-    } else if (food == "Medium") {
-      img = "/medium.svg";
-      return img;
-    } else {
-      img = "/hard.svg";
-      return img;
-    }
-  }; */
-
   return (
     <>
       <div>
         <div onClick={() => seeRecipe(food.id)} className="card-box">
-          <div className="img-box"><img className="card-img"src={food.image} alt="Bild på maträtt" /></div>
+          <div className="img-box">
+            <img className="card-img" src={food.image} alt="Bild på maträtt" />
+          </div>
           <p className="card-title">{food.name}</p>
           <div className="card-img-box">
             <img className="img-star" src="/star.svg" alt="En stjärna" />
