@@ -9,10 +9,16 @@ import { Footer } from "./Components/Footer";
 import { useEffect } from "react";
 import { getRecipes } from "./API/api";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
+import {atom, useRecoilState} from "recoil";
 import "./App.css";
 
+export const recipeState = atom({
+  key: "recipe",
+  default: [],
+})
+
 function App() {
-  const [recipes, setRecipes] = useState([]);
+  const [recipes, setRecipes] = useRecoilState(recipeState);
   const [recData, setRecData] = useState({});
   const [catData, setCatData] = useState([]);
   const [title, setTitle] = useState("");

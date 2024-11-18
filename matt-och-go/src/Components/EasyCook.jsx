@@ -1,8 +1,11 @@
 import "../CSS/home.css";
 import { Cards } from "./cards";
 import { useState } from "react";
+import { useRecoilState } from "recoil";
+import { recipeState } from "../App";
 
-export function EasyCook({ recipes, setRecData, levelImg }) {
+export function EasyCook({setRecData, levelImg }) {
+  const [recipes, setRecipes] = useRecoilState(recipeState);
   const [isPressed, setIsPressed] = useState(false);
   const easyList = [];
   for (let recipe of recipes) {

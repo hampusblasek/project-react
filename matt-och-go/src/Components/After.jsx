@@ -1,7 +1,10 @@
 import { Cards } from "./cards";
+import { useRecoilState } from "recoil";
+import { recipeState } from "../App";
 import "../CSS/home.css";
 
-export function AfterFood({ recipes, setRecData, levelImg }) {
+export function AfterFood({setRecData, levelImg }) {
+  const [recipes, setRecipes] = useRecoilState(recipeState);
   const afterList = [];
   for (let recipe of recipes) {
     if (recipe.mealType.includes("Dessert")) {

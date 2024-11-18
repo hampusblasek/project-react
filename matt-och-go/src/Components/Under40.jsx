@@ -1,8 +1,11 @@
 import { Cards } from "./cards";
 import "../CSS/home.css";
 import { useState } from "react";
+import { useRecoilState } from "recoil";
+import { recipeState } from "../App";
 
-export function Under40({ recipes, setRecData, levelImg }) {
+export function Under40({ setRecData, levelImg }) {
+  const [recipes, setRecipes] = useRecoilState(recipeState);
   const [isPressed, setIsPressed] = useState(false);
 
   const fastList = [];
