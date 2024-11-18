@@ -9,17 +9,21 @@ import { Footer } from "./Components/Footer";
 import { useEffect } from "react";
 import { getRecipes } from "./API/api";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
-import {atom, useRecoilState} from "recoil";
+import { atom, useRecoilState } from "recoil";
 import "./App.css";
 
 export const recipeState = atom({
   key: "recipe",
   default: [],
-})
+});
+export const recDataState = atom({
+  key: "data",
+  default: {},
+});
 
 function App() {
   const [recipes, setRecipes] = useRecoilState(recipeState);
-  const [recData, setRecData] = useState({});
+  const [recData, setRecData] = useRecoilState(recDataState);
   const [catData, setCatData] = useState([]);
   const [title, setTitle] = useState("");
 
@@ -46,51 +50,26 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route
-              index
-              element={
-                <HomePage
-                  recipes={recipes}
-                  setRecipes={setRecipes}
-                  setRecData={setRecData}
-                  recData={recData}
-                  levelImg={levelImg}
-                />
-              }
-            ></Route>
+            <Route index element={<HomePage levelImg={levelImg} />}></Route>
             <Route
               path="/recipe"
-              element={
-                <RecipePage
-                  recipes={recipes}
-                  recData={recData}
-                  levelImg={levelImg}
-                />
-              }
+              element={<RecipePage levelImg={levelImg} />}
             ></Route>
             <Route
               path="/category"
               element={
                 <Categories
-                  recipes={recipes}
                   setCatData={setCatData}
                   catData={catData}
                   setTitle={setTitle}
                   title={title}
-                  setRecData={setRecData}
                   levelImg={levelImg}
                 />
               }
             ></Route>
             <Route
               path="/category/recipe"
-              element={
-                <RecipePage
-                  recipes={recipes}
-                  recData={recData}
-                  levelImg={levelImg}
-                />
-              }
+              element={<RecipePage levelImg={levelImg} />}
             ></Route>
             <Route path="saved-recipes" element={<SavedRecipes />}></Route>
             <Route path="about-us" element={<AboutUs />}></Route>

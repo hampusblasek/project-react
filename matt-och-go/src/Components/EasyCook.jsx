@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRecoilState } from "recoil";
 import { recipeState } from "../App";
 
-export function EasyCook({setRecData, levelImg }) {
+export function EasyCook({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
   const [isPressed, setIsPressed] = useState(false);
   const easyList = [];
@@ -28,7 +28,7 @@ export function EasyCook({setRecData, levelImg }) {
           </h3>
 
           {easyList.map((food) => (
-            <Cards food={food} setRecData={setRecData} levelImg={levelImg} />
+            <Cards food={food} levelImg={levelImg} />
           ))}
         </div>
       </>
@@ -41,7 +41,7 @@ export function EasyCook({setRecData, levelImg }) {
             <h3>Visa alla</h3>
           </a>
           {easySlice.map((food) => (
-            <Cards food={food} setRecData={setRecData} levelImg={levelImg} />
+            <Cards food={food} levelImg={levelImg} />
           ))}
         </div>
       </>

@@ -1,6 +1,10 @@
+import { useRecoilState } from "recoil";
+import { recipeState, recDataState } from "../App";
 import "../CSS/recipe.css";
 
-export function RecipePage({ recipes, recData, levelImg }) {
+export function RecipePage({ levelImg }) {
+  const [recipes, setRecipes] = useRecoilState(recipeState);
+  const [recData, setRecData] = useRecoilState(recDataState);
   const food = recipes.find((recipe) => recipe.id === recData.recipeId);
   console.log(food);
 

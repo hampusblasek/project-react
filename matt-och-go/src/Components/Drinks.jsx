@@ -3,7 +3,7 @@ import "../CSS/home.css";
 import { useRecoilState } from "recoil";
 import { recipeState } from "../App";
 
-export function Drinks({ setRecData, levelImg }) {
+export function Drinks({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
   const drinkList = [];
   for (let recipe of recipes) {
@@ -16,7 +16,7 @@ export function Drinks({ setRecData, levelImg }) {
     <>
       <div className="drink-box">
         {drinkList.map((food) => (
-          <Cards food={food} setRecData={setRecData} levelImg={levelImg} />
+          <Cards food={food} levelImg={levelImg} />
         ))}
       </div>
     </>

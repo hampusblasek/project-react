@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRecoilState } from "recoil";
 import { recipeState } from "../App";
 
-export function Under40({ setRecData, levelImg }) {
+export function Under40({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
   const [isPressed, setIsPressed] = useState(false);
 
@@ -29,7 +29,7 @@ export function Under40({ setRecData, levelImg }) {
           </h3>
 
           {fastList.map((food) => (
-            <Cards food={food} setRecData={setRecData} levelImg={levelImg} />
+            <Cards food={food} levelImg={levelImg} />
           ))}
         </div>
       </>
@@ -42,7 +42,7 @@ export function Under40({ setRecData, levelImg }) {
             <h3>Visa alla</h3>
           </a>
           {fastSlice.map((food) => (
-            <Cards food={food} setRecData={setRecData} levelImg={levelImg} />
+            <Cards food={food} levelImg={levelImg} />
           ))}
         </div>
       </>
