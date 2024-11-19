@@ -33,6 +33,6 @@ export function SavedRecipes({ levelImg }) {
       </>
     );
   } else {
-    return <h1 className="h1-save">Du har inga sparade recept!</h1>;
+    return <h1 className="h1-save">Här var det tomt!</h1>;
   }
 }

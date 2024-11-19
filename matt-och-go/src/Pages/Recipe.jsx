@@ -7,10 +7,24 @@ export function RecipePage({ levelImg }) {
   const [recData, setRecData] = useRecoilState(recDataState);
   const [saveRec, setSaveRec] = useRecoilState(saveRecState);
   const food = recipes.find((recipe) => recipe.id === recData.recipeId);
-  console.log(food);
-
+  
+  const names = [];
+  for (let save of saveRec) {
+    names.push(save.name);
+  }
   const saveRecipe = (food) => {
     setSaveRec([...saveRec, food]);
+  };
+  const heartImg = (food) => {
+    let image = "";
+    console.log(names);
+    if (names.includes(food.name)) {
+      image = "/heart.svg";
+      return image;
+    } else {
+      image = "/heart-grey.svg";
+      return image
+    }
   };
 
   return (
@@ -66,7 +80,7 @@ export function RecipePage({ levelImg }) {
               <img
                 onClick={() => saveRecipe(food)}
                 className="food-icon-2"
-                src="/heart.svg"
+                src={heartImg(food)}
                 alt="Ett hjärta"
                 title="Spara recept"
               />
