@@ -1,12 +1,17 @@
 import { useRecoilState } from "recoil";
-import { recipeState, recDataState } from "../App";
+import { recipeState, recDataState, saveRecState } from "../App";
 import "../CSS/recipe.css";
 
 export function RecipePage({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
   const [recData, setRecData] = useRecoilState(recDataState);
+  const [saveRec, setSaveRec] = useRecoilState(saveRecState);
   const food = recipes.find((recipe) => recipe.id === recData.recipeId);
   console.log(food);
+
+  const saveRecipe = (food) => {
+    setSaveRec([...saveRec, food]);
+  };
 
   return (
     <>
@@ -59,6 +64,7 @@ export function RecipePage({ levelImg }) {
               </div>
               <img className="food-icon" src="/share.svg" alt="En dela-icon" />
               <img
+                onClick={() => saveRecipe(food)}
                 className="food-icon-2"
                 src="/heart.svg"
                 alt="Ett hjärta"

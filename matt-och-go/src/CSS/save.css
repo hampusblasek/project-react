@@ -1,5 +1,33 @@
-.save-container{
-    width: 100%;
-    height: 1000px;
-    background-color: rgb(35, 172, 28);
+.save-container {
+  width: 100%;
+  min-height: 1000px;
+  background-color: rgba(251, 251, 236, 0.507);
+}
+.save-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 50px;
+}
+.h1-save {
+  width: 100%;
+  text-align: center;
+}
+.btn-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.del-btn{
+  height: 2rem;
+  width: 8rem;
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: rgba(255, 64, 64, 0.755);
+  cursor: pointer;
+  color: white;
+  font-size: 1.1rem;
+  font-weight:bolder;
 }
