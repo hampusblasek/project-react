@@ -21,14 +21,14 @@ export const recDataState = atom({
   default: {},
 });
 export const saveRecState = atom({
-  key:"save",
+  key: "save",
   default: [],
-})
+});
 
 function App() {
   const [recipes, setRecipes] = useRecoilState(recipeState);
   const [recData, setRecData] = useRecoilState(recDataState);
-  const [saveRec, setSaveRec] = useRecoilState(saveRecState)
+  const [saveRec, setSaveRec] = useRecoilState(saveRecState);
   const [catData, setCatData] = useState([]);
   const [title, setTitle] = useState("");
 
@@ -76,7 +76,18 @@ function App() {
               path="/category/recipe"
               element={<RecipePage levelImg={levelImg} />}
             ></Route>
-            <Route path="saved-recipes" element={<SavedRecipes levelImg={levelImg} />}></Route>
+            <Route
+              path="/category/recipe"
+              element={<RecipePage levelImg={levelImg} />}
+            ></Route>
+            <Route
+              path="saved-recipes/recipe"
+              element={<RecipePage levelImg={levelImg} />}
+            ></Route>
+            <Route
+              path="saved-recipes"
+              element={<SavedRecipes levelImg={levelImg} />}
+            ></Route>
             <Route path="about-us" element={<AboutUs />}></Route>
           </Route>
         </Routes>
