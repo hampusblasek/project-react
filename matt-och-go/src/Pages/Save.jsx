@@ -1,6 +1,7 @@
 import { useRecoilState } from "recoil";
 import { saveRecState } from "../App";
 import { Cards } from "../Components/cards";
+import { NavLink } from "react-router-dom";
 import "../CSS/save.css";
 
 export function SavedRecipes({ levelImg }) {
@@ -14,6 +15,7 @@ export function SavedRecipes({ levelImg }) {
     return (
       <>
         <div className="save-container">
+          <h1 className="save-title">Här kan du hitta dina sparade recept!</h1>
           <div className="save-box">
             {saveRec.map((food) => (
               <div>
@@ -33,6 +35,20 @@ export function SavedRecipes({ levelImg }) {
       </>
     );
   } else {
-    return <h1 className="h1-save">Här var det tomt!</h1>;
+    return (
+    <div className="save-container">
+      <div className="save-wrapper">
+        <div className="save-text-box">
+          <h1 className="h1-save">Här var det tomt!</h1>
+          <p className="save-text">Tryck på hjärtat i receptet för att spara ett recept</p>
+          {/* <div className="link-box">
+            <NavLink className="save-link" to="category">
+              Till ny inspiration!
+            </NavLink>
+          </div> */}
+        </div>
+        <img className="save-img" src="/Cooking.svg" alt="" />
+      </div>
+    </div>)
   }
 }

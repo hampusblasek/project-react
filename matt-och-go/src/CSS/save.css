@@ -1,6 +1,6 @@
 .save-container {
   width: 100%;
-  min-height: 1000px;
+  min-height: 100vh;
   background-color: rgba(251, 251, 236, 0.507);
 }
 .save-box {
@@ -13,6 +13,8 @@
 .h1-save {
   width: 100%;
   text-align: center;
+  margin: 0;
+  padding-top: 50px;
 }
 .btn-box{
   display: flex;
@@ -30,4 +32,35 @@
   color: white;
   font-size: 1.1rem;
   font-weight:bolder;
+}
+.save-wrapper{
+  display: flex;
+  justify-content: space-around;
+  
+}
+.link-box{
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+.save-link{
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  color: black;
+  background-color: rgb(212, 212, 212);
+}
+.save-title{
+  margin: 0;
+  text-align: center;
+  padding-top: 50px;
+}
+.save-text-box{
+  padding-top: 100px;
+}
+.save-img{
+  width: 600px;
+}
+.save-text{
+  font-size: 1.2rem;
 }

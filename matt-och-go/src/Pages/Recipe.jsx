@@ -112,8 +112,8 @@ export function RecipePage({ levelImg }) {
             </div>
             <div className="instruction-box">
               <ul>
-                {food.instructions.map((how) => (
-                  <li className="instruction-li">{how}</li>
+                {food.instructions.map((how, index) => (
+                  <li key={index} className="instruction-li">{how}</li>
                 ))}
               </ul>
             </div>

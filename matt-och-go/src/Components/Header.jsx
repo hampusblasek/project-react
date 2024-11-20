@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { saveRecState } from "../App";
 import "../CSS/header.css";
@@ -25,10 +25,10 @@ export function Header() {
         
         <h1 className="logo">Mätt och Go!</h1>
             <nav>
-                <Link className="link" to="/">Hem</Link>
-                <Link className="link" to="category">Världens kök</Link>
-                <Link className="link" to="saved-recipes">Sparade recept <img src={savedResHeart()} alt="" /> <span>{savedResNumber()}</span></Link>
-                <Link className="link" to="about-us">Om Oss</Link>
+                <NavLink className="link" to="/">Hem</NavLink>
+                <NavLink className="link" to="category">Världens kök</NavLink>
+                <NavLink className="link" to="saved-recipes">Sparade recept <img src={savedResHeart()} alt="" /> <span>{savedResNumber()}</span></NavLink>
+                <NavLink className="link" to="about-us">Om Oss</NavLink>
             </nav>
         
       </header>

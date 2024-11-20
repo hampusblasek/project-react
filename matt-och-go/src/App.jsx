@@ -77,12 +77,21 @@ function App() {
               element={<RecipePage levelImg={levelImg} />}
             ></Route>
             <Route
-              path="/category/recipe"
+              path="/saved-recipes/category/recipe"
               element={<RecipePage levelImg={levelImg} />}
             ></Route>
             <Route
               path="saved-recipes/recipe"
               element={<RecipePage levelImg={levelImg} />}
+            ></Route>
+             <Route
+              path="saved-recipes/category"
+              element={<Categories 
+              setCatData={setCatData}
+              catData={catData}
+              setTitle={setTitle}
+              title={title}
+              levelImg={levelImg}/>}
             ></Route>
             <Route
               path="saved-recipes"

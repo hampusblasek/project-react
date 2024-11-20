@@ -16,6 +16,9 @@ nav {
   color: black;
   background-color: rgb(212, 212, 212);
 }
+.link.active{
+  background-color: rgba(1, 158, 1, 0.374);
+}
 .logo {
   margin-left: 20px;
 }
