@@ -2,19 +2,21 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Rating from "@mui/material/Rating";
 import Typography from "@mui/material/Typography";
+import { useState } from "react";
 
 export function BasicRating() {
-  /* const [value, setValue] = (React.useState < number) | (null > 2); */
+  const [value, setValue] = useState([]);
 
   return (
     <Box sx={{ "& > legend": { mt: 2 } }}>
      
-      <Rating
-        name="simple-uncontrolled"
+     <Rating
+        name="simple-controlled"
+        value={value}
         onChange={(event, newValue) => {
-          console.log(newValue);
+          setValue(newValue);
+          
         }}
-        defaultValue={2}
         size="large"
       />
     </Box>
