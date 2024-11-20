@@ -19,6 +19,23 @@
   width: 40%;
   height: auto;
 }
+.no-food{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.no-food-text{
+  font-size: 1.5rem;
+  margin-right: 50px;
+}
+.no-food-link{
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  color: black;
+  background-color: rgb(212, 212, 212);
+
+}
 .food-img {
   width: 100%;
 }

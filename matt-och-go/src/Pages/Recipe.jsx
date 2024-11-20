@@ -1,5 +1,7 @@
 import { useRecoilState } from "recoil";
 import { recipeState, recDataState, saveRecState } from "../App";
+import { Navigate, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../CSS/recipe.css";
 
 export function RecipePage({ levelImg }) {
@@ -7,6 +9,19 @@ export function RecipePage({ levelImg }) {
   const [recData, setRecData] = useRecoilState(recDataState);
   const [saveRec, setSaveRec] = useRecoilState(saveRecState);
   const food = recipes.find((recipe) => recipe.id === recData.recipeId);
+// ifall inte receptet hittas
+  if (!food) {
+    return (
+      <div className="no-food">
+        <p className="no-food-text">
+          Receptet hittades inte
+        </p>
+          <Link className="no-food-link" to="/">
+            Tillbaka till Hem
+          </Link>
+      </div>
+    );
+  }
 
   const names = [];
   for (let save of saveRec) {

@@ -8,6 +8,7 @@ export function EasyCook({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
   const [isPressed, setIsPressed] = useState(false);
   const easyList = [];
+
   for (let recipe of recipes) {
     if (
       recipe.difficulty.includes("Easy") &&
@@ -37,9 +38,10 @@ export function EasyCook({ levelImg }) {
     return (
       <>
         <div className="easy-box">
-          <a onClick={() => setIsPressed(!isPressed)} className="a-title">
-            <h3>Visa alla</h3>
-          </a>
+          <h3 onClick={() => setIsPressed(!isPressed)} className="a-title">
+            Visa alla
+          </h3>
+
           {easySlice.map((food) => (
             <Cards food={food} levelImg={levelImg} />
           ))}
