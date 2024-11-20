@@ -14,7 +14,7 @@ export function Cards({ food, levelImg }) {
 
   return (
     <>
-      <div>
+      <div key={food.id}>
         <div onClick={() => seeRecipe(food.id)} className="card-box">
           <div className="img-box">
             <img className="card-img" src={food.image} alt="Bild på maträtt" />

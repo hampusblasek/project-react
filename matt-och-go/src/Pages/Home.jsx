@@ -5,6 +5,7 @@ import { Drinks } from "../Components/Drinks";
 import "../CSS/home.css";
 
 export function HomePage({ levelImg }) {
+  
   return (
     <>
       <div className="home-container">
