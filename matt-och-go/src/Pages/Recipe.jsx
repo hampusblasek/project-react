@@ -2,6 +2,7 @@ import { useRecoilState } from "recoil";
 import { recipeState, recDataState, saveRecState } from "../App";
 import { Navigate, useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { BasicRating } from "../Components/Rating";
 import "../CSS/recipe.css";
 
 export function RecipePage({ levelImg }) {
@@ -102,6 +103,11 @@ export function RecipePage({ levelImg }) {
                 src={heartImg(food)}
                 alt="Ett hjärta"
               />
+            </div>
+            <h2 className="rating-title">Sätt ditt betyg på receptet</h2>
+            <div className="rating-star">
+              <BasicRating/>
+              
             </div>
           </div>
           <div className="rec-img">

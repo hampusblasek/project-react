@@ -172,3 +172,14 @@ ul {
   margin-bottom: 30px;
   border-bottom: 1px solid black;
 }
+.rating-star{
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.rating-title{
+  text-align: center;
+}
