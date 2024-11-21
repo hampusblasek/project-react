@@ -37,7 +37,7 @@ export function BasicRating({ food }) {
               onClick={() => changeRating(isRated.name)}
               className="rating-btn"
             >
-              Ändra betyget
+              Ta bort betyg
             </button>
           </div>
         </div>
@@ -47,17 +47,19 @@ export function BasicRating({ food }) {
 
   return (
     <div>
-      <h2 className="rating-title">Sätt ditt betyg på receptet</h2>
-      <Box>
-        <Rating
-          name="simple-controlled"
-          value={value}
-          onChange={(event, newValue) => {
-            starRating(newValue);
-          }}
-          size="large"
-        />
-      </Box>
+    <h2 className="rating-title">Sätt ditt betyg på receptet</h2>
+      <div className="rating-star-box">
+        <Box>
+          <Rating
+            name="simple-controlled"
+            value={value}
+            onChange={(event, newValue) => {
+              starRating(newValue);
+            }}
+            size="large"
+          />
+        </Box>
+      </div>
     </div>
   );
 }
