@@ -7,6 +7,9 @@ import { AboutUs } from "./Pages/about-us";
 import { SavedRecipes } from "./Pages/save";
 
 export function NavigatePage({levelImg, setCatData, catData, title, setTitle}) {
+
+    return (
+        <>
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -56,4 +59,6 @@ export function NavigatePage({levelImg, setCatData, catData, title, setTitle}) {
       </Route>
     </Routes>
   </BrowserRouter>
+        </>
+    )
 }
