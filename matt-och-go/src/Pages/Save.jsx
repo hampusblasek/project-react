@@ -40,7 +40,7 @@ export function SavedRecipes({ levelImg }) {
       <div className="save-wrapper">
         <div className="save-text-box">
           <h1 className="h1-save">Här var det tomt!</h1>
-          <p className="save-text">Tryck på hjärtat i receptet för att spara ett recept</p>
+          <p className="save-text">Tryck på hjärtat i ett recept för att spara ett recept</p>
           {/* <div className="link-box">
             <NavLink className="save-link" to="category">
               Till ny inspiration!

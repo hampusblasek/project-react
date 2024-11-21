@@ -106,7 +106,7 @@ export function RecipePage({ levelImg }) {
                 alt="Ett hjärta"
               />
             </div>
-            <h2 className="rating-title">Sätt ditt betyg på receptet</h2>
+            
             <div className="rating-star">
               <BasicRating food={food}/>
               

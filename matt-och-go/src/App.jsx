@@ -16,10 +16,15 @@ export const saveRecState = atom({
   key: "save",
   default: [],
 });
+export const ratingsState = atom({
+  key: "rating",
+  default: []
+})
 
 function App() {
   const [recipes, setRecipes] = useRecoilState(recipeState);
   const [saveRec, setSaveRec] = useRecoilState(saveRecState);
+  const [ratingState, SetRatingState] = useRecoilState(ratingsState);
   const [catData, setCatData] = useState([]);
   const [title, setTitle] = useState("");
 
