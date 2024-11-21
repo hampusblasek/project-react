@@ -1,11 +1,10 @@
 import "../CSS/category.css";
 import { Cards } from "../Components/cards";
 import { useRecoilState } from "recoil";
-import { recipeState, recDataState } from "../App";
+import { recipeState } from "../App";
 
 export function Categories({ setCatData, catData, setTitle, title, levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
-  const [recData, setRecData] = useRecoilState(recDataState);
   const catList = [];
   for (let recipe of recipes) {
     if (!catList.includes(recipe.cuisine)) {
@@ -36,7 +35,7 @@ export function Categories({ setCatData, catData, setTitle, title, levelImg }) {
         <h1 className="category-title">{title}</h1>
         <div className="cuisine-container">
           {catData.map((food, index) => (
-            <Cards food={food} setRecData={setRecData} levelImg={levelImg} />
+            <Cards food={food}  levelImg={levelImg} />
           ))}
         </div>
       </div>

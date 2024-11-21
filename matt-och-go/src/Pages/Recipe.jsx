@@ -1,15 +1,17 @@
 import { useRecoilState } from "recoil";
-import { recipeState, recDataState, saveRecState } from "../App";
-import { Navigate, useNavigate } from "react-router-dom";
+import { recipeState, saveRecState } from "../App";
+import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { BasicRating } from "../Components/Rating";
 import "../CSS/recipe.css";
 
 export function RecipePage({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
-  const [recData, setRecData] = useRecoilState(recDataState);
   const [saveRec, setSaveRec] = useRecoilState(saveRecState);
-  const food = recipes.find((recipe) => recipe.id === recData.recipeId);
+  
+  
+  const params = useParams();
+  const food = recipes.find((recipe) => recipe.id === Number.parseInt(params.id))
 // ifall inte receptet hittas
   if (!food) {
     return (

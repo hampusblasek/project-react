@@ -1,15 +1,13 @@
 import { Navigate, useNavigate } from "react-router-dom";
-import { useRecoilState } from "recoil";
-import { recDataState } from "../App";
 import "../CSS/cards.css";
 
 export function Cards({ food, levelImg }) {
-  const [recData, setRecData] = useRecoilState(recDataState);
   const navigate = useNavigate();
 
   const seeRecipe = (id) => {
-    setRecData({ recipeId: id });
-    navigate("recipe");
+    console.log(id);
+    
+    navigate("recipe/"+id);
   };
 
   return (

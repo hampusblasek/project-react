@@ -10,15 +10,12 @@ import { useEffect } from "react";
 import { getRecipes } from "./API/api";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import { atom, useRecoilState } from "recoil";
+import { NavigatePage } from "./Router";
 import "./App.css";
 
 export const recipeState = atom({
   key: "recipe",
   default: [],
-});
-export const recDataState = atom({
-  key: "data",
-  default: {},
 });
 export const saveRecState = atom({
   key: "save",
@@ -27,7 +24,6 @@ export const saveRecState = atom({
 
 function App() {
   const [recipes, setRecipes] = useRecoilState(recipeState);
-  const [recData, setRecData] = useRecoilState(recDataState);
   const [saveRec, setSaveRec] = useRecoilState(saveRecState);
   const [catData, setCatData] = useState([]);
   const [title, setTitle] = useState("");
@@ -57,7 +53,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage levelImg={levelImg} />}></Route>
             <Route
-              path="/recipe"
+              path="/recipe/:id"
               element={<RecipePage levelImg={levelImg} />}
             ></Route>
             <Route
@@ -73,7 +69,7 @@ function App() {
               }
             ></Route>
             <Route
-              path="/category/recipe"
+              path="/category/recipe/:id"
               element={<RecipePage levelImg={levelImg} />}
             ></Route>
             <Route
@@ -81,7 +77,7 @@ function App() {
               element={<RecipePage levelImg={levelImg} />}
             ></Route>
             <Route
-              path="saved-recipes/recipe"
+              path="saved-recipes/recipe/:id"
               element={<RecipePage levelImg={levelImg} />}
             ></Route>
              <Route
@@ -105,7 +101,7 @@ function App() {
   );
 }
 
-function Layout() {
+export function Layout() {
   return (
     <>
       <div className="body-container">
