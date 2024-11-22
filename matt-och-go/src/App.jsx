@@ -10,11 +10,11 @@ import "./App.css";
 
 export const recipeState = atom({
   key: "recipe",
-  default: [],
+  default: []
 });
 export const saveRecState = atom({
   key: "save",
-  default: [],
+  default: []
 });
 export const ratingsState = atom({
   key: "rating",

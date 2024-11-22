@@ -38,9 +38,10 @@ export function Under40({ levelImg }) {
     return (
       <>
         <div className="quick-box">
-          
-            <h3 onClick={() => setIsPressed(!isPressed)} className="a-title">Visa alla</h3>
-          
+          <h3 onClick={() => setIsPressed(!isPressed)} className="a-title">
+            Visa alla
+          </h3>
+
           {fastSlice.map((food) => (
             <Cards food={food} levelImg={levelImg} />
           ))}

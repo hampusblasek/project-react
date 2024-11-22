@@ -8,7 +8,7 @@
 .hero {
   width: 100%;
   height: 600px;
-  background-image: url("/pasta-small.jpg");
+  background-image: url("/pasta-small.webp");
   background-size: cover;
   display: flex;
   justify-content: center;
