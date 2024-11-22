@@ -14,7 +14,8 @@ export function MessurementConverter() {
     if (!sum) {
       return "Välj mått ovan för att se ditt svar här!";
     } else {
-      return "Svar: " + sum;
+        const shortSum = sum.toFixed(2)
+      return "Svar: " + shortSum;
     }
   };
 
