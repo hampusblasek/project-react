@@ -1,3 +1,4 @@
+import { AccordionUsage } from "../Components/DropDown";
 import "../CSS/about-us.css";
 
 export function AboutUs() {
@@ -30,8 +31,10 @@ export function AboutUs() {
             </p>
           </div>
         </div>
-        <div>
-            
+        <div className="expand-box">
+            <div className="expand">
+                <AccordionUsage/>
+            </div>
         </div>
       </div>
     </>

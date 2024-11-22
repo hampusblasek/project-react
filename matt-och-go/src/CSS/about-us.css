@@ -39,3 +39,16 @@
 .about-img-box {
   width: 40%;
 }
+.expand-box{
+    background-color: rgba(167, 167, 167, 0.48);
+    margin-top: 100px;
+}
+.expand{
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+    border-radius: 10px;
+}
+.arrow-img{
+    width: 30px;
+}
