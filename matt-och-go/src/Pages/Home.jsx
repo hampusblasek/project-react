@@ -2,10 +2,10 @@ import { Under40 } from "../Components/Under40";
 import { EasyCook } from "../Components/EasyCook";
 import { AfterFood } from "../Components/After";
 import { Drinks } from "../Components/Drinks";
+import { MessurementConverter } from "../Components/Converter";
 import "../CSS/home.css";
 
 export function HomePage({ levelImg }) {
-  
   return (
     <>
       <div className="home-container">
@@ -23,6 +23,9 @@ export function HomePage({ levelImg }) {
 
         <h2 className="h2-title">Något att dricka?</h2>
         <Drinks levelImg={levelImg} />
+      </div>
+      <div>
+        <MessurementConverter />
       </div>
     </>
   );
