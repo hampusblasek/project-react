@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../CSS/converter.css";
 
-export function MessurementConverter() {
+export function MessurementConverter({open, setOpen}) {
   const [value1, setValue1] = useState(null);
   const [value2, setValue2] = useState(null);
   const krm = 1;
@@ -26,7 +26,10 @@ export function MessurementConverter() {
   return (
     <>
       <div className="converter-container">
-        <h2 className="converter-title">Använd gärna våran måttomvandlare</h2>
+        <div className="exit-box">
+          <img onClick={() => setOpen(!open)} className="exit-icon" src="/exit.svg" alt="ett kryss" title="Stäng" />
+        </div>
+        <h2 className="converter-title">Använd gärna vår måttomvandlare</h2>
         <div className="converter-box">
           <p>Hur många</p>
           <form action="">

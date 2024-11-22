@@ -4,27 +4,35 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { BasicRating } from "../Components/Rating";
 import "../CSS/recipe.css";
+import { useState } from "react";
+import { MessurementConverter } from "../Components/Converter";
 
 export function RecipePage({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
   const [saveRec, setSaveRec] = useRecoilState(saveRecState);
-  
-  
+  const [open, setOpen] = useState(false);
+
   const params = useParams();
-  const food = recipes.find((recipe) => recipe.id === Number.parseInt(params.id))
-// ifall inte receptet hittas
+  const food = recipes.find(
+    (recipe) => recipe.id === Number.parseInt(params.id)
+  );
+  // ifall inte receptet hittas
   if (!food) {
     return (
       <div className="no-food">
-        <p className="no-food-text">
-          Receptet hittades inte
-        </p>
-          <Link className="no-food-link" to="/">
-            Tillbaka till Hem
-          </Link>
+        <p className="no-food-text">Receptet hittades inte</p>
+        <Link className="no-food-link" to="/">
+          Tillbaka till Hem
+        </Link>
       </div>
     );
   }
+
+  const isOpen = () => {
+    if (open) {
+      return <MessurementConverter setOpen={setOpen} open={open} />;
+    }
+  };
 
   const names = [];
   for (let save of saveRec) {
@@ -51,7 +59,7 @@ export function RecipePage({ levelImg }) {
 
   return (
     <>
-      <div className="recipe-container">
+      <div className={open ? "blur": "recipe-container"}>
         <div className="recipe-box">
           <div className="rec-info">
             <h1 className="rec-title">{food.name}</h1>
@@ -106,10 +114,12 @@ export function RecipePage({ levelImg }) {
                 alt="Ett hjärta"
               />
             </div>
-            
+
             <div className="rating-star">
-              <BasicRating food={food}/>
-              
+              <BasicRating food={food} />
+            </div>
+            <div className="converter-btn-box">
+              <button className="converter-btn" onClick={() => setOpen(!open)}>Måttomvandlare</button>
             </div>
           </div>
           <div className="rec-img">
@@ -121,13 +131,16 @@ export function RecipePage({ levelImg }) {
             <div className="instruction-box">
               <ul>
                 {food.instructions.map((how, index) => (
-                  <li key={index} className="instruction-li">{how}</li>
+                  <li key={index} className="instruction-li">
+                    {how}
+                  </li>
                 ))}
               </ul>
             </div>
           </div>
         </div>
       </div>
+        <div className="popup-box">{isOpen()}</div>
     </>
   );
 }

@@ -24,9 +24,6 @@ export function HomePage({ levelImg }) {
         <h2 className="h2-title">Något att dricka?</h2>
         <Drinks levelImg={levelImg} />
       </div>
-      <div>
-        <MessurementConverter />
-      </div>
     </>
   );
 }
