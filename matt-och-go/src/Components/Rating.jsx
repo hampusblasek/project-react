@@ -10,15 +10,15 @@ import "../CSS/ratingStar.css";
 export function BasicRating({ food }) {
   const [value, setValue] = useState([]);
   const [ratingState, SetRatingState] = useRecoilState(ratingsState);
-  const isRated = ratingState.find((rating) => rating.name == food.name);
+  const isRated = ratingState.find((rating) => rating.id == food.id);
 
-  const changeRating = (name) => {
-    SetRatingState(ratingState.filter((value) => value.name !== name));
+  const changeRating = (id) => {
+    SetRatingState(ratingState.filter((value) => value.id !== id));
   };
 
   const starRating = (value) => {
     setValue(value);
-    const newRating = { name: food.name, rating: value };
+    const newRating = { id: food.id, rating: value };
     SetRatingState([...ratingState, newRating]);
   };
 
@@ -34,7 +34,7 @@ export function BasicRating({ food }) {
           </div>
           <div className="rating-btn-box">
             <button
-              onClick={() => changeRating(isRated.name)}
+              onClick={() => changeRating(isRated.id)}
               className="rating-btn"
             >
               Ta bort betyg
