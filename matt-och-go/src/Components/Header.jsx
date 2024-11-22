@@ -23,7 +23,10 @@ export function Header() {
     <>
       <header>
         
-        <h1 className="logo">Mätt och Go!</h1>
+        <div className="logo-box">
+          <h1 className="logo">Mätt och Go!</h1>
+          <img className="logo-img" src="/logo2.png" alt="" />
+        </div>
             <nav>
                 <NavLink className="link" to="/">Hem</NavLink>
                 <NavLink className="link" to="category">Världens kök</NavLink>
