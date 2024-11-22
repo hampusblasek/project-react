@@ -8,6 +8,10 @@ export function MessurementConverter() {
   const tsk = 5;
   const msk = 15;
   const dl = 100;
+  const cup = 240;
+  const pint = 570;
+  const liter = 1000;
+  const gallon = 3785;
   let sum = value2 / value1;
 
   const numberOfSum = () => {
@@ -32,6 +36,10 @@ export function MessurementConverter() {
               id="messure"
             >
               <option>Välj</option>
+              <option value={gallon}>Gallon</option>
+              <option value={liter}>Liter</option>
+              <option value={pint}>Pint</option>
+              <option value={cup}>Cup</option>
               <option value={dl}>Deciliter</option>
               <option value={msk}>Matskedar</option>
               <option value={tsk}>Teskedar</option>
@@ -44,6 +52,10 @@ export function MessurementConverter() {
               id="messure"
             >
               <option>Välj</option>
+              <option value={gallon}>Gallon</option>
+              <option value={liter}>Liter</option>
+              <option value={pint}>Pint</option>
+              <option value={cup}>Cup</option>
               <option value={dl}>Deciliter</option>
               <option value={msk}>Matskedar</option>
               <option value={tsk}>Teskedar</option>
