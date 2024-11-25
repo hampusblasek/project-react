@@ -11,7 +11,7 @@ export function RecipePage({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
   const [saveRec, setSaveRec] = useRecoilState(saveRecState);
   const [open, setOpen] = useState(false);
-
+  //Söker igenom URL:en efter ett id
   const params = useParams();
   const food = recipes.find(
     (recipe) => recipe.id === Number.parseInt(params.id)
@@ -20,28 +20,26 @@ export function RecipePage({ levelImg }) {
   if (!food) {
     return <Error />;
   }
-
+  //Om användaren vill använda måttomvandlaren
   const isOpen = () => {
     if (open) {
       return <MessurementConverter setOpen={setOpen} open={open} />;
     }
   };
-
-  const names = [];
-  for (let save of saveRec) {
-    names.push(save.name);
-  }
+  //Funktion som lägger till eller tar bort recept i sparade recept
   const saveRecipe = (food) => {
-    if (!names.includes(food.name)) {
+    const saveRecipe = saveRec.find((save) => save.id == food.id);
+    if (!saveRecipe) {
       setSaveRec([...saveRec, food]);
     } else {
       setSaveRec(saveRec.filter((item) => item.id !== food.id));
     }
   };
+  //Funktion avgör om det ska visas ett rött eller grått hjärta
   const heartImg = (food) => {
+    const savedRecipe = saveRec.find((save) => save.id === food.id);
     let image = "";
-    console.log(names);
-    if (names.includes(food.name)) {
+    if (savedRecipe) {
       image = "/heart.svg";
       return image;
     } else {
