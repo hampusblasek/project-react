@@ -36,3 +36,10 @@
 .error-img {
   width: 500px;
 }
+.loading-box{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -6,6 +6,8 @@ import { BasicRating } from "../Components/Rating";
 import "../CSS/recipe.css";
 import { useState } from "react";
 import { MessurementConverter } from "../Components/Converter";
+import { Loading } from "../Components/Loading";
+import { Error } from "../Components/errorPage";
 
 export function RecipePage({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
@@ -18,15 +20,9 @@ export function RecipePage({ levelImg }) {
   );
   // ifall inte receptet hittas
   if (!food) {
-    return (
-      <div className="no-food">
-        <p className="no-food-text">Receptet hittades inte</p>
-        <Link className="no-food-link" to="/">
-          Tillbaka till Hem
-        </Link>
-      </div>
-    );
+    return <Loading/>
   }
+  
 
   const isOpen = () => {
     if (open) {
