@@ -64,3 +64,13 @@
 .save-text{
   font-size: 1.2rem;
 }
+.navigate-btn{
+  height: 3rem;
+    width: 15rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(212, 212, 212);
+    font-size: 17px;
+    cursor: pointer;
+    transition: ease 0.2s;
+}

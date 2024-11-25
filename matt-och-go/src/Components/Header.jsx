@@ -2,6 +2,12 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { saveRecState } from "../App";
 import { Navigate } from "react-router-dom";
+import * as React from "react";
+import Badge from "@mui/material/Badge";
+import { styled } from "@mui/material/styles";
+import IconButton from "@mui/material/IconButton";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import { pink } from "@mui/material/colors";
 import "../CSS/header.css";
 
 export function Header() {
@@ -17,11 +23,19 @@ export function Header() {
   };
   const savedResHeart = () => {
     if (saveRec.length > 0) {
-      return "/heart.svg";
+      return <FavoriteIcon sx={{ color: pink[500] }} />;
     } else {
       return null;
     }
   };
+  const StyledBadge = styled(Badge)(({ theme }) => ({
+    "& .MuiBadge-badge": {
+      right: -8,
+      top: 12,
+      border: `2px solid ${theme.palette.background.paper}`,
+      padding: "0 4px",
+    },
+  }));
   return (
     <>
       <header>
@@ -37,8 +51,12 @@ export function Header() {
             Världens kök
           </NavLink>
           <NavLink className="link" to="saved-recipes">
-            Sparade recept <img src={savedResHeart()} alt="" />{" "}
-            <span>{savedResNumber()}</span>
+            Sparade recept
+            <IconButton aria-label="cart">
+              <StyledBadge badgeContent={savedResNumber()} color="secondary">
+                {savedResHeart()}
+              </StyledBadge>
+            </IconButton>
           </NavLink>
           <NavLink className="link" to="about-us">
             Om Oss
