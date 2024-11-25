@@ -43,3 +43,23 @@
   justify-content: center;
   align-items: center;
 }
+.message-box{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.message-title{
+  text-align: center;
+  font-size: 35px;
+}
+.message-text{
+  text-align: center;
+  font-size: 20px;
+}
+.message-btn{
+  padding: 10px 40px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}

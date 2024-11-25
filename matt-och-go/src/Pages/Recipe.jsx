@@ -6,6 +6,7 @@ import "../CSS/recipe.css";
 import { useState } from "react";
 import { MessurementConverter } from "../Components/Converter";
 import { Error } from "../Components/errorPage";
+import { Loading } from "../Components/Loading";
 
 export function RecipePage({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
@@ -18,7 +19,7 @@ export function RecipePage({ levelImg }) {
   );
   // ifall inte receptet hittas
   if (!food) {
-    return <Error />;
+    return <Loading />;
   }
   //Om användaren vill använda måttomvandlaren
   const isOpen = () => {
