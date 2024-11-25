@@ -12,7 +12,6 @@ export function Under40({ levelImg }) {
   if (!recipes) {
     return <Loading/>;
   }
-
   const fastList = recipes.filter(
     (recipe) =>
       recipe.prepTimeMinutes < 40 &&
@@ -30,8 +29,8 @@ export function Under40({ levelImg }) {
             Visa färre
           </h3>
 
-          {fastList.map((food) => (
-            <Cards food={food} levelImg={levelImg} />
+          {fastList.map((food, index) => (
+            <Cards key={index} food={food} levelImg={levelImg} />
           ))}
         </div>
       </>
@@ -44,8 +43,8 @@ export function Under40({ levelImg }) {
             Visa alla
           </h3>
 
-          {fastSlice.map((food) => (
-            <Cards food={food} levelImg={levelImg} />
+          {fastSlice.map((food, index) => (
+            <Cards key={index} food={food} levelImg={levelImg} />
           ))}
         </div>
       </>

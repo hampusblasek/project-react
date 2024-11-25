@@ -1,12 +1,9 @@
 import { Navigate, useNavigate } from "react-router-dom";
+import { Loading } from "./Loading";
 import "../CSS/cards.css";
 
 export function Cards({ food, levelImg }) {
   const navigate = useNavigate();
-
-  if (!food) {
-    return <p>Laddar...</p>;
-  }
 
   const seeRecipe = (id) => {
     console.log(id);
@@ -16,7 +13,7 @@ export function Cards({ food, levelImg }) {
 
   return (
     <>
-      <div key={food.id}>
+      <div>
         <div onClick={() => seeRecipe(food.id)} className="card-box">
           <div className="img-box">
             <img className="card-img" src={food.image} alt="Bild på maträtt" />

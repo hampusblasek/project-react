@@ -17,8 +17,8 @@ export function AfterFood({ levelImg }) {
   return (
     <>
       <div className="cold-box">
-        {afterList.map((food) => (
-          <Cards food={food} levelImg={levelImg} />
+        {afterList.map((food, index) => (
+          <Cards key={index} food={food} levelImg={levelImg} />
         ))}
       </div>
     </>

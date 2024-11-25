@@ -1,12 +1,10 @@
 import { useRecoilState } from "recoil";
 import { recipeState, saveRecState } from "../App";
 import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
 import { BasicRating } from "../Components/Rating";
 import "../CSS/recipe.css";
 import { useState } from "react";
 import { MessurementConverter } from "../Components/Converter";
-import { Loading } from "../Components/Loading";
 import { Error } from "../Components/errorPage";
 
 export function RecipePage({ levelImg }) {
@@ -20,9 +18,8 @@ export function RecipePage({ levelImg }) {
   );
   // ifall inte receptet hittas
   if (!food) {
-    return <Loading/>
+    return <Error />;
   }
-  
 
   const isOpen = () => {
     if (open) {
@@ -55,7 +52,7 @@ export function RecipePage({ levelImg }) {
 
   return (
     <>
-      <div className={open ? "blur": "recipe-container"}>
+      <div className={open ? "blur" : "recipe-container"}>
         <div className="recipe-box">
           <div className="rec-info">
             <h1 className="rec-title">{food.name}</h1>
@@ -115,7 +112,9 @@ export function RecipePage({ levelImg }) {
               <BasicRating food={food} />
             </div>
             <div className="converter-btn-box">
-              <button className="converter-btn" onClick={() => setOpen(!open)}>Måttomvandlare</button>
+              <button className="converter-btn" onClick={() => setOpen(!open)}>
+                Måttomvandlare
+              </button>
             </div>
           </div>
           <div className="rec-img">
@@ -136,7 +135,7 @@ export function RecipePage({ levelImg }) {
           </div>
         </div>
       </div>
-        <div className="popup-box">{isOpen()}</div>
+      <div className="popup-box">{isOpen()}</div>
     </>
   );
 }

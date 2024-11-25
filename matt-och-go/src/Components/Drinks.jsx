@@ -18,8 +18,8 @@ export function Drinks({ levelImg }) {
   return (
     <>
       <div className="drink-box">
-        {drinkList.map((food) => (
-          <Cards food={food} levelImg={levelImg} />
+        {drinkList.map((food, index) => (
+          <Cards key={index} food={food} levelImg={levelImg} />
         ))}
       </div>
     </>

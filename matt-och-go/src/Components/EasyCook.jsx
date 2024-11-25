@@ -43,8 +43,8 @@ export function EasyCook({ levelImg }) {
             Visa alla
           </h3>
 
-          {easySlice.map((food) => (
-            <Cards food={food} levelImg={levelImg} />
+          {easySlice.map((food, index) => (
+            <Cards key={index} food={food} levelImg={levelImg} />
           ))}
         </div>
       </>
