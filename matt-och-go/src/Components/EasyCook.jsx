@@ -7,17 +7,17 @@ import { recipeState } from "../App";
 export function EasyCook({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
   const [isPressed, setIsPressed] = useState(false);
-  const easyList = [];
 
-  for (let recipe of recipes) {
-    if (
+  if (!recipes) {
+    return <p>Laddar...</p>;
+  }
+  const easyList = recipes.filter(
+    (recipe) =>
       recipe.difficulty.includes("Easy") &&
       !recipe.mealType.includes("Dessert") &&
       !recipe.mealType.includes("Beverage")
-    ) {
-      easyList.push(recipe);
-    }
-  }
+  );
+
   const easySlice = easyList.slice(0, 4);
 
   if (isPressed) {

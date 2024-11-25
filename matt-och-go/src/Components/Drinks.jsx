@@ -5,12 +5,14 @@ import { recipeState } from "../App";
 
 export function Drinks({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
-  const drinkList = [];
-  for (let recipe of recipes) {
-    if (recipe.mealType.includes("Beverage")) {
-      drinkList.push(recipe);
-    }
+
+  if (!recipes) {
+    return <p>Laddar...</p>;
   }
+
+  const drinkList = recipes.filter((recipe) =>
+    recipe.mealType.includes("Beverage")
+  );
 
   return (
     <>

@@ -8,16 +8,17 @@ export function Under40({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
   const [isPressed, setIsPressed] = useState(false);
 
-  const fastList = [];
-  for (let recipe of recipes) {
-    if (
-      recipe.cookTimeMinutes + recipe.prepTimeMinutes < 40 &&
+  if (!recipes) {
+    return <p>Laddar...</p>;
+  }
+
+  const fastList = recipes.filter(
+    (recipe) =>
+      recipe.prepTimeMinutes < 40 &&
       !recipe.mealType.includes("Dessert") &&
       !recipe.mealType.includes("Beverage")
-    ) {
-      fastList.push(recipe);
-    }
-  }
+  );
+
   const fastSlice = fastList.slice(0, 4);
 
   if (isPressed) {

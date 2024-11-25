@@ -4,10 +4,14 @@ import "../CSS/cards.css";
 export function Cards({ food, levelImg }) {
   const navigate = useNavigate();
 
+  if (!food) {
+    return <p>Laddar...</p>;
+  }
+
   const seeRecipe = (id) => {
     console.log(id);
-    
-    navigate("recipe/"+id);
+
+    navigate("recipe/" + id);
   };
 
   return (

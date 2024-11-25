@@ -3,14 +3,15 @@ import { useRecoilState } from "recoil";
 import { recipeState } from "../App";
 import "../CSS/home.css";
 
-export function AfterFood({levelImg }) {
+export function AfterFood({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
-  const afterList = [];
-  for (let recipe of recipes) {
-    if (recipe.mealType.includes("Dessert")) {
-      afterList.push(recipe);
-    }
+
+  if (!recipes) {
+    return <p>Laddar...</p>;
   }
+  const afterList = recipes.filter((recipe) =>
+    recipe.mealType.includes("Dessert")
+  );
 
   return (
     <>
