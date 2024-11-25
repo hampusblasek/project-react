@@ -3,13 +3,14 @@ import { Cards } from "./cards";
 import { useState } from "react";
 import { useRecoilState } from "recoil";
 import { recipeState } from "../App";
+import { Loading } from "./Loading";
 
 export function EasyCook({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
   const [isPressed, setIsPressed] = useState(false);
 
   if (!recipes) {
-    return <p>Laddar...</p>;
+    return <Loading/>;
   }
   const easyList = recipes.filter(
     (recipe) =>

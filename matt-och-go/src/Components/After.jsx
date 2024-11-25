@@ -1,13 +1,14 @@
 import { Cards } from "./cards";
 import { useRecoilState } from "recoil";
 import { recipeState } from "../App";
+import { Loading } from "./Loading";
 import "../CSS/home.css";
 
 export function AfterFood({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
 
   if (!recipes) {
-    return <p>Laddar...</p>;
+    return <Loading/>;
   }
   const afterList = recipes.filter((recipe) =>
     recipe.mealType.includes("Dessert")
