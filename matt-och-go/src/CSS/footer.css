@@ -1,4 +1,7 @@
 footer{
-    height: 100px;
+    height: 200px;
     background-color: rgb(249, 249, 234);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
