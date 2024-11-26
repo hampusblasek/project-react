@@ -63,3 +63,9 @@
   border: 1px solid black;
   cursor: pointer;
 }
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}

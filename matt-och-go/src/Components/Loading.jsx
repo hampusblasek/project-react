@@ -6,17 +6,15 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export function Loading() {
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(false)
 
   const navigate = useNavigate()
   function longLoading() {
     setTimeout(() => {
-      setIsLoading(false)
+      setIsLoading(true)
     }, 4000);
   }
-
-  if (!isLoading) {
-    return (
+return (
       <>
         <div className="error-container">
           <div className="loading-box">
@@ -24,29 +22,16 @@ export function Loading() {
               <CircularProgress size="70px" />
             </Box>
           </div>
-          <div>
+          <div>{longLoading()}</div>
+          <div className={isLoading ? "show" : "hide"}>
               <h2 className="message-title">Hoppsan, här tar det lång tid!</h2>
-              <p className="message-text">Receptet du söker efter hittas inte. Tryck på knappen nedan för att gå tillbaka.</p>
+              <p className="message-text">Receptet du söker efter hittas inte. Tryck på knappen nedan för att gå tillbaka till startsidan.</p>
             <div className="message-box">
-              <button className="message-btn" onClick={() => navigate(-1)}>Tillbaka</button>
+              <button className="message-btn" onClick={() => navigate("/")}>Tillbaka till startsidan</button>
             </div>
           </div>
         </div>
       </>
     );
-  } else {
-    return (
-      <>
-        <div className="error-container">
-          <div className="loading-box">
-            <Box sx={{ display: "flex" }}>
-              <CircularProgress size="70px" />
-            </Box>
-            <p>Laddar...</p>
-          </div>
-          <div>{longLoading()}</div>
-        </div>
-      </>
-    );
-  }
+  
 }
