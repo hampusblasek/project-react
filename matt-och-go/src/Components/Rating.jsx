@@ -22,7 +22,6 @@ export function BasicRating({ food }) {
   };
 
   if (isRated) {
-    console.log(isRated);
     return (
       <>
         <div>
@@ -60,5 +59,6 @@ export function BasicRating({ food }) {
         </Box>
       </div>
     </div>
+    
   );
 }

@@ -10,7 +10,7 @@ export function Under40({ levelImg }) {
   const [isPressed, setIsPressed] = useState(false);
 
   if (!recipes) {
-    return <Loading/>;
+    return <p>Laddar...</p>;
   }
   const fastList = recipes.filter(
     (recipe) =>

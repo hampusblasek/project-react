@@ -10,7 +10,7 @@ export function EasyCook({ levelImg }) {
   const [isPressed, setIsPressed] = useState(false);
 
   if (!recipes) {
-    return <Loading/>;
+    return <p>Laddar...</p>;
   }
   const easyList = recipes.filter(
     (recipe) =>
@@ -29,8 +29,8 @@ export function EasyCook({ levelImg }) {
             Visa färre
           </h3>
 
-          {easyList.map((food) => (
-            <Cards food={food} levelImg={levelImg} />
+          {easyList.map((food, index) => (
+            <Cards key={index} food={food} levelImg={levelImg} />
           ))}
         </div>
       </>

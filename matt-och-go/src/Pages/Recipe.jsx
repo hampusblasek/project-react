@@ -5,8 +5,10 @@ import { BasicRating } from "../Components/Rating";
 import "../CSS/recipe.css";
 import { useState } from "react";
 import { MessurementConverter } from "../Components/Converter";
-import { Error } from "../Components/errorPage";
 import { Loading } from "../Components/Loading";
+import * as React from 'react';
+import Checkbox from '@mui/material/Checkbox';
+import { Instructions } from "../Components/Divider";
 
 export function RecipePage({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
@@ -58,8 +60,8 @@ export function RecipePage({ levelImg }) {
             <div className="info">
               <img className="food-icon" src="/time-green.svg" alt="" />
               <span>{food.cookTimeMinutes + food.prepTimeMinutes} minuter</span>
-              {food.mealType.map((type) => (
-                <span className="rec-type">{type}</span>
+              {food.mealType.map((type, index) => (
+                <span key={index} className="rec-type">{type}</span>
               ))}
               <div className="rating-box">
                 <img className="star" src="/star.svg" alt="" />
@@ -84,9 +86,9 @@ export function RecipePage({ levelImg }) {
             <h2 className="ingredients-title">Ingredienser</h2>
             <div className="ingredients-container">
               <div className="ingredients-box">
-                {food.ingredients.map((type) => (
-                  <div className="ingredients-content">
-                    <input className="check" type="checkbox" />
+                {food.ingredients.map((type, index) => (
+                  <div key={index} className="ingredients-content">
+                    <Checkbox {...type} />
                     <span className="rec-ingredients">{type}</span>
                   </div>
                 ))}
@@ -94,8 +96,8 @@ export function RecipePage({ levelImg }) {
             </div>
             <div className="bottom-section">
               <div className="tag-wrapper">
-                {food.tags.map((tag) => (
-                  <span className="rec-type-2">{tag}</span>
+                {food.tags.map((tag, index) => (
+                  <span key={index} className="rec-type-2">{tag}</span>
                 ))}
               </div>
               <img className="food-icon" src="/share.svg" alt="En dela-icon" />

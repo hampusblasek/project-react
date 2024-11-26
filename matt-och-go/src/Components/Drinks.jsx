@@ -8,7 +8,7 @@ export function Drinks({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
 
   if (!recipes) {
-    return <Loading/>;
+    return <p>Laddar...</p>;
   }
 
   const drinkList = recipes.filter((recipe) =>

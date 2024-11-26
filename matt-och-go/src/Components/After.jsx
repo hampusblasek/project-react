@@ -8,7 +8,7 @@ export function AfterFood({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
 
   if (!recipes) {
-    return <Loading/>;
+    return <p>Laddar...</p>;
   }
   const afterList = recipes.filter((recipe) =>
     recipe.mealType.includes("Dessert")
