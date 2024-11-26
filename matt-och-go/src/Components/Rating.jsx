@@ -7,7 +7,7 @@ import { useState } from "react";
 import "../CSS/ratingStar.css";
 
 export function BasicRating({ food }) {
-  const [value, setValue] = useState([]);
+  const [value, setValue] = useState(0);
   const [ratingState, SetRatingState] = useRecoilState(ratingsState);
   const isRated = ratingState.find((rating) => rating.id == food.id);
 

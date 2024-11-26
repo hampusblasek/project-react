@@ -17,8 +17,8 @@ export function SavedRecipes({ levelImg }) {
         <div className="save-container">
           <h1 className="save-title">Här kan du hitta dina sparade recept!</h1>
           <div className="save-box">
-            {saveRec.map((food) => (
-              <div>
+            {saveRec.map((food, index) => (
+              <div key={index}>
                 <Cards food={food} levelImg={levelImg} />
                 <div className="btn-box">
                   <button
