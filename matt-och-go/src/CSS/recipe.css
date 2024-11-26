@@ -17,6 +17,7 @@
   background-color: rgba(207, 207, 207, 0.662);
   width: 60%;
   height: auto;
+  padding-bottom: 30px;
 }
 .rec-info {
   background-color: rgba(231, 231, 231, 0.489);
@@ -91,24 +92,8 @@
 .ingredients-container {
   display: flex;
   justify-content: center;
-}
-.ingredients-box {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgb(177, 177, 177);
-  padding: 15px;
-  font-size: 1.3rem;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.732);
-  min-width: 400px;
-}
-.ingredients-content {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  border-bottom: 1px solid rgb(177, 177, 177);
-  padding-bottom: 10px;
+  width: 80%;
+  margin: auto;
 }
 .ingredients-title {
   width: 100%;
@@ -116,9 +101,6 @@
   text-align: center;
   text-decoration: underline;
   font-size: 1.7rem;
-}
-.check {
-  scale: 1.6;
 }
 .bottom-section {
   margin-top: 40px;
@@ -164,17 +146,6 @@
   display: flex;
   justify-content: center;
   padding: 0 30px;
-}
-ul {
-  border: 1px solid grey;
-  border-radius: 10px;
-  padding-top: 20px;
-  background-color: rgba(255, 255, 255, 0.802);
-}
-.instruction-li {
-  font-size: 1.4rem;
-  margin-bottom: 30px;
-  border-bottom: 1px solid black;
 }
 .rating-star {
   margin: auto;
