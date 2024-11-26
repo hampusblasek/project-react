@@ -59,6 +59,5 @@ export function BasicRating({ food }) {
         </Box>
       </div>
     </div>
-    
   );
 }

@@ -2,7 +2,6 @@ import { Under40 } from "../Components/Under40";
 import { EasyCook } from "../Components/EasyCook";
 import { AfterFood } from "../Components/After";
 import { Drinks } from "../Components/Drinks";
-import { MessurementConverter } from "../Components/Converter";
 import "../CSS/home.css";
 
 export function HomePage({ levelImg }) {
