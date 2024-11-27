@@ -7,7 +7,7 @@ import Badge from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import { pink } from "@mui/material/colors";
+import { pink, red } from "@mui/material/colors";
 import "../CSS/header.css";
 
 export function Header() {
@@ -23,7 +23,7 @@ export function Header() {
   };
   const savedResHeart = () => {
     if (saveRec.length > 0) {
-      return <FavoriteIcon sx={{ color: pink[500] }} />;
+      return <FavoriteIcon sx={{ color: red[600] }} />;
     } else {
       return null;
     }

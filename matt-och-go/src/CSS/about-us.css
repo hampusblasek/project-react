@@ -1,11 +1,11 @@
 .about-us-container {
   width: 100%;
-  min-height: 100vh;
+  height: auto;
   background-color: rgba(251, 251, 236, 0.507);
 }
 .about-title {
   text-align: center;
-  font-family: "Bilbo", cursive;
+  /* font-family: "Bilbo", cursive; */
   font-weight: 400;
   font-style: normal;
   font-size: 80px;
@@ -13,42 +13,49 @@
   padding-top: 50px;
 }
 .about-h2 {
-  font-family: "Bilbo", cursive;
+  /* font-family: "Bilbo", cursive; */
   font-weight: 400;
   font-style: normal;
-  font-size: 40px;
+  font-size: 30px;
 }
-.about-p{
-    font-size: 1.1rem;
+.about-p {
+  font-size: 1.1rem;
 }
 .about-box {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  padding-top: 120px;
+  padding-top: 90px;
 }
 .text-box {
   text-align: center;
-  
+}
+.text-box2 {
+  margin-top: 80px;
+  text-align: center;
 }
 .about-img {
   width: 600px;
-  border-radius: 20px;
 }
 .about-img-box {
   width: 40%;
 }
-.expand-box{
-    background-color: rgba(167, 167, 167, 0.48);
-    margin-top: 100px;
+.expand-box {
+background-color: rgba(208, 208, 208, 0.48);
+  margin-top: 100px;
 }
-.expand{
-    width: 80%;
-    margin: auto;
-    padding: 50px;
-    border-radius: 10px;
+.expand {
+  width: 80%;
+  margin: auto;
+ padding: 20px;
+  border-radius: 10px;
 }
-.arrow-img{
-    width: 30px;
+.arrow-img {
+  width: 30px;
+}
+.faq{
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
 }

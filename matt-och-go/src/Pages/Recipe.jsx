@@ -29,6 +29,8 @@ export function RecipePage({ levelImg }) {
     borderColor: "divider",
     backgroundColor: "background.paper",
   };
+  //Styr vilken title hjärticonen ska ha
+  let heartStatus;
 
   // ifall inte receptet hittas
   if (!food) {
@@ -55,9 +57,11 @@ export function RecipePage({ levelImg }) {
     let image = "";
     if (savedRecipe) {
       image = "/heart.svg";
+      heartStatus = "Ta bort";
       return image;
     } else {
       image = "/heart-grey.svg";
+      heartStatus = "Spara recept";
       return image;
     }
   };
@@ -118,6 +122,7 @@ export function RecipePage({ levelImg }) {
                 className="food-icon-2"
                 src={heartImg(food)}
                 alt="Ett hjärta"
+                title={heartStatus}
               />
             </div>
 
