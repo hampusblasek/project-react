@@ -8,12 +8,22 @@ import { Loading } from "../Components/Loading";
 import * as React from "react";
 import List from "@mui/material/List";
 import { CheckList } from "../Components/Divider";
+import Box from "@mui/material/Box";
+import Snackbar from "@mui/material/Snackbar";
 import "../CSS/recipe.css";
 
 export function RecipePage({ levelImg }) {
-  const [recipes, setRecipes] = useRecoilState(recipeState);
-  const [saveRec, setSaveRec] = useRecoilState(saveRecState);
-  const [open, setOpen] = useState(false);
+  const [recipes, setRecipes] = useRecoilState(recipeState); // state som innehåller recepten
+  const [saveRec, setSaveRec] = useRecoilState(saveRecState); // state som lagrar sparade recept
+  const [open, setOpen] = useState(false); // state som styr om modalen - måttkonverteraren ska visas
+  const [snackState, setSnackState] = React.useState({
+    // state som styr om snackbaren ska visas
+    snackOpen: false,
+    vertical: "bottom",
+    horizontal: "center",
+  });
+  const { vertical, horizontal, snackOpen } = snackState;
+
   //Söker igenom URL:en efter ett id
   const params = useParams();
   const food = recipes.find(
@@ -43,12 +53,20 @@ export function RecipePage({ levelImg }) {
     }
   };
   //Funktion som lägger till eller tar bort recept i sparade recept
-  const saveRecipe = (food) => {
+  const saveRecipe = (food, newState) => {
     const saveRecipe = saveRec.find((save) => save.id == food.id);
     if (!saveRecipe) {
-      setSaveRec([...saveRec, food]);
+      setSaveRec([...saveRec, food]); // sparar receptet i sparade recept
+      setSnackState({ ...newState, snackOpen: true }); //Snackbaren visas
+      setTimeout(() => {
+        setSnackState({ ...newState, snackOpen: false }); // Snackbaren slutar visas efter 3 sekunder
+      }, 3000);
     } else {
-      setSaveRec(saveRec.filter((item) => item.id !== food.id));
+      setSaveRec(saveRec.filter((item) => item.id !== food.id)); // Tar bort receptet från sparade recept
+      setSnackState({ ...newState, snackOpen: true });
+      setTimeout(() => {
+        setSnackState({ ...newState, snackOpen: false });
+      }, 3000);
     }
   };
   //Funktion avgör om det ska visas ett rött eller grått hjärta
@@ -63,6 +81,16 @@ export function RecipePage({ levelImg }) {
       image = "/heart-grey.svg";
       heartStatus = "Spara recept";
       return image;
+    }
+  };
+// Funktion som styr vilket meddelande som ska visas i snackbaren
+  const snackMessage = (food) => {
+    const saveRecipe = saveRec.find((save) => save.id == food.id);
+
+    if (!saveRecipe) {
+      return "Receptet togs bort!"; // om receptet inte ligger i sparade recept
+    } else {
+      return "Receptet sparades!"; // om receptet ligger i sparade recept
     }
   };
 
@@ -118,7 +146,9 @@ export function RecipePage({ levelImg }) {
               </div>
               <img className="food-icon" src="/share.svg" alt="En dela-icon" />
               <img
-                onClick={() => saveRecipe(food)}
+                onClick={() =>
+                  saveRecipe(food, { vertical: "bottom", horizontal: "center" })
+                }
                 className="food-icon-2"
                 src={heartImg(food)}
                 alt="Ett hjärta"
@@ -152,6 +182,14 @@ export function RecipePage({ levelImg }) {
         </div>
       </div>
       <div className="popup-box">{isOpen()}</div>
+      <Box sx={{ width: 500, bgcolor: "black" }}>
+        <Snackbar
+          anchorOrigin={{ vertical, horizontal }}
+          open={snackOpen}
+          message={snackMessage(food)}
+          key={vertical + horizontal}
+        />
+      </Box>
     </>
   );
 }
