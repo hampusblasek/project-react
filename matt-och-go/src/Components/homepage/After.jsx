@@ -4,12 +4,12 @@ import { recipeState } from "../../App";
 import "../../CSS/home.css"
 
 export function AfterFood({ levelImg }) {
-  const [recipes, setRecipes] = useRecoilState(recipeState);
+  const [recipes] = useRecoilState(recipeState); // state som innehåller alla recept
 
   if (!recipes) {
-    return <p>Laddar...</p>;
+    return <p>Laddar...</p>; // om det inte finns några recept
   }
-  const afterList = recipes.filter((recipe) =>
+  const afterList = recipes.filter((recipe) => // sparar ner alla recept som uppfyller filtreringen
     recipe.mealType.includes("Dessert")
   );
 

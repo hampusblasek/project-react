@@ -5,22 +5,22 @@ import { recipeState } from "../../App";
 import "../../CSS/home.css";
 
 export function Under40({ levelImg }) {
-  const [recipes, setRecipes] = useRecoilState(recipeState);
-  const [isPressed, setIsPressed] = useState(false);
+  const [recipes] = useRecoilState(recipeState); // state som innehåller alla recept
+  const [isPressed, setIsPressed] = useState(false); // state som håller koll på hur många kort som ska visas
 
   if (!recipes) {
-    return <p>Laddar...</p>;
+    return <p>Laddar...</p>; // om det inte finns några recept
   }
-  const fastList = recipes.filter(
+  const fastList = recipes.filter( // sparar ner alla recept som uppfyller filtreringen
     (recipe) =>
       recipe.prepTimeMinutes + recipe.cookTimeMinutes < 40 &&
       !recipe.mealType.includes("Dessert") &&
       !recipe.mealType.includes("Beverage")
   );
 
-  const fastSlice = fastList.slice(0, 4);
+  const fastSlice = fastList.slice(0, 4); // skapar en variabel som håller 4 recept
 
-  if (isPressed) {
+  if (isPressed) { // om visa alla knappen har blivit tryck på
     return (
       <>
         <div className="quick-box">
@@ -34,7 +34,7 @@ export function Under40({ levelImg }) {
         </div>
       </>
     );
-  } else {
+  } else { // om inte användaren tryckt på visa alla
     return (
       <>
         <div className="quick-box">
