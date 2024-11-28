@@ -5,7 +5,7 @@ import "../CSS/cards.css";
 export function Cards({ food, levelImg }) {
   const navigate = useNavigate();
 
-  const seeRecipe = (id) => {
+  const seeRecipe = (id) => { // navigerar användaren till receptsidan och skickar med id via url parameters
     navigate("recipe/" + id);
   };
 

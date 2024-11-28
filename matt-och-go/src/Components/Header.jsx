@@ -14,14 +14,14 @@ export function Header() {
   const [saveRec, setSaveRec] = useRecoilState(saveRecState);
   const navigateTo = useNavigate();
 
-  const savedResNumber = () => {
+  const savedResNumber = () => { // funktion som skriver ut hur många sparade recept det finns.
     if (saveRec.length > 0) {
       return saveRec.length;
     } else {
       return null;
     }
   };
-  const savedResHeart = () => {
+  const savedResHeart = () => { // funktion som visar ett hjärta i sparade recept-linken om det finns några sparade recept
     if (saveRec.length > 0) {
       return <FavoriteIcon sx={{ color: red[600] }} />;
     } else {

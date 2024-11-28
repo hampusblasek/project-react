@@ -10,7 +10,7 @@ import "../CSS/footer.css";
 
 export function Footer() {
   const preventDefault = (event) => event.preventDefault();
-
+  //Hämtar färgerna till ikonerna
   const youtube = red[500];
   const facebook = blue[900];
   const linkedIn = blue[800];

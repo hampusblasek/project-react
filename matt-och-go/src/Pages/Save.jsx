@@ -5,13 +5,13 @@ import { NavLink } from "react-router-dom";
 import "../CSS/save.css";
 
 export function SavedRecipes({ levelImg }) {
-  const [saveRec, setSaveRec] = useRecoilState(saveRecState);
+  const [saveRec, setSaveRec] = useRecoilState(saveRecState); //State som innehåller de sparade recepten
 
   const deleteFood = (id) => {
-    setSaveRec(saveRec.filter((item) => item.id !== id));
+    setSaveRec(saveRec.filter((item) => item.id !== id)); // om användaren vill ta bort receptet från sparade recept
   };
-
-  if (saveRec.length > 0) {
+  
+  if (saveRec.length > 0) { //Om det finns några sparade recept
     return (
       <>
         <div className="save-container">
@@ -34,7 +34,7 @@ export function SavedRecipes({ levelImg }) {
         </div>
       </>
     );
-  } else {
+  } else { // om det inte finns några sparade recept
     return (
     <div className="save-container">
       <div className="save-wrapper">

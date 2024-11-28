@@ -9,10 +9,10 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export function Loading() {
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(false) // State som avgör om felmeddelande ska visas eller inte
 
   const navigate = useNavigate()
-  function longLoading() {
+  function longLoading() { // funktion som visar ett felmeddelande efter 4 sekunder
     setTimeout(() => {
       setIsLoading(true)
     }, 4000);

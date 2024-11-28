@@ -7,21 +7,21 @@ import { useState } from "react";
 import "../../CSS/ratingStar.css";
 
 export function BasicRating({ food }) {
-  const [value, setValue] = useState(0);
-  const [ratingState, SetRatingState] = useRecoilState(ratingsState);
-  const isRated = ratingState.find((rating) => rating.id == food.id);
+  const [value, setValue] = useState(0); // state som tar emot värdet på betyget
+  const [ratingState, SetRatingState] = useRecoilState(ratingsState); // state som innehåller alla betyg
+  const isRated = ratingState.find((rating) => rating.id == food.id); // kollar om receptet redan har blivit betygsatt
 
-  const changeRating = (id) => {
+  const changeRating = (id) => { // om användaren vill ändra eller ta bort sitt betyg
     SetRatingState(ratingState.filter((value) => value.id !== id));
   };
 
-  const starRating = (value) => {
+  const starRating = (value) => { // funktion där betyget sparas ner i ratingstate
     setValue(value);
-    const newRating = { id: food.id, rating: value };
-    SetRatingState([...ratingState, newRating]);
+    const newRating = { id: food.id, rating: value }; // objekt skapas med id på receptet och värdet på betyget
+    SetRatingState([...ratingState, newRating]); // objektet läggs till i ratingstate
   };
 
-  if (isRated) {
+  if (isRated) { // om användaren redan har satt betyg på receptet
     return (
       <>
         <div>
@@ -43,7 +43,7 @@ export function BasicRating({ food }) {
     );
   }
 
-  return (
+  return ( // om användaren inte har satt något betyg på receptet
     <div>
       <h2 className="rating-title">Sätt ditt betyg på receptet</h2>
       <div className="rating-star-box">

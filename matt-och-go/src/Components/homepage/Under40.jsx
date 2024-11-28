@@ -2,8 +2,7 @@ import { Cards } from "../cards";
 import { useState } from "react";
 import { useRecoilState } from "recoil";
 import { recipeState } from "../../App";
-import "../../CSS/home.css"
-
+import "../../CSS/home.css";
 
 export function Under40({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);

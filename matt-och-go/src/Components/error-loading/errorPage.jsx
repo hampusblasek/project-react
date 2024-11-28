@@ -5,6 +5,7 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { green } from "@mui/material/colors";
 
+// felmeddelande som visas upp när routingen inte hittar någon path
 export function Error() {
   const navigate = useNavigate();
 

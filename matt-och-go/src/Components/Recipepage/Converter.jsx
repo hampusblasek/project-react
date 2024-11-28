@@ -1,9 +1,10 @@
 import { useState } from "react";
 import "../../CSS/converter.css";
 
-export function MessurementConverter({open, setOpen}) {
-  const [value1, setValue1] = useState(null);
-  const [value2, setValue2] = useState(null);
+export function MessurementConverter({ open, setOpen }) {
+  const [value1, setValue1] = useState(null); // state som håller det första värdet av selectmenyn
+  const [value2, setValue2] = useState(null); // state som håller det andra värdet av selectmenyn
+  //Deklarerar variabler med måttens volym i ml
   const krm = 1;
   const tsk = 5;
   const msk = 15;
@@ -12,13 +13,13 @@ export function MessurementConverter({open, setOpen}) {
   const pint = 570;
   const liter = 1000;
   const gallon = 3785;
-  let sum = value2 / value1;
+  let sum = value2 / value1; // Räknar ut summan av användarens val
 
-  const numberOfSum = () => {
+  const numberOfSum = () => { // funktion som bestämmer vad som ska stå längst ner i konverteraren
     if (!sum) {
       return "Välj mått ovan för att se ditt svar här!";
     } else {
-        const shortSum = sum.toFixed(2)
+      const shortSum = sum.toFixed(2);
       return "Svar: " + shortSum;
     }
   };
@@ -27,7 +28,13 @@ export function MessurementConverter({open, setOpen}) {
     <>
       <div className="converter-container">
         <div className="exit-box">
-          <img onClick={() => setOpen(!open)} className="exit-icon" src="/exit.svg" alt="ett kryss" title="Stäng" />
+          <img
+            onClick={() => setOpen(!open)}
+            className="exit-icon"
+            src="/exit.svg"
+            alt="ett kryss"
+            title="Stäng"
+          />
         </div>
         <h2 className="converter-title">Använd gärna vår måttomvandlare</h2>
         <div className="converter-box">
