@@ -1,17 +1,10 @@
 import { Cards } from "../cards";
 import { useState } from "react";
-import { useRecoilState } from "recoil";
-import { recipeState } from "../../App";
 import "../../CSS/home.css";
 
-export function EasyCook({ levelImg }) {
-  const [recipes] = useRecoilState(recipeState); // state som innehåller alla recept
+export function EasyCook({ levelImg, recipes }) {
   const [isPressed, setIsPressed] = useState(false); // state som håller koll på hur många kort som ska visas
 
-
-  if (!recipes) {
-    return <p>Laddar...</p>;
-  }
   const easyList = recipes.filter( // sparar ner alla recept som uppfyller filtreringen
     (recipe) =>
       recipe.difficulty.includes("Easy") &&
