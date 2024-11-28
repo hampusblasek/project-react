@@ -12,60 +12,60 @@
 .error-text {
   text-align: center;
 }
-.error-btn{
-    height: 3rem;
-    width: 15rem;
-    border-radius: 10px;
-    border: none;
-    background-color: rgb(212, 212, 212);
-    font-size: 17px;
-    cursor: pointer;
-    transition: ease 0.2s;
+.error-btn {
+  height: 3rem;
+  width: 15rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(212, 212, 212);
+  font-size: 17px;
+  cursor: pointer;
+  transition: ease 0.2s;
 }
-.error-btn:hover{
-    background-color: rgba(1, 158, 1, 0.374);
+.error-btn:hover {
+  background-color: rgba(1, 158, 1, 0.374);
 }
 .error-title {
   margin-top: 0;
   font-size: 40px;
 }
-.error-p{
-    margin-bottom: 80px;
-    font-size: 20px;
+.error-p {
+  margin-bottom: 80px;
+  font-size: 20px;
 }
 .error-img {
   width: 500px;
 }
-.loading-box{
+.loading-box {
   height: 200px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.message-box{
+.message-box {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
-.message-title{
+.message-title {
   text-align: center;
   font-size: 35px;
 }
-.message-text{
+.message-text {
   text-align: center;
   font-size: 20px;
 }
-.message-btn{
+.message-btn {
   padding: 10px 40px;
   font-size: 15px;
   border-radius: 10px;
   border: 1px solid black;
   cursor: pointer;
 }
-.hide{
+.hide {
   display: none;
 }
-.show{
+.show {
   display: block;
 }

@@ -42,19 +42,19 @@
   width: 40%;
 }
 .expand-box {
-background-color: rgba(208, 208, 208, 0.48);
+  background-color: rgba(208, 208, 208, 0.48);
   margin-top: 100px;
 }
 .expand {
   width: 80%;
   margin: auto;
- padding: 20px;
+  padding: 20px;
   border-radius: 10px;
 }
 .arrow-img {
   width: 30px;
 }
-.faq{
+.faq {
   text-align: center;
   margin: 0;
   padding-top: 20px;

@@ -2,9 +2,8 @@
   width: 100%;
   min-height: 100vh;
   background-color: rgba(251, 251, 236, 0.507);
- /*  background-color: rgba(216, 216, 216, 0.628); */
+  /*  background-color: rgba(216, 216, 216, 0.628); */
 }
-
 .category-container1 {
   max-width: 1300px;
   margin: auto;

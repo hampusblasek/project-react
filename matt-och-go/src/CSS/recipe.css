@@ -7,7 +7,7 @@
   width: 100%;
   height: auto;
   background-color: rgba(251, 251, 236, 0.507);
-  filter:blur(5px)
+  filter: blur(5px);
 }
 .recipe-box {
   display: flex;
@@ -173,12 +173,12 @@
   padding: 10px;
   transition: ease 0.3s;
 }
-.converter-btn:hover{
+.converter-btn:hover {
   background-color: rgba(1, 158, 1, 0.374);
   border: 1px solid green;
 }
-.popup-box{
-  position:absolute;
+.popup-box {
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);

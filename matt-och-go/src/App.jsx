@@ -3,23 +3,23 @@ import { Header } from "./Components/Header";
 import { Footer } from "./Components/Footer";
 import { useEffect } from "react";
 import { getRecipes } from "./API/api";
-import { Outlet} from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { atom, useRecoilState } from "recoil";
 import { NavigatePage } from "./Router";
 import "./App.css";
 
 export const recipeState = atom({
   key: "recipe",
-  default: []
+  default: [],
 });
 export const saveRecState = atom({
   key: "save",
-  default: []
+  default: [],
 });
 export const ratingsState = atom({
   key: "rating",
-  default: []
-})
+  default: [],
+});
 
 function App() {
   const [recipes, setRecipes] = useRecoilState(recipeState);
@@ -33,7 +33,6 @@ function App() {
   }, []);
 
   console.log(recipes);
-  
 
   const levelImg = (food) => {
     let img = "";
