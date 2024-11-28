@@ -1,6 +1,9 @@
-import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../CSS/error.css";
+import * as React from "react";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
+import { green } from "@mui/material/colors";
 
 export function Error() {
   const navigate = useNavigate();
@@ -14,9 +17,11 @@ export function Error() {
             <p className="error-p">
               Tryck på knappen nedan för att komma tillbaka till startsidan
             </p>
-            <button onClick={() => navigate("/")} className="error-btn">
-              Tillbaka till startsidan
-            </button>
+            <Stack direction="row" justifyContent={"center"} spacing={2}>
+              <Button  onClick={() => navigate("/")} variant="contained" color="black" sx={{ bgcolor: green[400] }}>
+                Tillbaka till startsidan
+              </Button>
+            </Stack>
           </div>
           <img className="error-img" src="/chef-big.svg" alt="" />
         </div>

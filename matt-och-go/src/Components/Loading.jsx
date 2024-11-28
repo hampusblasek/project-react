@@ -1,6 +1,9 @@
 import * as React from "react";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
+import { green } from "@mui/material/colors";
 import "../CSS/error.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -27,7 +30,11 @@ return (
               <h2 className="message-title">Hoppsan, här tar det lång tid!</h2>
               <p className="message-text">Receptet du söker efter hittas inte. Tryck på knappen nedan för att gå tillbaka till startsidan.</p>
             <div className="message-box">
-              <button className="message-btn" onClick={() => navigate("/")}>Tillbaka till startsidan</button>
+            <Stack direction="row" justifyContent={"center"} spacing={2}>
+              <Button  onClick={() => navigate("/")} variant="contained" color="black" sx={{ bgcolor: green[400] }}>
+                Tillbaka till startsidan
+              </Button>
+            </Stack>
             </div>
           </div>
         </div>

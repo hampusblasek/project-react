@@ -23,7 +23,7 @@ select {
   height: 50px;
   width: 110px;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .converter-title {
   text-align: center;

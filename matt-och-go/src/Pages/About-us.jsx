@@ -26,7 +26,7 @@ export function AboutUs() {
             </div>
           </div>
           <div className="about-img-box">
-            <img className="about-img" src="/about-chef.png" alt="" />
+            <img className="about-img" src="/chef-big.svg" alt="" />
           </div>
         </div>
 
