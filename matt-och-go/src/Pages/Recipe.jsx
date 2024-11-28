@@ -14,8 +14,8 @@ import { HeartIcon } from "../Components/Recipepage/Save-recipe";
 import "../CSS/recipe.css";
 
 export function RecipePage({ levelImg }) {
-  const [recipes, setRecipes] = useRecoilState(recipeState); // state som innehåller recepten
-  const [saveRec, setSaveRec] = useRecoilState(saveRecState); // state som lagrar sparade recept
+  const [recipes] = useRecoilState(recipeState); // state som innehåller recepten
+  const [saveRec] = useRecoilState(saveRecState); // state som lagrar sparade recept
   const [open, setOpen] = useState(false); // state som styr om modalen - måttkonverteraren ska visas
   const [snackState, setSnackState] = React.useState({
     // state som styr om snackbaren ska visas
@@ -30,6 +30,10 @@ export function RecipePage({ levelImg }) {
   const food = recipes.find(
     (recipe) => recipe.id === Number.parseInt(params.id)
   );
+  //om inte receptet hittas.
+  if (!food) {
+    return <Loading />;
+  }
   // style för ingredienser och instructioner
   const style = {
     py: 0,
@@ -40,12 +44,7 @@ export function RecipePage({ levelImg }) {
     borderColor: "divider",
     backgroundColor: "background.paper",
   };
-  //Styr vilken title hjärticonen ska ha
 
-  // ifall inte receptet hittas
-  if (!food) {
-    return <Loading />;
-  }
   //Om användaren vill använda måttomvandlaren
   const isOpen = () => {
     if (open) {
@@ -119,10 +118,7 @@ export function RecipePage({ levelImg }) {
                   </span>
                 ))}
               </div>
-              <HeartIcon
-                setSnackState={setSnackState}
-                food={food}
-              />
+              <HeartIcon setSnackState={setSnackState} food={food} />
             </div>
 
             {/* Här börjar sektionen för betyg och måttomvandlare------------------------- */}
