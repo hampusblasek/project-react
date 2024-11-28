@@ -1,13 +1,13 @@
 import { useRecoilState } from "recoil";
 import { recipeState, saveRecState } from "../App";
 import { useParams } from "react-router-dom";
-import { BasicRating } from "../Components/Rating";
+import { BasicRating } from "../Components/Recipepage/Rating";
 import { useState } from "react";
-import { MessurementConverter } from "../Components/Converter";
+import { MessurementConverter } from "../Components/Recipepage/Converter";
 import { Loading } from "../Components/error-loading/Loading";
 import * as React from "react";
 import List from "@mui/material/List";
-import { CheckList } from "../Components/Divider";
+import { CheckList } from "../Components/Recipepage/Divider";
 import Box from "@mui/material/Box";
 import Snackbar from "@mui/material/Snackbar";
 import "../CSS/recipe.css";
@@ -98,6 +98,7 @@ export function RecipePage({ levelImg }) {
     <>
       <div className={open ? "blur" : "recipe-container"}>
         <div className="recipe-box">
+          {/* Här börjar sektionen information om maträtten--------------------------------------- */}
           <div className="rec-info">
             <h1 className="rec-title">{food.name}</h1>
             <div className="info">
@@ -128,6 +129,8 @@ export function RecipePage({ levelImg }) {
                 <span>{food.caloriesPerServing}</span> kalorier per portion
               </p>
             </div>
+
+            {/* Här börjar sektionen ingredienserna för maträtten---------------------------------- */}
             <h2 className="ingredients-title">Ingredienser</h2>
             <div className="ingredients-container">
               <List sx={style}>
@@ -136,6 +139,8 @@ export function RecipePage({ levelImg }) {
                 ))}
               </List>
             </div>
+
+            {/* Här börjar sektionen för tags och spara recept-hjärtat-------------------- */}
             <div className="bottom-section">
               <div className="tag-wrapper">
                 {food.tags.map((tag, index) => (
@@ -144,7 +149,6 @@ export function RecipePage({ levelImg }) {
                   </span>
                 ))}
               </div>
-              <img className="food-icon" src="/share.svg" alt="En dela-icon" />
               <img
                 onClick={() =>
                   saveRecipe(food, { vertical: "bottom", horizontal: "center" })
@@ -156,6 +160,7 @@ export function RecipePage({ levelImg }) {
               />
             </div>
 
+            {/* Här börjar sektionen för betyg och måttomvandlare------------------------- */}
             <div className="rating-star">
               <BasicRating food={food} />
             </div>
@@ -165,6 +170,8 @@ export function RecipePage({ levelImg }) {
               </button>
             </div>
           </div>
+
+          {/* Här börjar sektionen bild och instruktioner-----------------------------------------*/}
           <div className="rec-img">
             <img className="food-img" src={food.image} alt="" />
             <div className="instruction-title">
@@ -181,6 +188,8 @@ export function RecipePage({ levelImg }) {
           </div>
         </div>
       </div>
+
+      {/* Här börjar sektionen för popup, när ett recept sparas eller tas bort-------------------- */}
       <div className="popup-box">{isOpen()}</div>
       <Box sx={{ width: 500, bgcolor: "black" }}>
         <Snackbar

@@ -2,9 +2,9 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Rating from "@mui/material/Rating";
 import { useRecoilState } from "recoil";
-import { ratingsState } from "../App";
+import { ratingsState } from "../../App";
 import { useState } from "react";
-import "../CSS/ratingStar.css";
+import "../../CSS/ratingStar.css";
 
 export function BasicRating({ food }) {
   const [value, setValue] = useState(0);
@@ -45,7 +45,7 @@ export function BasicRating({ food }) {
 
   return (
     <div>
-    <h2 className="rating-title">Sätt ditt betyg på receptet</h2>
+      <h2 className="rating-title">Sätt ditt betyg på receptet</h2>
       <div className="rating-star-box">
         <Box>
           <Rating

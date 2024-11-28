@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../CSS/converter.css";
+import "../../CSS/converter.css";
 
 export function MessurementConverter({open, setOpen}) {
   const [value1, setValue1] = useState(null);
