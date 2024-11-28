@@ -10,6 +10,7 @@ import List from "@mui/material/List";
 import { CheckList } from "../Components/Recipepage/Divider";
 import Box from "@mui/material/Box";
 import Snackbar from "@mui/material/Snackbar";
+import { HeartIcon } from "../Components/Recipepage/Save-recipe";
 import "../CSS/recipe.css";
 
 export function RecipePage({ levelImg }) {
@@ -40,7 +41,6 @@ export function RecipePage({ levelImg }) {
     backgroundColor: "background.paper",
   };
   //Styr vilken title hjärticonen ska ha
-  let heartStatus;
 
   // ifall inte receptet hittas
   if (!food) {
@@ -52,37 +52,7 @@ export function RecipePage({ levelImg }) {
       return <MessurementConverter setOpen={setOpen} open={open} />;
     }
   };
-  //Funktion som lägger till eller tar bort recept i sparade recept
-  const saveRecipe = (food, newState) => {
-    const saveRecipe = saveRec.find((save) => save.id == food.id);
-    if (!saveRecipe) {
-      setSaveRec([...saveRec, food]); // sparar receptet i sparade recept
-      setSnackState({ ...newState, snackOpen: true }); //Snackbaren visas
-      setTimeout(() => {
-        setSnackState({ ...newState, snackOpen: false }); // Snackbaren slutar visas efter 3 sekunder
-      }, 3000);
-    } else {
-      setSaveRec(saveRec.filter((item) => item.id !== food.id)); // Tar bort receptet från sparade recept
-      setSnackState({ ...newState, snackOpen: true });
-      setTimeout(() => {
-        setSnackState({ ...newState, snackOpen: false });
-      }, 3000);
-    }
-  };
-  //Funktion avgör om det ska visas ett rött eller grått hjärta
-  const heartImg = (food) => {
-    const savedRecipe = saveRec.find((save) => save.id === food.id);
-    let image = "";
-    if (savedRecipe) {
-      image = "/heart.svg";
-      heartStatus = "Ta bort";
-      return image;
-    } else {
-      image = "/heart-grey.svg";
-      heartStatus = "Spara recept";
-      return image;
-    }
-  };
+
   // Funktion som styr vilket meddelande som ska visas i snackbaren
   const snackMessage = (food) => {
     const saveRecipe = saveRec.find((save) => save.id == food.id);
@@ -149,14 +119,9 @@ export function RecipePage({ levelImg }) {
                   </span>
                 ))}
               </div>
-              <img
-                onClick={() =>
-                  saveRecipe(food, { vertical: "bottom", horizontal: "center" })
-                }
-                className="food-icon-2"
-                src={heartImg(food)}
-                alt="Ett hjärta"
-                title={heartStatus}
+              <HeartIcon
+                setSnackState={setSnackState}
+                food={food}
               />
             </div>
 
