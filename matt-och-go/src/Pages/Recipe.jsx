@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { BasicRating } from "../Components/Rating";
 import { useState } from "react";
 import { MessurementConverter } from "../Components/Converter";
-import { Loading } from "../Components/Loading";
+import { Loading } from "../Components/error-loading/Loading";
 import * as React from "react";
 import List from "@mui/material/List";
 import { CheckList } from "../Components/Divider";
@@ -83,7 +83,7 @@ export function RecipePage({ levelImg }) {
       return image;
     }
   };
-// Funktion som styr vilket meddelande som ska visas i snackbaren
+  // Funktion som styr vilket meddelande som ska visas i snackbaren
   const snackMessage = (food) => {
     const saveRecipe = saveRec.find((save) => save.id == food.id);
 

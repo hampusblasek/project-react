@@ -1,8 +1,7 @@
-import { Cards } from "./cards";
+import { Cards } from "../cards";
 import { useRecoilState } from "recoil";
-import { recipeState } from "../App";
-import { Loading } from "./Loading";
-import "../CSS/home.css";
+import { recipeState } from "../../App";
+import "../../CSS/home.css"
 
 export function AfterFood({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);

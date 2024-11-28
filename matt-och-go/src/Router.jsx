@@ -5,7 +5,7 @@ import { HomePage } from "./Pages/home";
 import { RecipePage } from "./Pages/Recipe";
 import { AboutUs } from "./Pages/about-us";
 import { SavedRecipes } from "./Pages/save";
-import { Error } from "./Components/errorPage";
+import { Error } from "./Components/error-loading/errorPage";
 
 export function NavigatePage({
   levelImg,

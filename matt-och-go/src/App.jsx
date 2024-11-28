@@ -32,6 +32,9 @@ function App() {
     getRecipes().then(setRecipes);
   }, []);
 
+  console.log(recipes);
+  
+
   const levelImg = (food) => {
     let img = "";
     if (food === "Easy") {

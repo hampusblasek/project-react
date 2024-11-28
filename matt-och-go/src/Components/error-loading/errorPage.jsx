@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import "../CSS/error.css";
+import "../../CSS/error.css";
 import * as React from "react";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";

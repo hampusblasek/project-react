@@ -1,15 +1,13 @@
-import { Cards } from "./cards";
-import "../CSS/home.css";
+import { Cards } from "../cards";
 import { useState } from "react";
 import { useRecoilState } from "recoil";
-import { recipeState } from "../App";
-import { Loading } from "./Loading";
+import { recipeState } from "../../App";
+import "../../CSS/home.css"
+
 
 export function Under40({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
   const [isPressed, setIsPressed] = useState(false);
-
-  console.log(recipes);
 
   if (!recipes) {
     return <p>Laddar...</p>;

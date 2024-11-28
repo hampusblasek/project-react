@@ -1,8 +1,7 @@
-import { Under40 } from "../Components/Under40";
-import { EasyCook } from "../Components/EasyCook";
-import { AfterFood } from "../Components/After";
-import { Drinks } from "../Components/Drinks";
-import "../CSS/home.css";
+import { Under40 } from "../Components/homepage/Under40";
+import { EasyCook } from "../Components/homepage/EasyCook";
+import { AfterFood } from "../Components/homepage/After";
+import { Drinks } from "../Components/homepage/Drinks";
 
 export function HomePage({ levelImg }) {
   return (

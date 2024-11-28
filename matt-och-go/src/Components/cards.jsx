@@ -1,13 +1,11 @@
 import { Navigate, useNavigate } from "react-router-dom";
-import { Loading } from "./Loading";
+import { Loading } from "./error-loading/Loading";
 import "../CSS/cards.css";
 
 export function Cards({ food, levelImg }) {
   const navigate = useNavigate();
 
   const seeRecipe = (id) => {
-    console.log(id);
-
     navigate("recipe/" + id);
   };
 

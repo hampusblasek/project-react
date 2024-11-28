@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { green } from "@mui/material/colors";
-import "../CSS/error.css";
+import "../../CSS/error.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 

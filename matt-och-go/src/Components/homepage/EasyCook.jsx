@@ -1,9 +1,8 @@
-import "../CSS/home.css";
-import { Cards } from "./cards";
+import { Cards } from "../cards";
 import { useState } from "react";
 import { useRecoilState } from "recoil";
-import { recipeState } from "../App";
-import { Loading } from "./Loading";
+import { recipeState } from "../../App";
+import "../../CSS/home.css";
 
 export function EasyCook({ levelImg }) {
   const [recipes, setRecipes] = useRecoilState(recipeState);
