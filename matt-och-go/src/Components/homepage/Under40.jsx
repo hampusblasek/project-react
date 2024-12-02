@@ -1,10 +1,8 @@
 import { Cards } from "../cards";
-import { useState } from "react";
 import "../../CSS/home.css";
 import { useRef } from "react";
 
 export function Under40({ levelImg, recipes }) {
-  const [isPressed, setIsPressed] = useState(false); // state som håller koll på hur många kort som ska visas
   const scroll = useRef();
 
   const fastList = recipes.filter(

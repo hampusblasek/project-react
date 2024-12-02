@@ -32,9 +32,14 @@
 }
 .easy-box {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding-top: 60px;
   gap: 30px;
+}
+.easy-box::-webkit-scrollbar {
+  display: none;
 }
 .cold-box {
   display: flex;

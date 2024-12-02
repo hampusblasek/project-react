@@ -1,47 +1,55 @@
 import { Cards } from "../cards";
-import { useState } from "react";
+import { useRef } from "react";
 import "../../CSS/home.css";
 
 export function EasyCook({ levelImg, recipes }) {
-  const [isPressed, setIsPressed] = useState(false); // state som håller koll på hur många kort som ska visas
+  const scroll = useRef();
 
-  const easyList = recipes.filter( // sparar ner alla recept som uppfyller filtreringen
+  const easyList = recipes.filter(
+    // sparar ner alla recept som uppfyller filtreringen
     (recipe) =>
       recipe.difficulty.includes("Easy") &&
       !recipe.mealType.includes("Dessert") &&
       !recipe.mealType.includes("Beverage")
   );
 
-  const easySlice = easyList.slice(0, 4); // skapar en variabel som håller 4 recept
+  const scrollDirection = (direction) => {
+    if (direction === "left") {
+      scroll ? (scroll.current.scrollLeft -= 290) : null;
+    } else {
+      scroll ? (scroll.current.scrollLeft += 290) : null;
+    }
+  };
 
-
-  if (isPressed) { // om visa alla knappen har blivit tryck på
-    return (
-      <>
-        <div className="easy-box">
-          <h3 onClick={() => setIsPressed(!isPressed)} className="a-title">
-            Visa färre
-          </h3>
-
+  return (
+    <>
+      <div className="under40-container">
+        <button
+          onClick={() => scrollDirection("left")}
+          className="scroll-btn-next"
+        >
+          <img
+            width="35px"
+            src="/arrow-left.svg"
+            alt="pil som pekar åt vänster"
+          />
+        </button>
+        <div className="easy-box" ref={scroll}>
           {easyList.map((food, index) => (
             <Cards key={index} food={food} levelImg={levelImg} />
           ))}
         </div>
-      </>
-    );
-  } else { // om inte användaren tryckt på visa alla
-    return (
-      <>
-        <div className="easy-box">
-          <h3 onClick={() => setIsPressed(!isPressed)} className="a-title">
-            Visa alla
-          </h3>
-
-          {easySlice.map((food, index) => (
-            <Cards key={index} food={food} levelImg={levelImg} />
-          ))}
-        </div>
-      </>
-    );
-  }
+        <button
+          onClick={() => scrollDirection("right")}
+          className="scroll-btn-next"
+        >
+          <img
+            width="35px"
+            src="/arrow-right.svg"
+            alt="pil som pekar åt höger"
+          />
+        </button>
+      </div>
+    </>
+  );
 }
