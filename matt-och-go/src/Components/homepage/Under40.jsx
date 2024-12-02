@@ -1,9 +1,11 @@
 import { Cards } from "../cards";
 import { useState } from "react";
 import "../../CSS/home.css";
+import { useRef } from "react";
 
 export function Under40({ levelImg, recipes }) {
   const [isPressed, setIsPressed] = useState(false); // state som håller koll på hur många kort som ska visas
+  const scroll = useRef();
 
   const fastList = recipes.filter(
     // sparar ner alla recept som uppfyller filtreringen
@@ -13,37 +15,34 @@ export function Under40({ levelImg, recipes }) {
       !recipe.mealType.includes("Beverage")
   );
 
-  const fastSlice = fastList.slice(0, 4); // skapar en variabel som håller 4 recept
-
-  if (isPressed) {
-    // om visa alla knappen har blivit tryck på
-    return (
-      <>
-        <div className="quick-box">
-          <h3 onClick={() => setIsPressed(!isPressed)} className="a-title">
-            Visa färre
-          </h3>
-
+  const scrollDirection = (direction) => {
+    if (direction === "left") {
+      scroll ? (scroll.current.scrollLeft -= 290) : null;
+    } else {
+      scroll ? (scroll.current.scrollLeft += 290) : null;
+    }
+  };
+  return (
+    <>
+      <div className="under40-container">
+        <button
+          onClick={() => scrollDirection("left")}
+          className="scroll-btn-next"
+        >
+          <img width="35px" src="/arrow-left.svg" alt="pil som pekar åt vänster" />
+        </button>
+        <div className="quick-box" ref={scroll}>
           {fastList.map((food, index) => (
             <Cards key={index} food={food} levelImg={levelImg} />
           ))}
         </div>
-      </>
-    );
-  } else {
-    // om inte användaren tryckt på visa alla
-    return (
-      <>
-        <div className="quick-box">
-          <h3 onClick={() => setIsPressed(!isPressed)} className="a-title">
-            Visa alla
-          </h3>
-
-          {fastSlice.map((food, index) => (
-            <Cards key={index} food={food} levelImg={levelImg} />
-          ))}
-        </div>
-      </>
-    );
-  }
+        <button
+          onClick={() => scrollDirection("right")}
+          className="scroll-btn-next"
+        >
+          <img width="35px" src="/arrow-right.svg" alt="pil som pekar åt höger" />
+        </button>
+      </div>
+    </>
+  );
 }

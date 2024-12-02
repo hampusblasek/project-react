@@ -21,9 +21,14 @@
 }
 .quick-box {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding-top: 60px;
   gap: 30px;
+}
+.quick-box::-webkit-scrollbar {
+  display: none;
 }
 .easy-box {
   display: flex;
@@ -45,4 +50,25 @@
   gap: 30px;
   margin-top: 50px;
   padding-bottom: 80px;
+}
+.scroll-btn-next {
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 50%;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(1, 158, 1, 0.374);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease 0.3s;
+}
+.scroll-btn-next:hover{
+  scale: 1.2;
+}
+.under40-container {
+  display: flex;
+  align-items: center;
 }

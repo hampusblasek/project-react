@@ -67,7 +67,7 @@ h3 {
 }
 .card-img {
   transition: ease 0.5s;
-  width: 300px;
+  width: 260px;
   animation: fadeIn 2s;
 }
 .card-img:hover {
