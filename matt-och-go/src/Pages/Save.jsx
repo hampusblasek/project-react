@@ -1,6 +1,7 @@
 import { useRecoilState } from "recoil";
 import { saveRecState } from "../App";
 import { Cards } from "../Components/cards";
+import Button from "@mui/material/Button";
 import { NavLink } from "react-router-dom";
 import "../CSS/save.css";
 
@@ -10,8 +11,9 @@ export function SavedRecipes({ levelImg }) {
   const deleteFood = (id) => {
     setSaveRec(saveRec.filter((item) => item.id !== id)); // om användaren vill ta bort receptet från sparade recept
   };
-  
-  if (saveRec.length > 0) { //Om det finns några sparade recept
+
+  if (saveRec.length > 0) {
+    //Om det finns några sparade recept
     return (
       <>
         <div className="save-container">
@@ -21,12 +23,9 @@ export function SavedRecipes({ levelImg }) {
               <div key={index}>
                 <Cards food={food} levelImg={levelImg} />
                 <div className="btn-box">
-                  <button
-                    onClick={() => deleteFood(food.id)}
-                    className="del-btn"
-                  >
+                  <Button onClick={() => deleteFood(food.id)} variant="contained" color="error">
                     Ta bort
-                  </button>
+                  </Button>
                 </div>
               </div>
             ))}
@@ -34,21 +33,25 @@ export function SavedRecipes({ levelImg }) {
         </div>
       </>
     );
-  } else { // om det inte finns några sparade recept
+  } else {
+    // om det inte finns några sparade recept
     return (
-    <div className="save-container">
-      <div className="save-wrapper">
-        <div className="save-text-box">
-          <h1 className="h1-save">Här var det tomt!</h1>
-          <p className="save-text">Tryck på hjärtat i ett recept för att spara ett recept</p>
-          <div className="link-box">
-            {/* <NavLink className="save-link" to="category">
+      <div className="save-container">
+        <div className="save-wrapper">
+          <div className="save-text-box">
+            <h1 className="h1-save">Här var det tomt!</h1>
+            <p className="save-text">
+              Tryck på hjärtat i ett recept för att spara ett recept
+            </p>
+            <div className="link-box">
+              {/* <NavLink className="save-link" to="category">
               Till ny inspiration!
             </NavLink> */}
-          </div> 
+            </div>
+          </div>
+          <img className="save-img" src="/Cooking.svg" alt="" />
         </div>
-        <img className="save-img" src="/Cooking.svg" alt="" />
       </div>
-    </div>)
+    );
   }
 }
