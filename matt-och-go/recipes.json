@@ -821,197 +821,166 @@
       "mealType": ["Breakfast", "Beverage"]
     },
     {
-        "id": 26,
-        "name": "Mexican Street Corn (Elote)",
-        "ingredients": [
-            "Corn on the cob",
-            "Mayonnaise",
-            "Cotija cheese, crumbled",
-            "Chili powder",
-            "Lime wedges"
-        ],
-        "instructions": [
-            "Grill or roast corn on the cob until kernels are charred.",
-            "Brush each cob with mayonnaise, then sprinkle with crumbled Cotija cheese and chili powder.",
-            "Serve with lime wedges for squeezing over the top.",
-            "Enjoy this delicious and flavorful Mexican Street Corn!"
-        ],
-        "prepTimeMinutes": 15,
-        "cookTimeMinutes": 15,
-        "servings": 4,
-        "difficulty": "Easy",
-        "cuisine": "Mexican",
-        "caloriesPerServing": 180,
-        "tags": [
-            "Elote",
-            "Mexican",
-            "Street food"
-        ],
-        "userId": 93,
-        "image": "https://cdn.dummyjson.com/recipe-images/26.webp",
-        "rating": 4.6,
-        "reviewCount": 2,
-        "mealType": [
-            "Snack",
-            "Side Dish"
-        ]
+      "id": 26,
+      "name": "Mexican Street Corn (Elote)",
+      "ingredients": [
+        "Corn on the cob",
+        "Mayonnaise",
+        "Cotija cheese, crumbled",
+        "Chili powder",
+        "Lime wedges"
+      ],
+      "instructions": [
+        "Grill or roast corn on the cob until kernels are charred.",
+        "Brush each cob with mayonnaise, then sprinkle with crumbled Cotija cheese and chili powder.",
+        "Serve with lime wedges for squeezing over the top.",
+        "Enjoy this delicious and flavorful Mexican Street Corn!"
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "cuisine": "Mexican",
+      "caloriesPerServing": 180,
+      "tags": ["Elote", "Mexican", "Street food"],
+      "userId": 93,
+      "image": "https://cdn.dummyjson.com/recipe-images/26.webp",
+      "rating": 4.6,
+      "reviewCount": 2,
+      "mealType": ["Snack", "Side Dish"]
     },
     {
-        "id": 27,
-        "name": "Russian Borscht",
-        "ingredients": [
-            "Beets, peeled and shredded",
-            "Cabbage, shredded",
-            "Potatoes, diced",
-            "Onions, finely chopped",
-            "Carrots, grated",
-            "Tomato paste",
-            "Beef or vegetable broth",
-            "Garlic, minced",
-            "Bay leaves",
-            "Sour cream for serving"
-        ],
-        "instructions": [
-            "In a pot, sauté chopped onions and garlic until softened.",
-            "Add shredded beets, cabbage, diced potatoes, grated carrots, and tomato paste.",
-            "Pour in broth and add bay leaves. Simmer until vegetables are tender.",
-            "Serve hot with a dollop of sour cream on top.",
-            "Enjoy the hearty and comforting flavors of Russian Borscht!"
-        ],
-        "prepTimeMinutes": 30,
-        "cookTimeMinutes": 40,
-        "servings": 6,
-        "difficulty": "Medium",
-        "cuisine": "Russian",
-        "caloriesPerServing": 220,
-        "tags": [
-            "Borscht",
-            "Russian",
-            "Soup"
-        ],
-        "userId": 1,
-        "image": "https://cdn.dummyjson.com/recipe-images/27.webp",
-        "rating": 4.3,
-        "reviewCount": 39,
-        "mealType": [
-            "Dinner"
-        ]
+      "id": 27,
+      "name": "Russian Borscht",
+      "ingredients": [
+        "Beets, peeled and shredded",
+        "Cabbage, shredded",
+        "Potatoes, diced",
+        "Onions, finely chopped",
+        "Carrots, grated",
+        "Tomato paste",
+        "Beef or vegetable broth",
+        "Garlic, minced",
+        "Bay leaves",
+        "Sour cream for serving"
+      ],
+      "instructions": [
+        "In a pot, sauté chopped onions and garlic until softened.",
+        "Add shredded beets, cabbage, diced potatoes, grated carrots, and tomato paste.",
+        "Pour in broth and add bay leaves. Simmer until vegetables are tender.",
+        "Serve hot with a dollop of sour cream on top.",
+        "Enjoy the hearty and comforting flavors of Russian Borscht!"
+      ],
+      "prepTimeMinutes": 30,
+      "cookTimeMinutes": 40,
+      "servings": 6,
+      "difficulty": "Medium",
+      "cuisine": "Russian",
+      "caloriesPerServing": 220,
+      "tags": ["Borscht", "Russian", "Soup"],
+      "userId": 1,
+      "image": "https://cdn.dummyjson.com/recipe-images/27.webp",
+      "rating": 4.3,
+      "reviewCount": 39,
+      "mealType": ["Dinner"]
     },
     {
-        "id": 28,
-        "name": "South Indian Masala Dosa",
-        "ingredients": [
-            "Dosa batter (fermented rice and urad dal batter)",
-            "Potatoes, boiled and mashed",
-            "Onions, finely chopped",
-            "Mustard seeds",
-            "Cumin seeds",
-            "Curry leaves",
-            "Turmeric powder",
-            "Green chilies, chopped",
-            "Ghee",
-            "Coconut chutney for serving"
-        ],
-        "instructions": [
-            "In a pan, heat ghee and add mustard seeds, cumin seeds, and curry leaves.",
-            "Add chopped onions, green chilies, and turmeric powder. Sauté until onions are golden brown.",
-            "Mix in boiled and mashed potatoes. Cook until well combined and seasoned.",
-            "Spread dosa batter on a hot griddle to make thin pancakes.",
-            "Place a spoonful of the potato mixture in the center, fold, and serve hot.",
-            "Pair with coconut chutney for a delicious South Indian meal."
-        ],
-        "prepTimeMinutes": 40,
-        "cookTimeMinutes": 20,
-        "servings": 4,
-        "difficulty": "Medium",
-        "cuisine": "Indian",
-        "caloriesPerServing": 320,
-        "tags": [
-            "Dosa",
-            "Indian",
-            "Asian"
-        ],
-        "userId": 138,
-        "image": "https://cdn.dummyjson.com/recipe-images/28.webp",
-        "rating": 4.4,
-        "reviewCount": 96,
-        "mealType": [
-            "Breakfast"
-        ]
+      "id": 28,
+      "name": "South Indian Masala Dosa",
+      "ingredients": [
+        "Dosa batter (fermented rice and urad dal batter)",
+        "Potatoes, boiled and mashed",
+        "Onions, finely chopped",
+        "Mustard seeds",
+        "Cumin seeds",
+        "Curry leaves",
+        "Turmeric powder",
+        "Green chilies, chopped",
+        "Ghee",
+        "Coconut chutney for serving"
+      ],
+      "instructions": [
+        "In a pan, heat ghee and add mustard seeds, cumin seeds, and curry leaves.",
+        "Add chopped onions, green chilies, and turmeric powder. Sauté until onions are golden brown.",
+        "Mix in boiled and mashed potatoes. Cook until well combined and seasoned.",
+        "Spread dosa batter on a hot griddle to make thin pancakes.",
+        "Place a spoonful of the potato mixture in the center, fold, and serve hot.",
+        "Pair with coconut chutney for a delicious South Indian meal."
+      ],
+      "prepTimeMinutes": 40,
+      "cookTimeMinutes": 20,
+      "servings": 4,
+      "difficulty": "Medium",
+      "cuisine": "Indian",
+      "caloriesPerServing": 320,
+      "tags": ["Dosa", "Indian", "Asian"],
+      "userId": 138,
+      "image": "https://cdn.dummyjson.com/recipe-images/28.webp",
+      "rating": 4.4,
+      "reviewCount": 96,
+      "mealType": ["Breakfast"]
     },
     {
-        "id": 29,
-        "name": "Lebanese Falafel Wrap",
-        "ingredients": [
-            "Falafel balls",
-            "Whole wheat or regular wraps",
-            "Tomatoes, diced",
-            "Cucumbers, sliced",
-            "Red onions, thinly sliced",
-            "Lettuce, shredded",
-            "Tahini sauce",
-            "Fresh parsley, chopped"
-        ],
-        "instructions": [
-            "Warm falafel balls according to package instructions.",
-            "Place a generous serving of falafel in the center of each wrap.",
-            "Top with diced tomatoes, sliced cucumbers, red onions, shredded lettuce, and fresh parsley.",
-            "Drizzle with tahini sauce and wrap tightly.",
-            "Enjoy this Lebanese Falafel Wrap filled with fresh and flavorful ingredients!"
-        ],
-        "prepTimeMinutes": 15,
-        "cookTimeMinutes": 10,
-        "servings": 2,
-        "difficulty": "Easy",
-        "cuisine": "Lebanese",
-        "caloriesPerServing": 400,
-        "tags": [
-            "Falafel",
-            "Lebanese",
-            "Wrap"
-        ],
-        "userId": 110,
-        "image": "https://cdn.dummyjson.com/recipe-images/29.webp",
-        "rating": 4.7,
-        "reviewCount": 84,
-        "mealType": [
-            "Lunch"
-        ]
+      "id": 29,
+      "name": "Lebanese Falafel Wrap",
+      "ingredients": [
+        "Falafel balls",
+        "Whole wheat or regular wraps",
+        "Tomatoes, diced",
+        "Cucumbers, sliced",
+        "Red onions, thinly sliced",
+        "Lettuce, shredded",
+        "Tahini sauce",
+        "Fresh parsley, chopped"
+      ],
+      "instructions": [
+        "Warm falafel balls according to package instructions.",
+        "Place a generous serving of falafel in the center of each wrap.",
+        "Top with diced tomatoes, sliced cucumbers, red onions, shredded lettuce, and fresh parsley.",
+        "Drizzle with tahini sauce and wrap tightly.",
+        "Enjoy this Lebanese Falafel Wrap filled with fresh and flavorful ingredients!"
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 10,
+      "servings": 2,
+      "difficulty": "Easy",
+      "cuisine": "Lebanese",
+      "caloriesPerServing": 400,
+      "tags": ["Falafel", "Lebanese", "Wrap"],
+      "userId": 110,
+      "image": "https://cdn.dummyjson.com/recipe-images/29.webp",
+      "rating": 4.7,
+      "reviewCount": 84,
+      "mealType": ["Lunch"]
     },
     {
-        "id": 30,
-        "name": "Brazilian Caipirinha",
-        "ingredients": [
-            "Cachaça (Brazilian sugarcane spirit)",
-            "Lime, cut into wedges",
-            "Granulated sugar",
-            "Ice cubes"
-        ],
-        "instructions": [
-            "In a glass, muddle lime wedges with granulated sugar to release the juice.",
-            "Fill the glass with ice cubes.",
-            "Pour cachaça over the ice and stir well.",
-            "Sip and enjoy the refreshing taste of the Brazilian Caipirinha!",
-            "Adjust sugar and lime to suit your taste preferences."
-        ],
-        "prepTimeMinutes": 5,
-        "cookTimeMinutes": 0,
-        "servings": 1,
-        "difficulty": "Easy",
-        "cuisine": "Brazilian",
-        "caloriesPerServing": 150,
-        "tags": [
-            "Caipirinha",
-            "Brazilian",
-            "Cocktail"
-        ],
-        "userId": 134,
-        "image": "https://cdn.dummyjson.com/recipe-images/30.webp",
-        "rating": 4.4,
-        "reviewCount": 55,
-        "mealType": [
-            "Beverage"
-        ]
+      "id": 30,
+      "name": "Brazilian Caipirinha",
+      "ingredients": [
+        "Cachaça (Brazilian sugarcane spirit)",
+        "Lime, cut into wedges",
+        "Granulated sugar",
+        "Ice cubes"
+      ],
+      "instructions": [
+        "In a glass, muddle lime wedges with granulated sugar to release the juice.",
+        "Fill the glass with ice cubes.",
+        "Pour cachaça over the ice and stir well.",
+        "Sip and enjoy the refreshing taste of the Brazilian Caipirinha!",
+        "Adjust sugar and lime to suit your taste preferences."
+      ],
+      "prepTimeMinutes": 5,
+      "cookTimeMinutes": 0,
+      "servings": 1,
+      "difficulty": "Easy",
+      "cuisine": "Brazilian",
+      "caloriesPerServing": 150,
+      "tags": ["Caipirinha", "Brazilian", "Cocktail"],
+      "userId": 134,
+      "image": "https://cdn.dummyjson.com/recipe-images/30.webp",
+      "rating": 4.4,
+      "reviewCount": 55,
+      "mealType": ["Beverage"]
     },
     {
       "id": 31,
@@ -1044,7 +1013,245 @@
         "Rulla färsen till köttbullar med oljade händer eller lägg färsen i en spritspåse och tryck ut bullar direkt i stekpannan. Stek köttbullarna i omgångar i smör i en stekpanna ca 8 minuter eller tills de är genomstekta."
       ],
       "mealType": ["Dinner", "Lunch"],
-      "tags": ["Köttbullar", "Swedish", "Julmat"]
+      "tags": ["Köttbullar", "Swedish", "Jul"]
+    },
+    {
+      "id": 32,
+      "name": "Saffranskladdkaka",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_104454/cf_259/saffranskladdkaka.jpg",
+      "prepTimeMinutes": 25,
+      "cookTimeMinutes": 15,
+      "caloriesPerServing": 400,
+      "rating": 4.6,
+      "reviewCount": 98,
+      "difficulty": "Medium",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "100 g smör",
+        "1 förp saffran (0.5 g)",
+        "100 g vit choklad",
+        "2 ägg",
+        "2 dl vetemjöl",
+        "2 dl socker",
+        "smör till formen"
+      ],
+      "instructions": [
+        "Sätt ugnen på 175°C.",
+        "Smörj en form med löstagbar kant, ca 24 cm i diameter (för 12 bitar).",
+        "Smält smöret i en kastrull, ta kastrullen från plattan. Rör ner saffranet. Bryt chokladen i mindre bitar och lägg ner dem i smöret, rör om så att chokladen smälter.",
+        "Blanda ägg och socker i en skål. Rör ner smörblandningen och vänd ner mjölet. Häll smeten i formen.",
+        "Grädda kakan mitt i ugnen 13-14 minuter. Låt svalna i formen på galler. Låt kakan bli ordentligt kall innan den serveras."
+      ],
+      "mealType": ["Dessert"],
+      "tags": ["Kladdkaka", "Swedish", "Jul"]
+    },
+    {
+      "id": 33,
+      "name": "Griljerad julskinka",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_234396/cf_259/griljerad_julskinka.jpg",
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 15,
+      "caloriesPerServing": 200,
+      "rating": 4.6,
+      "reviewCount": 155,
+      "difficulty": "Medium",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "1 äggula",
+        "1/2 dl senap",
+        "1/2 dl majsstärkelse",
+        "2 msk ströbröd",
+        "1 kg färdigkokt julskinka"
+      ],
+      "instructions": [
+        "Sätt ugnen på 225°C.",
+        "Griljering: Rör ihop äggula och senap.",
+        "Lägg den kokta skinkan på ett ugnssäkert fat. Ta bort nätet.",
+        "Torka av skinkan med hushållspapper. Sikta över majsstärkelse. Bred griljeringen över skinkan och strö på ströbrödet.",
+        "Griljera skinkan mitt i ugnen 10- 15 minuter eller tills den fått fin färg. Låt den kallna."
+      ],
+      "mealType": ["Lunch", "Dinner"],
+      "tags": ["julskinka", "Swedish", "Jul"]
+    },
+    {
+      "id": 34,
+      "name": "Spagetti Carbonara",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/s3xwefear9kaybmvulme.jpg",
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 10,
+      "caloriesPerServing": 500,
+      "rating": 4.3,
+      "reviewCount": 522,
+      "difficulty": "Medium",
+      "cuisine": "Italian",
+      "ingredients": [
+        "400 g spagetti",
+        "4 äggulor",
+        "200 g pancetta",
+        "30 g pecorinoost, finriven ",
+        "30 g parmesanost, finriven",
+        "svartpeppar, nymalen",
+        "salt"
+      ],
+      "instructions": [
+        "Koka spaghettin ca 3 minuter kortare än anvisningen på förpackningen säger.",
+        "Skär pancettan i små bitar.",
+        "Stek pancettan i en wokpanna eller en stekpanna med höga kanter utan fett tills den blivit krispig. Lyft upp och lägg åt sidan. Låt fettet vara kvar i pannan.",
+        "Vispa ihop äggulorna med den fint rivna osten och rikligt med nymalen svartpeppar i en skål.",
+        "Sätt på värmen igen på pannan med stekfettet, häll i ca 3 dl av pastavattnet och låt koka.",
+        "Häll av spagettin och lägg i pannan med pancettan. Precis som när man kokar risotto i en buljong ska pastan få koka i stekfettet. Låt koka ca 2-3 minuter och rör om hela tiden, det gör att stärkelsen från pastan utsöndras och det blir en krämig sås.",
+        "När vattnet börjar koka in och det är någon matsked kvar, ta pannan från värmen. Tillsätt äggsmeten, rör runt tills det blir krämigt, tillsätt lite vatten om det blir torrt. Smaka av med salt och peppar."
+      ],
+      "mealType": ["Lunch", "Dinner"],
+      "tags": ["pasta", "italian"]
+    },
+    {
+      "id": 35,
+      "name": "Snabb äppelkaka i glas",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_206699/cf_259/snabb_appelkaka_i_glas.jpg",
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 5,
+      "caloriesPerServing": 500,
+      "rating": 4.5,
+      "reviewCount": 14,
+      "difficulty": "Easy",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "2-3 röda äpplen",
+        "2 msk smör",
+        "2 msk socker",
+        "1/2 tsk malen kanel ",
+        "1 1/2 dl vispgrädde",
+        "1 tsk vaniljsocker",
+        "1 - 2 dl smulor av kakor (t.ex havrekakor)"
+      ],
+      "instructions": [
+        "Dela och kärna ut äpplena. Skär i mindre bitar. Stek i smör med socker och kanel tills de mjuknar.",
+        "Vispa grädden med vaniljsocker. Varva äpplen, vaniljgrädde och kaksmulor i glas."
+      ],
+      "mealType": ["Dessert"],
+      "tags": ["Dessert", "apple"]
+    },
+    {
+      "id": 36,
+      "name": "Daimpannacotta",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_172429/cf_259/daimpannacotta.jpg",
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 60,
+      "caloriesPerServing": 500,
+      "rating": 4.7,
+      "reviewCount": 36,
+      "difficulty": "Medium",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "2 gelatinblad",
+        "1 vaniljstång",
+        "5 dl vispgrädde",
+        "200 g mjölkchoklad med daim ",
+        "1 dubbeldaim"
+      ],
+      "instructions": [
+        "Lägg gelatinbladen i kallt vatten ca 5 minuter.",
+        "Skär ett snitt i vaniljstången och skrapa ur fröna. Koka upp grädden tillsammans med frön och vaniljstång och låt sjuda några minuter.",
+        "Ta upp vaniljstången. Bryt ner chokladen i grädden, rör tills chokladen smält.",
+        "Ta upp gelatinbladen ur vattnet och rör ner dem i grädden och låt smälta till en slät smet och att allt blandats ordentligt.",
+        "Häll upp i glas eller små burkar. Låt stelna i kylskåp minst 4 timmar.",
+        "Hacka daimen och strö den över pannacottorna vid servering."
+      ],
+      "mealType": ["Dessert"],
+      "tags": ["Dessert", "daim"]
+    },
+    {
+      "id": 37,
+      "name": "Pannacotta",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_243738/cf_259/pannacotta.jpg",
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 60,
+      "caloriesPerServing": 500,
+      "rating": 5,
+      "reviewCount": 24,
+      "difficulty": "Medium",
+      "cuisine": "Italian",
+      "ingredients": [
+        "2 gelatinblad",
+        "1 vaniljstång",
+        "5 dl vispgrädde",
+        "1/2 dl strösocker ",
+        "färska bär"
+      ],
+      "instructions": [
+        "Lägg gelatinbladen i kallt vatten.",
+        "Häll grädden i en kastrull. Dela vaniljstången på längden och skrapa ur fröna. Lägg fröna och stången i grädden tillsammans med sockret.",
+        "Koka upp grädden och koka den sakta i ca 2 minuter. Vispa så att vaniljfröna blandar sig med grädden. Ta upp vaniljstången.",
+        "Ta upp gelatinbladen och lägg ner dem i den varma grädden. Rör försiktigt så att gelatinbladen löser sig.",
+        "Fördela grädden i portionsglas eller formar.",
+        "Sätt formarna i kylen, minst 5 timmar."
+      ],
+      "mealType": ["Dessert"],
+      "tags": ["Dessert", "italian", "pannacotta"]
+    },
+    {
+      "id": 38,
+      "name": "Polkagrischeesecake",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_190108/cf_259/polkagrischeesecake.jpg",
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 60,
+      "caloriesPerServing": 500,
+      "rating": 4.5,
+      "reviewCount": 24,
+      "difficulty": "Medium",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "100 g smör",
+        "200 g digestivekex",
+        "2 dl krossade polkagrisar",
+        "3 dl vispgrädde",
+        "1 tsk vaniljsocker",
+        "3 äggvitor",
+        "3 äggulor",
+        "2 dl strösocker",
+        "200 g cream cheese",
+        "1 dl krossade polkagrisar",
+        "50 g vit choklad"
+      ],
+      "instructions": [
+        "Botten: Smält smöret i en kastrull. Mixa kexen i en matberedare. Häll på smöret och kör ihop till en smulig massa. Tryck ut massan försiktigt (packa inte hårt) i en form med löstagbar kant, ca 24 cm i diameter (för 12 port).",
+        "Fyllning: Mixa polkagrisarna i en matberedare eller med en mixer. Vispa grädden med vaniljsockret i en skål. Vispa äggvitorna till ett hårt skum i en annan skål. Vispa äggulorna med strösockret i en tredje stor skål och rör ner färskosten. Vänd försiktigt, med en slickepott, ner grädden och äggvitorna i äggulevispet. Blanda ner polkagrismixet i smeten. Häll smeten över botten. Frys kakan i minst 5 timmar.",
+        "Topping: Krossa polkagrisar i en mortel och hacka chokladen.",
+        "Ta ut cheesecaken ca 15 minuter innan servering. Garnera kakan med krossade polkagrisar och hackad choklad."
+      ],
+      "mealType": ["Dessert"],
+      "tags": ["Dessert", "swedish", "polkagris", "cheesecake"]
+    },
+    {
+      "id": 39,
+      "name": "Blåbärspaj",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_182602/cf_259/blabarspaj.jpg",
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 30,
+      "caloriesPerServing": 500,
+      "rating": 4,
+      "reviewCount": 800,
+      "difficulty": "Easy",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "1 liter blåbär",
+        "1 dl socker till fyllningen",
+        "5 dl vispgrädde",
+        "2 msk potatismjöl ",
+        "150 g smör",
+        "3/4 socker till smuldegen",
+        "3 dl vetemjöl",
+        "vaniljsås eller glass till servering"
+      ],
+      "instructions": [
+        "Värm ugnen till 200°C.",
+        "Fyllning: Skölj och rensa bären. Blanda dem med socker och potatismjöl.",
+        "Smuldeg: Smält smöret till smuldegen. Rör ner socker och mjöl. Rör tills det blivit en deg. Låt svalna något.",
+        "Bottna en pajform med blåbären. Smula över degen. Grädda pajen 15-20 minuter i ugnen."
+      ],
+      "mealType": ["Dessert"],
+      "tags": ["Dessert", "swedish", "paj", "blåbär"]
     }
   ]
 }
