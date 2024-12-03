@@ -504,7 +504,7 @@
       "mealType": ["Lunch", "Dinner", "Snacks"]
     },
     {
-      "id": 16,
+      "id": 15,
       "name": "Japanese Ramen Soup",
       "ingredients": [
         "Ramen noodles",
@@ -541,7 +541,7 @@
       "mealType": ["Dinner"]
     },
     {
-      "id": 17,
+      "id": 16,
       "name": "Moroccan Chickpea Tagine",
       "ingredients": [
         "Chickpeas, cooked",
@@ -579,7 +579,7 @@
       "mealType": ["Dinner"]
     },
     {
-      "id": 18,
+      "id": 17,
       "name": "Korean Bibimbap",
       "ingredients": [
         "Cooked white rice",
@@ -615,7 +615,7 @@
       "mealType": ["Dinner"]
     },
     {
-      "id": 19,
+      "id": 18,
       "name": "Greek Moussaka",
       "ingredients": [
         "Eggplants, sliced",
@@ -658,7 +658,7 @@
       "mealType": ["Dinner"]
     },
     {
-      "id": 21,
+      "id": 19,
       "name": "Thai Green Curry",
       "ingredients": [
         "Chicken thighs, boneless and skinless",
@@ -692,7 +692,7 @@
       "mealType": ["Dinner"]
     },
     {
-      "id": 22,
+      "id": 20,
       "name": "Mango Lassi",
       "ingredients": [
         "Ripe mango, peeled and diced",
@@ -723,7 +723,7 @@
       "mealType": ["Beverage"]
     },
     {
-      "id": 23,
+      "id": 21,
       "name": "Italian Tiramisu",
       "ingredients": [
         "Espresso, brewed and cooled",
@@ -757,7 +757,7 @@
       "mealType": ["Dessert"]
     },
     {
-      "id": 24,
+      "id": 22,
       "name": "Turkish Kebabs",
       "ingredients": [
         "Ground lamb or beef",
@@ -791,7 +791,7 @@
       "mealType": ["Dinner"]
     },
     {
-      "id": 25,
+      "id": 23,
       "name": "Blueberry Banana Smoothie",
       "ingredients": [
         "Blueberries, fresh or frozen",
@@ -821,7 +821,7 @@
       "mealType": ["Breakfast", "Beverage"]
     },
     {
-      "id": 26,
+      "id": 24,
       "name": "Mexican Street Corn (Elote)",
       "ingredients": [
         "Corn on the cob",
@@ -850,7 +850,7 @@
       "mealType": ["Snack", "Side Dish"]
     },
     {
-      "id": 27,
+      "id": 25,
       "name": "Russian Borscht",
       "ingredients": [
         "Beets, peeled and shredded",
@@ -885,7 +885,7 @@
       "mealType": ["Dinner"]
     },
     {
-      "id": 28,
+      "id": 26,
       "name": "South Indian Masala Dosa",
       "ingredients": [
         "Dosa batter (fermented rice and urad dal batter)",
@@ -921,7 +921,7 @@
       "mealType": ["Breakfast"]
     },
     {
-      "id": 29,
+      "id": 27,
       "name": "Lebanese Falafel Wrap",
       "ingredients": [
         "Falafel balls",
@@ -954,7 +954,7 @@
       "mealType": ["Lunch"]
     },
     {
-      "id": 30,
+      "id": 28,
       "name": "Brazilian Caipirinha",
       "ingredients": [
         "Cachaça (Brazilian sugarcane spirit)",
@@ -983,7 +983,7 @@
       "mealType": ["Beverage"]
     },
     {
-      "id": 31,
+      "id": 29,
       "name": "Julköttbullar",
       "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_222382/cf_259/julkottbullar.jpg",
       "prepTimeMinutes": 20,
@@ -1016,7 +1016,7 @@
       "tags": ["Köttbullar", "Swedish", "Jul"]
     },
     {
-      "id": 32,
+      "id": 30,
       "name": "Saffranskladdkaka",
       "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_104454/cf_259/saffranskladdkaka.jpg",
       "prepTimeMinutes": 25,
@@ -1046,7 +1046,7 @@
       "tags": ["Kladdkaka", "Swedish", "Jul"]
     },
     {
-      "id": 33,
+      "id": 31,
       "name": "Griljerad julskinka",
       "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_234396/cf_259/griljerad_julskinka.jpg",
       "prepTimeMinutes": 20,
@@ -1074,7 +1074,7 @@
       "tags": ["julskinka", "Swedish", "Jul"]
     },
     {
-      "id": 34,
+      "id": 32,
       "name": "Spagetti Carbonara",
       "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/s3xwefear9kaybmvulme.jpg",
       "prepTimeMinutes": 15,
@@ -1106,7 +1106,7 @@
       "tags": ["pasta", "italian"]
     },
     {
-      "id": 35,
+      "id": 33,
       "name": "Snabb äppelkaka i glas",
       "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_206699/cf_259/snabb_appelkaka_i_glas.jpg",
       "prepTimeMinutes": 10,
@@ -1133,7 +1133,7 @@
       "tags": ["Dessert", "apple"]
     },
     {
-      "id": 36,
+      "id": 34,
       "name": "Daimpannacotta",
       "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_172429/cf_259/daimpannacotta.jpg",
       "prepTimeMinutes": 10,
@@ -1162,7 +1162,7 @@
       "tags": ["Dessert", "daim"]
     },
     {
-      "id": 37,
+      "id": 35,
       "name": "Pannacotta",
       "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_243738/cf_259/pannacotta.jpg",
       "prepTimeMinutes": 10,
@@ -1191,7 +1191,7 @@
       "tags": ["Dessert", "italian", "pannacotta"]
     },
     {
-      "id": 38,
+      "id": 36,
       "name": "Polkagrischeesecake",
       "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_190108/cf_259/polkagrischeesecake.jpg",
       "prepTimeMinutes": 10,
@@ -1224,7 +1224,7 @@
       "tags": ["Dessert", "swedish", "polkagris", "cheesecake"]
     },
     {
-      "id": 39,
+      "id": 37,
       "name": "Blåbärspaj",
       "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_182602/cf_259/blabarspaj.jpg",
       "prepTimeMinutes": 10,
@@ -1252,6 +1252,84 @@
       ],
       "mealType": ["Dessert"],
       "tags": ["Dessert", "swedish", "paj", "blåbär"]
+    },
+    {
+      "id": 38,
+      "name": "Varm choklad med After Eight",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_192241/cf_259/varm_choklad_med_after_eight.jpg",
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 5,
+      "caloriesPerServing": 400,
+      "rating": 4,
+      "reviewCount": 14,
+      "difficulty": "Easy",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "4 msk kakao",
+        "4 tsk strösocker",
+        "4 dl mjölk",
+        "4 bitar After Eight (+ ev extra till garnering ) ",
+        "minimarshmallows till topping",
+        "vispad grädde till topping"
+      ],
+      "instructions": [
+        "Blanda kakao, socker i en kastrull och rör ut i lite av mjölken. Tillsätt resten av mjölken och värm under omrörning.",
+        "Fördela After Eight i kopparna. Häll på den varma chokladen.",
+        "Till servering: Toppa med minimarshmallows eller vispad grädde och garnera gärna med After Eight."
+      ],
+      "mealType": ["Beverage"],
+      "tags": ["Beverage", "chocolate", "drink"]
+    },
+    {
+      "id": 39,
+      "name": "Bubblig lemonad",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_62913/cf_259/bubblig_lemonad.jpg",
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 5,
+      "caloriesPerServing": 200,
+      "rating": 4.8,
+      "reviewCount": 14,
+      "difficulty": "Medium",
+      "cuisine": "American",
+      "ingredients": [
+        "2 dl vatten",
+        "1 dl socker",
+        "1 dl färskpressad lime- eller citronjuice",
+        "1 citron eller lime i tunna skivor (1 citron motsvarar 2 lime)",
+        "1 l kolsyrat vatten",
+        "isbitar"
+      ],
+      "instructions": [
+        "Koka upp vatten och socker i en kastrull. Rör så att sockret löses upp. Ta från värmen. Låt kallna.",
+        "Tillsätt lime- eller citronjuice och citrusskivor. Blanda med kolsyrat vatten och is strax före servering. Servera lemonaden väl kyld."
+      ],
+      "mealType": ["Beverage"],
+      "tags": ["Beverage", "lemonade", "drink", "lemon"]
+    },
+    {
+      "id": 40,
+      "name": "Äppellemonad",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_250313/cf_259/appellemonad.jpg",
+      "prepTimeMinutes": 50,
+      "cookTimeMinutes": 5,
+      "caloriesPerServing": 200,
+      "rating": 4.8,
+      "reviewCount": 14,
+      "difficulty": "Easy",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "5 äpplen gärna röda (5 äpplen motsvarar ca 700 g)",
+        "1 dl socker",
+        "15 dl vatten",
+        "1 dl färskpressad citronjuice",
+        "isbitar"
+      ],
+      "instructions": [
+        "Dela, kärna ur och riv äpplena grovt. Lägg i en kastrull med citronjuice, vatten och socker. Låt koka ca 5 minuter. Låt svalna.",
+        "Sila genom en finmaskig sil. Ställ i kylen. Servera lemonaden väl kyld med is."
+      ],
+      "mealType": ["Beverage"],
+      "tags": ["Beverage", "lemonade", "drink", "apple"]
     }
   ]
 }
