@@ -1013,7 +1013,7 @@
         "Rulla färsen till köttbullar med oljade händer eller lägg färsen i en spritspåse och tryck ut bullar direkt i stekpannan. Stek köttbullarna i omgångar i smör i en stekpanna ca 8 minuter eller tills de är genomstekta."
       ],
       "mealType": ["Dinner", "Lunch"],
-      "tags": ["Köttbullar", "Swedish", "Jul"]
+      "tags": ["köttbullar", "swedish", "jul"]
     },
     {
       "id": 30,
@@ -1043,7 +1043,7 @@
         "Grädda kakan mitt i ugnen 13-14 minuter. Låt svalna i formen på galler. Låt kakan bli ordentligt kall innan den serveras."
       ],
       "mealType": ["Dessert"],
-      "tags": ["Kladdkaka", "Swedish", "Jul"]
+      "tags": ["kladdkaka", "swedish", "jul"]
     },
     {
       "id": 31,
@@ -1071,7 +1071,7 @@
         "Griljera skinkan mitt i ugnen 10- 15 minuter eller tills den fått fin färg. Låt den kallna."
       ],
       "mealType": ["Lunch", "Dinner"],
-      "tags": ["julskinka", "Swedish", "Jul"]
+      "tags": ["julskinka", "Swedish", "jul"]
     },
     {
       "id": 32,
@@ -1130,7 +1130,7 @@
         "Vispa grädden med vaniljsocker. Varva äpplen, vaniljgrädde och kaksmulor i glas."
       ],
       "mealType": ["Dessert"],
-      "tags": ["Dessert", "apple"]
+      "tags": ["dessert", "apple"]
     },
     {
       "id": 34,
@@ -1159,7 +1159,7 @@
         "Hacka daimen och strö den över pannacottorna vid servering."
       ],
       "mealType": ["Dessert"],
-      "tags": ["Dessert", "daim"]
+      "tags": ["dessert", "daim"]
     },
     {
       "id": 35,
@@ -1188,7 +1188,7 @@
         "Sätt formarna i kylen, minst 5 timmar."
       ],
       "mealType": ["Dessert"],
-      "tags": ["Dessert", "italian", "pannacotta"]
+      "tags": ["dessert", "italian", "pannacotta"]
     },
     {
       "id": 36,
@@ -1221,7 +1221,7 @@
         "Ta ut cheesecaken ca 15 minuter innan servering. Garnera kakan med krossade polkagrisar och hackad choklad."
       ],
       "mealType": ["Dessert"],
-      "tags": ["Dessert", "swedish", "polkagris", "cheesecake"]
+      "tags": ["dessert", "swedish", "polkagris", "cheesecake"]
     },
     {
       "id": 37,
@@ -1251,7 +1251,7 @@
         "Bottna en pajform med blåbären. Smula över degen. Grädda pajen 15-20 minuter i ugnen."
       ],
       "mealType": ["Dessert"],
-      "tags": ["Dessert", "swedish", "paj", "blåbär"]
+      "tags": ["dessert", "swedish", "paj", "blåbär"]
     },
     {
       "id": 38,
@@ -1278,7 +1278,7 @@
         "Till servering: Toppa med minimarshmallows eller vispad grädde och garnera gärna med After Eight."
       ],
       "mealType": ["Beverage"],
-      "tags": ["Beverage", "chocolate", "drink"]
+      "tags": ["beverage", "chocolate", "drink"]
     },
     {
       "id": 39,
@@ -1304,7 +1304,7 @@
         "Tillsätt lime- eller citronjuice och citrusskivor. Blanda med kolsyrat vatten och is strax före servering. Servera lemonaden väl kyld."
       ],
       "mealType": ["Beverage"],
-      "tags": ["Beverage", "lemonade", "drink", "lemon"]
+      "tags": ["beverage", "lemonade", "drink", "lemon"]
     },
     {
       "id": 40,
@@ -1329,7 +1329,7 @@
         "Sila genom en finmaskig sil. Ställ i kylen. Servera lemonaden väl kyld med is."
       ],
       "mealType": ["Beverage"],
-      "tags": ["Beverage", "lemonade", "drink", "apple"]
+      "tags": ["beverage", "lemonade", "drink", "apple"]
     }
   ]
 }
