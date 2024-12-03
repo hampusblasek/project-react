@@ -30,7 +30,7 @@ export function RecipePage({ levelImg }) {
   const food = recipes.find(
     (recipe) => recipe.id === Number.parseInt(params.id)
   );
-  //om inte receptet hittas.
+//om inte receptet hittas.
   if (!food) {
     return <Loading />;
   }
