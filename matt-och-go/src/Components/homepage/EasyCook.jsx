@@ -34,7 +34,7 @@ export function EasyCook({ levelImg, recipes }) {
             alt="pil som pekar åt vänster"
           />
         </button>
-        <div className="easy-box" ref={scroll}>
+        <div className="home-box" ref={scroll}>
           {easyList.map((food, index) => (
             <Cards key={index} food={food} levelImg={levelImg} />
           ))}

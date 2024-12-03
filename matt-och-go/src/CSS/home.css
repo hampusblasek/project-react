@@ -19,7 +19,7 @@
   font-size: 70px;
   padding-bottom: 70px;
 }
-.quick-box {
+.home-box {
   display: flex;
   align-items: center;
   overflow-x: scroll;
@@ -27,40 +27,14 @@
   padding-top: 60px;
   gap: 30px;
 }
-.quick-box::-webkit-scrollbar {
+.home-box::-webkit-scrollbar {
   display: none;
-}
-.easy-box {
-  display: flex;
-  align-items: center;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  padding-top: 60px;
-  gap: 30px;
-}
-.easy-box::-webkit-scrollbar {
-  display: none;
-}
-.cold-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 50px;
-}
-.drink-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 50px;
-  padding-bottom: 80px;
 }
 .scroll-btn-next {
   margin-right: 20px;
   margin-left: 20px;
   border-radius: 50%;
-  width: 100px;
+  width: 50px;
   height: 50px;
   cursor: pointer;
   border: none;
@@ -70,10 +44,15 @@
   justify-content: center;
   transition: ease 0.3s;
 }
-.scroll-btn-next:hover{
+.scroll-btn-next:hover {
   scale: 1.2;
 }
 .under40-container {
   display: flex;
   align-items: center;
+}
+.under40-container:last-child {
+  display: flex;
+  align-items: center;
+  padding-bottom: 60px;
 }

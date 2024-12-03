@@ -29,7 +29,7 @@ export function Under40({ levelImg, recipes }) {
         >
           <img width="35px" src="/arrow-left.svg" alt="pil som pekar åt vänster" />
         </button>
-        <div className="quick-box" ref={scroll}>
+        <div className="home-box" ref={scroll}>
           {fastList.map((food, index) => (
             <Cards key={index} food={food} levelImg={levelImg} />
           ))}
