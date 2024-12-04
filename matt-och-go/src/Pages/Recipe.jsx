@@ -1,4 +1,5 @@
 import { useRecoilState } from "recoil";
+import levelImg from "../functions/levelImg";
 import { recipeState, saveRecState } from "../App";
 import { useParams } from "react-router-dom";
 import { BasicRating } from "../Components/Recipepage/Rating";
@@ -13,7 +14,7 @@ import Snackbar from "@mui/material/Snackbar";
 import { HeartIcon } from "../Components/Recipepage/Save-recipe";
 import "../CSS/recipe.css";
 
-export function RecipePage({ levelImg }) {
+export function RecipePage() {
   const [recipes] = useRecoilState(recipeState); // state som innehåller recepten
   const [saveRec] = useRecoilState(saveRecState); // state som lagrar sparade recept
   const [open, setOpen] = useState(false); // state som styr om modalen - måttkonverteraren ska visas

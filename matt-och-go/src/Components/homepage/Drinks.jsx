@@ -2,7 +2,7 @@ import { Cards } from "../cards";
 import { useRef } from "react";
 import "../../CSS/home.css";
 
-export function Drinks({ levelImg, recipes }) {
+export function Drinks({ recipes }) {
   const scroll = useRef();
 
   const scrollDirection = (direction) => {
@@ -34,7 +34,7 @@ export function Drinks({ levelImg, recipes }) {
         </button>
         <div className="home-box" ref={scroll}>
           {drinkList.map((food, index) => (
-            <Cards key={index} food={food} levelImg={levelImg} />
+            <Cards key={index} food={food} />
           ))}
         </div>
         <button

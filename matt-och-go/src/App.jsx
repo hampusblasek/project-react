@@ -34,24 +34,9 @@ function App() {
 
   console.log(recipes);
 
-  const levelImg = (food) => {
-    let img = "";
-    if (food === "Easy") {
-      img = "/easy.svg";
-      return img;
-    } else if (food == "Medium") {
-      img = "/medium.svg";
-      return img;
-    } else {
-      img = "/hard.svg";
-      return img;
-    }
-  };
-
   return (
     <>
       <NavigatePage
-        levelImg={levelImg}
         setCatData={setCatData}
         catData={catData}
         setTitle={setTitle}

@@ -36,36 +36,35 @@ export function HomePage({ levelImg }) {
     <>
       <div className="home-container">
         <div className="hero">
-          {/* <h2 className="hero-text">Vad är du sugen på?</h2> */}
+        <h2 className="hero-text">Vad är du sugen på?</h2> 
           <form className="form-pop" onChange={sortCards}>
             <input
               className="input-search"
               value={smallValue}
               onChange={(event) => setSmallValue(event.target.value)}
               type="text"
-              placeholder="Vad letar du efter?"
+              placeholder="Skriv in det här!"
             />
           <div className={smallValue ? "drop-down-search" : "display-none"}>
             <div className="drop-box">
               {smallCards.map((short, index) => (
-                <SmallCards key={index} short={short} levelImg={levelImg} />
+                <SmallCards key={index} short={short} />
               ))}
-              {/*  <div className="show-more">Visa fler</div> */}
             </div>
           </div>
           </form>
         </div>
         <h2 className="h2-title">Färdigt på under 40 min!</h2>
-        <Under40 levelImg={levelImg} recipes={recipes} />
+        <Under40 recipes={recipes} />
 
         <h2 className="h2-title">Något Lättlagat?</h2>
-        <EasyCook levelImg={levelImg} recipes={recipes} />
+        <EasyCook recipes={recipes} />
 
         <h2 className="h2-title">Något sött?</h2>
-        <AfterFood levelImg={levelImg} recipes={recipes} />
+        <AfterFood recipes={recipes} />
 
         <h2 className="h2-title">Något att dricka?</h2>
-        <Drinks levelImg={levelImg} recipes={recipes} />
+        <Drinks recipes={recipes} />
       </div>
     </>
   );

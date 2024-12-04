@@ -1,6 +1,7 @@
 import { Navigate, useNavigate } from "react-router-dom";
+import levelImg from "../../functions/levelImg";
 
-export function SmallCards({ short, levelImg }) {
+export function SmallCards({ short }) {
   const navigate = useNavigate();
 
   const seeRecipe = (id) => {

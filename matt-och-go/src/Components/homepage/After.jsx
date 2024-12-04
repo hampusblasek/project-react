@@ -2,7 +2,7 @@ import { Cards } from "../cards";
 import { useRef } from "react";
 import "../../CSS/home.css";
 
-export function AfterFood({ levelImg, recipes }) {
+export function AfterFood({ recipes }) {
   const scroll = useRef();
 
   const scrollDirection = (direction) => {
@@ -33,7 +33,7 @@ export function AfterFood({ levelImg, recipes }) {
         </button>
         <div className="home-box" ref={scroll}>
           {afterList.map((food, index) => (
-            <Cards key={index} food={food} levelImg={levelImg} />
+            <Cards key={index} food={food} />
           ))}
         </div>
         <button

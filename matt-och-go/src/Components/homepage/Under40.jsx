@@ -2,7 +2,7 @@ import { Cards } from "../cards";
 import "../../CSS/home.css";
 import { useRef } from "react";
 
-export function Under40({ levelImg, recipes }) {
+export function Under40({ recipes }) {
   const scroll = useRef();
 
   const fastList = recipes.filter(
@@ -31,7 +31,7 @@ export function Under40({ levelImg, recipes }) {
         </button>
         <div className="home-box" ref={scroll}>
           {fastList.map((food, index) => (
-            <Cards key={index} food={food} levelImg={levelImg} />
+            <Cards key={index} food={food} />
           ))}
         </div>
         <button
