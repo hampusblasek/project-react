@@ -17,8 +17,13 @@ export function HomePage({ levelImg }) {
     setIsOpen(true);
     e.preventDefault();
 
-    const filterCards = recipes.filter((recipe) =>
-      recipe.name.toUpperCase().includes(smallValue.toUpperCase()) || recipe.tags.map((tag) => tag.toUpperCase()).includes(smallValue.toUpperCase())
+    const filterCards = recipes.filter(
+      (recipe) =>
+        recipe.name
+          .toUpperCase()
+          .includes(
+            smallValue.toUpperCase()
+          ) /*  || recipe.tags.map((tag) => tag.toUpperCase()).includes(smallValue.toUpperCase()) */
     );
     setSmallCards(filterCards);
   };
@@ -38,8 +43,8 @@ export function HomePage({ levelImg }) {
               value={smallValue}
               onChange={(event) => setSmallValue(event.target.value)}
               type="text"
+              placeholder="Vad letar du efter?"
             />
-          </form>
           <div className={smallValue ? "drop-down-search" : "display-none"}>
             <div className="drop-box">
               {smallCards.map((short, index) => (
@@ -48,6 +53,7 @@ export function HomePage({ levelImg }) {
               {/*  <div className="show-more">Visa fler</div> */}
             </div>
           </div>
+          </form>
         </div>
         <h2 className="h2-title">Färdigt på under 40 min!</h2>
         <Under40 levelImg={levelImg} recipes={recipes} />
