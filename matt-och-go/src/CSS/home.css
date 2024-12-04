@@ -40,6 +40,7 @@
   z-index: 2;
   overflow-y: scroll;
   padding-bottom: 20px;
+  animation: fadeIn 0.5s;
 }
 .drop-down-search::-webkit-scrollbar {
   display: none;
@@ -69,6 +70,15 @@
 .img-search{
   width: 90px;
   border-radius: 10px;
+}
+.img-pop{
+  width: 80px;
+  position: sticky;
+  transform: translate(-50%, 0%);
+  bottom: 0%;
+  left: 40%;
+  animation: fade-in-down 2s;
+  animation-iteration-count: infinite;
 }
 .show-more{
   width: 100%;
@@ -131,4 +141,18 @@
 }
 .display-none {
   display: none;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
