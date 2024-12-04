@@ -46,6 +46,7 @@ export function HomePage({ levelImg }) {
               placeholder="Skriv in det här!"
             />
           <div className={smallValue ? "drop-down-search" : "display-none"}>
+            <p className={smallCards.length > 0 ? "display-none" : "no-match"}>Inga resultat hittades</p>
             <div className="drop-box">
               {smallCards.map((short, index) => (
                 <SmallCards key={index} short={short} />

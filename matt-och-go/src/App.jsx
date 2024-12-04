@@ -8,15 +8,15 @@ import { atom, useRecoilState } from "recoil";
 import { NavigatePage } from "./Router";
 import "./App.css";
 
-export const recipeState = atom({
+export const recipeState = atom({ //Globalstate som innehåller alla recept
   key: "recipe",
   default: [],
 });
-export const saveRecState = atom({
+export const saveRecState = atom({ // Globalstate som innehåller alla sparade recept
   key: "save",
   default: [],
 });
-export const ratingsState = atom({
+export const ratingsState = atom({ // Globalstate som innehåller alla betyg
   key: "rating",
   default: [],
 });
@@ -29,7 +29,7 @@ function App() {
   const [title, setTitle] = useState("");
 
   useEffect(() => {
-    getRecipes().then(setRecipes);
+    getRecipes().then(setRecipes); // Lägger in recept i globalstaten från api:et
   }, []);
 
   console.log(recipes);
