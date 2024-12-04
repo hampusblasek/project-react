@@ -10,7 +10,7 @@
 .rating-btn-box {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .rating-btn {
   scale: 1.3;
