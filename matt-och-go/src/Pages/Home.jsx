@@ -18,7 +18,7 @@ export function HomePage({ levelImg }) {
     e.preventDefault();
 
     const filterCards = recipes.filter((recipe) =>
-      recipe.name.includes(smallValue)
+      recipe.name.toUpperCase().includes(smallValue.toUpperCase()) || recipe.tags.map((tag) => tag.toUpperCase()).includes(smallValue.toUpperCase())
     );
     setSmallCards(filterCards);
   };
