@@ -52,6 +52,11 @@ export function HomePage({ levelImg }) {
                 <SmallCards key={index} short={short} />
               ))}
             </div>
+              <img
+                className={smallCards.length > 5 ? "img-pop" : "display-none"}
+                src="/arrow.svg"
+                alt=""
+              />
           </div>
           </form>
         </div>
