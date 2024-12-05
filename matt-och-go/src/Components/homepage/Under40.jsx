@@ -42,7 +42,7 @@ export function Under40({ recipes }) {
         <div className="btn-div">
           <button
             onClick={() => scrollDirection("right")}
-            className={scrollState > 8 ? "hide" : "scroll-btn-next"}
+            className={scrollState > fastList.length - 5 ? "hide" : "scroll-btn-next"}
           >
             <img width="35px" src="/arrow-right.svg" alt="pil som pekar åt höger" />
           </button>

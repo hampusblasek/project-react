@@ -147,6 +147,9 @@
 }
 .btn-div{
   width:20%;
+  height: 100px;
+  display: flex;
+  align-items: center;
 }
 @keyframes fadeIn {
   0% { opacity: 0; }
