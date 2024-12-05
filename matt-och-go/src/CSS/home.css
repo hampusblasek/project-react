@@ -125,10 +125,61 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: ease 0.3s;
 }
 .scroll-btn-next:hover {
   scale: 1.2;
+}
+.scroll-btn-off{
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 50%;
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(251, 251, 236, 0.507);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scroll-btn-off-2{
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 50%;
+  width: 95px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(251, 251, 236, 0.507);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scroll-btn-off-3{
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 50%;
+  width: 80px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(251, 251, 236, 0.507);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scroll-btn-off-4{
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 50%;
+  width: 60px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(251, 251, 236, 0.507);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .under40-container {
   display: flex;
@@ -142,15 +193,7 @@
 .display-none {
   display: none;
 }
-.hide{
-  visibility:hidden;
-}
-.btn-div{
-  width:20%;
-  height: 100px;
-  display: flex;
-  align-items: center;
-}
+
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }

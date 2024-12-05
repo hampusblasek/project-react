@@ -3,7 +3,7 @@ import "../../CSS/home.css";
 import { useRef, useState } from "react";
 
 export function Under40({ recipes }) {
-  const [scrollState, setScrollState] = useState(0)
+  const [scrollState, setScrollState] = useState(0);
   const scroll = useRef();
 
   const fastList = recipes.filter(
@@ -17,36 +17,49 @@ export function Under40({ recipes }) {
   const scrollDirection = (direction) => {
     if (direction === "left") {
       scroll ? (scroll.current.scrollLeft -= 290) : null;
-      setScrollState(scrollState - 1)
+      setScrollState(scrollState - 1);
     } else {
       scroll ? (scroll.current.scrollLeft += 290) : null;
-      setScrollState(scrollState + 1)
+      setScrollState(scrollState + 1);
     }
   };
   return (
     <>
       <div className="under40-container">
-        <div className="btn-div">
+        {scrollState > 0 ? (
           <button
             onClick={() => scrollDirection("left")}
-            className={scrollState > 0 ? "scroll-btn-next" : "hide"}
+            className="scroll-btn-next"
           >
-            <img width="35px" src="/arrow-left.svg" alt="pil som pekar åt vänster" />
+            <img
+              width="35px"
+              src="/arrow-left.svg"
+              alt="pil som pekar åt vänster"
+            />
           </button>
-        </div>
+        ) : (
+          <button className="scroll-btn-off"></button>
+        )}
+
         <div className="home-box" ref={scroll}>
           {fastList.map((food, index) => (
             <Cards key={index} food={food} />
           ))}
         </div>
-        <div className="btn-div">
+        {scrollState > fastList.length - 5 ? (
+          <button className="scroll-btn-off"></button>
+        ) : (
           <button
             onClick={() => scrollDirection("right")}
-            className={scrollState > fastList.length - 5 ? "hide" : "scroll-btn-next"}
+            className="scroll-btn-next"
           >
-            <img width="35px" src="/arrow-right.svg" alt="pil som pekar åt höger" />
+            <img
+              width="35px"
+              src="/arrow-right.svg"
+              alt="pil som pekar åt vänster"
+            />
           </button>
-        </div>
+        )}
       </div>
     </>
   );
