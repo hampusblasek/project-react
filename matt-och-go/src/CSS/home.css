@@ -2,8 +2,6 @@
   width: 100%;
   height: auto;
   background-color: rgba(251, 251, 236, 0.507);
-  /*  background-color: rgba(216, 216, 216, 0.628); */
-  /* background-color: rgba(224, 224, 224, 0.502); */
 }
 .hero {
   width: 100%;
@@ -24,8 +22,8 @@
   height: 40px;
   outline: none;
 }
-.form-pop{
-  position:relative;
+.form-pop {
+  position: relative;
 }
 .drop-down-search {
   max-height: 500px;
@@ -34,12 +32,13 @@
   background-color: white;
   position: absolute;
   left: 50%;
-  top: 30%; 
+  top: 30%;
   transform: translate(-50%, 0%);
   border-radius: 10px;
   z-index: 2;
   overflow-y: scroll;
   padding-bottom: 20px;
+  animation: fadeIn 0.5s;
 }
 .drop-down-search::-webkit-scrollbar {
   display: none;
@@ -53,7 +52,7 @@
   transition: ease 0.2s;
   cursor: pointer;
 }
-.card-drop:hover{
+.card-drop:hover {
   background-color: rgb(208, 208, 208);
 }
 .card-bottom-search {
@@ -66,11 +65,11 @@
   padding-left: 10px;
   padding-right: 10px;
 }
-.img-search{
+.img-search {
   width: 90px;
   border-radius: 10px;
 }
-.show-more{
+.show-more {
   width: 100%;
   height: 40px;
   margin-top: 20px;
@@ -81,7 +80,7 @@
   border-bottom-right-radius: 10px;
   cursor: pointer;
 }
-.no-match{
+.no-match {
   text-align: center;
 }
 .hero-text {
@@ -91,7 +90,7 @@
   text-align: center;
   padding-top: 150px;
   margin-bottom: 50px;
-} 
+}
 .home-box {
   display: flex;
   align-items: center;
@@ -131,4 +130,32 @@
 }
 .display-none {
   display: none;
+}
+.img-pop {
+  width: 80px;
+  position: sticky;
+  transform: translate(-50%, 0%);
+  bottom: 0%;
+  left: 40%;
+  animation: fade-in-down 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
