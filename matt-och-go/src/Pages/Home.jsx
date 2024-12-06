@@ -43,7 +43,7 @@ export function HomePage({ levelImg }) {
               value={smallValue}
               onChange={(event) => setSmallValue(event.target.value)}
               type="text"
-              placeholder="Skriv in det här!"
+              placeholder="Skriv in det här..."
             />
             <div className={smallValue ? "drop-down-search" : "display-none"}>
               <p

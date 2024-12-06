@@ -23,9 +23,10 @@
   width: 600px;
   height: 40px;
   outline: none;
+  font-size: 1.1rem;
 }
-.form-pop{
-  position:relative;
+.form-pop {
+  position: relative;
 }
 .drop-down-search {
   max-height: 500px;
@@ -34,7 +35,7 @@
   background-color: white;
   position: absolute;
   left: 50%;
-  top: 30%; 
+  top: 30%;
   transform: translate(-50%, 0%);
   border-radius: 10px;
   z-index: 2;
@@ -53,8 +54,9 @@
   margin-right: 10px;
   transition: ease 0.2s;
   cursor: pointer;
+  font-size: 1.1rem;
 }
-.card-drop:hover{
+.card-drop:hover {
   background-color: rgb(208, 208, 208);
 }
 .card-bottom-search {
@@ -67,11 +69,11 @@
   padding-left: 10px;
   padding-right: 10px;
 }
-.img-search{
+.img-search {
   width: 90px;
   border-radius: 10px;
 }
-.img-pop{
+.img-pop {
   width: 80px;
   position: sticky;
   transform: translate(-50%, 0%);
@@ -80,7 +82,7 @@
   animation: fade-in-down 2s;
   animation-iteration-count: infinite;
 }
-.show-more{
+.show-more {
   width: 100%;
   height: 40px;
   margin-top: 20px;
@@ -91,7 +93,7 @@
   border-bottom-right-radius: 10px;
   cursor: pointer;
 }
-.no-match{
+.no-match {
   text-align: center;
 }
 .hero-text {
@@ -101,7 +103,7 @@
   text-align: center;
   padding-top: 150px;
   margin-bottom: 50px;
-} 
+}
 .home-box {
   display: flex;
   align-items: center;
@@ -130,7 +132,7 @@
 .scroll-btn-next:hover {
   scale: 1.2;
 }
-.scroll-btn-off{
+.scroll-btn-off {
   margin-right: 20px;
   margin-left: 20px;
   border-radius: 50%;
@@ -156,8 +158,12 @@
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes fade-in-down {
   0% {

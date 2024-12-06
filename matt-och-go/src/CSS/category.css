@@ -2,7 +2,6 @@
   width: 100%;
   min-height: 100vh;
   background-color: rgba(251, 251, 236, 0.507);
-  /*  background-color: rgba(216, 216, 216, 0.628); */
 }
 .category-container1 {
   max-width: 1300px;
@@ -37,7 +36,7 @@
   background-color: rgba(255, 255, 255, 0.639);
   transition: ease 0.3s;
 }
-.type-meal{
+.type-meal {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +48,9 @@
   font-size: 20px;
   background-color: rgba(255, 255, 255, 0.639);
   transition: ease 0.3s;
-
+}
+.type-meal:hover {
+  background-color: rgb(211, 211, 211);
 }
 .category-box:hover {
   background-color: rgb(211, 211, 211);
@@ -77,7 +78,7 @@
   font-size: 20px;
   font-weight: bold;
 }
-.category-btn-box{
+.category-btn-box {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -85,15 +86,19 @@
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.category-btn{
+.category-btn {
   margin-right: 20px;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid black;
   background-color: rgba(255, 255, 255, 0.639);
   font-size: 1.1rem;
+  transition: ease 0.3s;
   cursor: pointer;
 }
-.text-title2{
+.category-btn:hover {
+  background-color: rgb(211, 211, 211);
+}
+.text-title2 {
   text-align: center;
 }
