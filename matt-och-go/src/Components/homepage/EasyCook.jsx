@@ -14,6 +14,7 @@ export function EasyCook({ recipes }) {
       !recipe.mealType.includes("Dessert") &&
       !recipe.mealType.includes("Beverage")
   );
+  const easySlice = easyList.slice(0,10)
 
   const scrollDirection = (direction) => {
     if (direction === "left") {
@@ -40,16 +41,16 @@ export function EasyCook({ recipes }) {
             />
           </button>
         ) : (
-          <button className="scroll-btn-off-2"></button>
+          <button className="scroll-btn-off"></button>
         )}
 
         <div className="home-box" ref={scroll}>
-          {easyList.map((food, index) => (
+          {easySlice.map((food, index) => (
             <Cards key={index} food={food} />
           ))}
         </div>
-        {scrollState > easyList.length - 5 ? (
-          <button className="scroll-btn-off-2"></button>
+        {scrollState > easySlice.length - 5 ? (
+          <button className="scroll-btn-off"></button>
         ) : (
           <button
             onClick={() => scrollDirection("right")}

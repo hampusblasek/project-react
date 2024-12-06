@@ -22,6 +22,7 @@ export function Drinks({ recipes }) {
       recipe // sparar ner alla recept som uppfyller filtreringen
     ) => recipe.mealType.includes("Beverage")
   );
+  const drinkSlice = drinkList.slice(0,10)
 
   return (
     <>
@@ -38,16 +39,16 @@ export function Drinks({ recipes }) {
             />
           </button>
         ) : (
-          <button className="scroll-btn-off-4"></button>
+          <button className="scroll-btn-off"></button>
         )}
 
         <div className="home-box" ref={scroll}>
-          {drinkList.map((food, index) => (
+          {drinkSlice.map((food, index) => (
             <Cards key={index} food={food} />
           ))}
         </div>
-        {scrollState > drinkList.length - 5 ? (
-          <button className="scroll-btn-off-4"></button>
+        {scrollState > drinkSlice.length - 5 ? (
+          <button className="scroll-btn-off"></button>
         ) : (
           <button
             onClick={() => scrollDirection("right")}

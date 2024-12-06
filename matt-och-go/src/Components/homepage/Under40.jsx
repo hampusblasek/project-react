@@ -13,6 +13,7 @@ export function Under40({ recipes }) {
       !recipe.mealType.includes("Dessert") &&
       !recipe.mealType.includes("Beverage")
   );
+  const fastSlice = fastList.slice(0, 10);
 
   const scrollDirection = (direction) => {
     if (direction === "left") {
@@ -42,11 +43,11 @@ export function Under40({ recipes }) {
         )}
 
         <div className="home-box" ref={scroll}>
-          {fastList.map((food, index) => (
+          {fastSlice.map((food, index) => (
             <Cards key={index} food={food} />
           ))}
         </div>
-        {scrollState > fastList.length - 5 ? (
+        {scrollState > fastSlice.length - 5 ? (
           <button className="scroll-btn-off"></button>
         ) : (
           <button

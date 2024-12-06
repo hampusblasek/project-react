@@ -21,6 +21,7 @@ export function AfterFood({ recipes }) {
       recipe // sparar ner alla recept som uppfyller filtreringen
     ) => recipe.mealType.includes("Dessert")
   );
+  const afterSlice = afterList.slice(0,10)
 
   return (
     <>
@@ -37,16 +38,16 @@ export function AfterFood({ recipes }) {
             />
           </button>
         ) : (
-          <button className="scroll-btn-off-3"></button>
+          <button className="scroll-btn-off"></button>
         )}
 
         <div className="home-box" ref={scroll}>
-          {afterList.map((food, index) => (
+          {afterSlice.map((food, index) => (
             <Cards key={index} food={food} />
           ))}
         </div>
-        {scrollState > afterList.length - 5 ? (
-          <button className="scroll-btn-off-3"></button>
+        {scrollState > afterSlice.length - 5 ? (
+          <button className="scroll-btn-off"></button>
         ) : (
           <button
             onClick={() => scrollDirection("right")}
