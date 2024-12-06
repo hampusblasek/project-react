@@ -2,6 +2,627 @@
   "recipes": [
     {
       "id": 1,
+      "name": "Julköttbullar",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_222382/cf_259/julkottbullar.jpg",
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 15,
+      "caloriesPerServing": 300,
+      "rating": 4.6,
+      "reviewCount": 100,
+      "difficulty": "Medium",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "2 stora lökar",
+        "2 msk smör",
+        "1 dl vispgrädde",
+        "1 dl mjölk (3%)",
+        "1 dl ströbröd",
+        "2 ägg",
+        "1 1/2 salt",
+        "2 krm kryddpeppar",
+        "1 1/2 socker",
+        "1 kg blandfärs",
+        "3-4 msk smör till stekning"
+      ],
+      "instructions": [
+        "Skala och skär löken i bitar. Stek den mjuk i smöret, låt svalna",
+        "Blanda löken med grädde, mjölk och ströbröd i en bunke. Mixa slätt och låt svälla 10 minuter",
+        "Blanda ner ägg, kryddpeppar, salt och socker. Rör ner färsen och blanda hastigt ihop till en jämn smet.",
+        "Rulla färsen till köttbullar med oljade händer eller lägg färsen i en spritspåse och tryck ut bullar direkt i stekpannan. Stek köttbullarna i omgångar i smör i en stekpanna ca 8 minuter eller tills de är genomstekta."
+      ],
+      "mealType": ["Dinner", "Lunch"],
+      "tags": ["köttbullar", "swedish", "jul"]
+    },
+    {
+      "id": 2,
+      "name": "Saffranskladdkaka",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_104454/cf_259/saffranskladdkaka.jpg",
+      "prepTimeMinutes": 25,
+      "cookTimeMinutes": 15,
+      "caloriesPerServing": 400,
+      "rating": 4.6,
+      "reviewCount": 98,
+      "difficulty": "Medium",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "100 g smör",
+        "1 förp saffran (0.5 g)",
+        "100 g vit choklad",
+        "2 ägg",
+        "2 dl vetemjöl",
+        "2 dl socker",
+        "smör till formen"
+      ],
+      "instructions": [
+        "Sätt ugnen på 175°C.",
+        "Smörj en form med löstagbar kant, ca 24 cm i diameter (för 12 bitar).",
+        "Smält smöret i en kastrull, ta kastrullen från plattan. Rör ner saffranet. Bryt chokladen i mindre bitar och lägg ner dem i smöret, rör om så att chokladen smälter.",
+        "Blanda ägg och socker i en skål. Rör ner smörblandningen och vänd ner mjölet. Häll smeten i formen.",
+        "Grädda kakan mitt i ugnen 13-14 minuter. Låt svalna i formen på galler. Låt kakan bli ordentligt kall innan den serveras."
+      ],
+      "mealType": ["Dessert"],
+      "tags": ["kladdkaka", "swedish", "jul"]
+    },
+    {
+      "id": 3,
+      "name": "Griljerad julskinka",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_234396/cf_259/griljerad_julskinka.jpg",
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 15,
+      "caloriesPerServing": 200,
+      "rating": 4.6,
+      "reviewCount": 155,
+      "difficulty": "Medium",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "1 äggula",
+        "1/2 dl senap",
+        "1/2 dl majsstärkelse",
+        "2 msk ströbröd",
+        "1 kg färdigkokt julskinka"
+      ],
+      "instructions": [
+        "Sätt ugnen på 225°C.",
+        "Griljering: Rör ihop äggula och senap.",
+        "Lägg den kokta skinkan på ett ugnssäkert fat. Ta bort nätet.",
+        "Torka av skinkan med hushållspapper. Sikta över majsstärkelse. Bred griljeringen över skinkan och strö på ströbrödet.",
+        "Griljera skinkan mitt i ugnen 10- 15 minuter eller tills den fått fin färg. Låt den kallna."
+      ],
+      "mealType": ["Lunch", "Dinner"],
+      "tags": ["julskinka", "Swedish", "jul"]
+    },
+    {
+      "id": 4,
+      "name": "Spagetti Carbonara",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/s3xwefear9kaybmvulme.jpg",
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 10,
+      "caloriesPerServing": 500,
+      "rating": 4.3,
+      "reviewCount": 522,
+      "difficulty": "Medium",
+      "cuisine": "Italian",
+      "ingredients": [
+        "400 g spagetti",
+        "4 äggulor",
+        "200 g pancetta",
+        "30 g pecorinoost, finriven ",
+        "30 g parmesanost, finriven",
+        "svartpeppar, nymalen",
+        "salt"
+      ],
+      "instructions": [
+        "Koka spaghettin ca 3 minuter kortare än anvisningen på förpackningen säger.",
+        "Skär pancettan i små bitar.",
+        "Stek pancettan i en wokpanna eller en stekpanna med höga kanter utan fett tills den blivit krispig. Lyft upp och lägg åt sidan. Låt fettet vara kvar i pannan.",
+        "Vispa ihop äggulorna med den fint rivna osten och rikligt med nymalen svartpeppar i en skål.",
+        "Sätt på värmen igen på pannan med stekfettet, häll i ca 3 dl av pastavattnet och låt koka.",
+        "Häll av spagettin och lägg i pannan med pancettan. Precis som när man kokar risotto i en buljong ska pastan få koka i stekfettet. Låt koka ca 2-3 minuter och rör om hela tiden, det gör att stärkelsen från pastan utsöndras och det blir en krämig sås.",
+        "När vattnet börjar koka in och det är någon matsked kvar, ta pannan från värmen. Tillsätt äggsmeten, rör runt tills det blir krämigt, tillsätt lite vatten om det blir torrt. Smaka av med salt och peppar."
+      ],
+      "mealType": ["Lunch", "Dinner"],
+      "tags": ["pasta", "italian"]
+    },
+    {
+      "id": 5,
+      "name": "Snabb äppelkaka i glas",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_206699/cf_259/snabb_appelkaka_i_glas.jpg",
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 5,
+      "caloriesPerServing": 500,
+      "rating": 4.5,
+      "reviewCount": 14,
+      "difficulty": "Easy",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "2-3 röda äpplen",
+        "2 msk smör",
+        "2 msk socker",
+        "1/2 tsk malen kanel ",
+        "1 1/2 dl vispgrädde",
+        "1 tsk vaniljsocker",
+        "1 - 2 dl smulor av kakor (t.ex havrekakor)"
+      ],
+      "instructions": [
+        "Dela och kärna ut äpplena. Skär i mindre bitar. Stek i smör med socker och kanel tills de mjuknar.",
+        "Vispa grädden med vaniljsocker. Varva äpplen, vaniljgrädde och kaksmulor i glas."
+      ],
+      "mealType": ["Dessert"],
+      "tags": ["dessert", "apple"]
+    },
+    {
+      "id": 6,
+      "name": "Daimpannacotta",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_172429/cf_259/daimpannacotta.jpg",
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 60,
+      "caloriesPerServing": 500,
+      "rating": 4.7,
+      "reviewCount": 36,
+      "difficulty": "Medium",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "2 gelatinblad",
+        "1 vaniljstång",
+        "5 dl vispgrädde",
+        "200 g mjölkchoklad med daim ",
+        "1 dubbeldaim"
+      ],
+      "instructions": [
+        "Lägg gelatinbladen i kallt vatten ca 5 minuter.",
+        "Skär ett snitt i vaniljstången och skrapa ur fröna. Koka upp grädden tillsammans med frön och vaniljstång och låt sjuda några minuter.",
+        "Ta upp vaniljstången. Bryt ner chokladen i grädden, rör tills chokladen smält.",
+        "Ta upp gelatinbladen ur vattnet och rör ner dem i grädden och låt smälta till en slät smet och att allt blandats ordentligt.",
+        "Häll upp i glas eller små burkar. Låt stelna i kylskåp minst 4 timmar.",
+        "Hacka daimen och strö den över pannacottorna vid servering."
+      ],
+      "mealType": ["Dessert"],
+      "tags": ["dessert", "daim"]
+    },
+    {
+      "id": 7,
+      "name": "Pannacotta",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_243738/cf_259/pannacotta.jpg",
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 60,
+      "caloriesPerServing": 500,
+      "rating": 5,
+      "reviewCount": 24,
+      "difficulty": "Medium",
+      "cuisine": "Italian",
+      "ingredients": [
+        "2 gelatinblad",
+        "1 vaniljstång",
+        "5 dl vispgrädde",
+        "1/2 dl strösocker ",
+        "färska bär"
+      ],
+      "instructions": [
+        "Lägg gelatinbladen i kallt vatten.",
+        "Häll grädden i en kastrull. Dela vaniljstången på längden och skrapa ur fröna. Lägg fröna och stången i grädden tillsammans med sockret.",
+        "Koka upp grädden och koka den sakta i ca 2 minuter. Vispa så att vaniljfröna blandar sig med grädden. Ta upp vaniljstången.",
+        "Ta upp gelatinbladen och lägg ner dem i den varma grädden. Rör försiktigt så att gelatinbladen löser sig.",
+        "Fördela grädden i portionsglas eller formar.",
+        "Sätt formarna i kylen, minst 5 timmar."
+      ],
+      "mealType": ["Dessert"],
+      "tags": ["dessert", "italian", "pannacotta"]
+    },
+    {
+      "id": 8,
+      "name": "Polkagrischeesecake",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_190108/cf_259/polkagrischeesecake.jpg",
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 60,
+      "caloriesPerServing": 500,
+      "rating": 4.5,
+      "reviewCount": 24,
+      "difficulty": "Medium",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "100 g smör",
+        "200 g digestivekex",
+        "2 dl krossade polkagrisar",
+        "3 dl vispgrädde",
+        "1 tsk vaniljsocker",
+        "3 äggvitor",
+        "3 äggulor",
+        "2 dl strösocker",
+        "200 g cream cheese",
+        "1 dl krossade polkagrisar",
+        "50 g vit choklad"
+      ],
+      "instructions": [
+        "Botten: Smält smöret i en kastrull. Mixa kexen i en matberedare. Häll på smöret och kör ihop till en smulig massa. Tryck ut massan försiktigt (packa inte hårt) i en form med löstagbar kant, ca 24 cm i diameter (för 12 port).",
+        "Fyllning: Mixa polkagrisarna i en matberedare eller med en mixer. Vispa grädden med vaniljsockret i en skål. Vispa äggvitorna till ett hårt skum i en annan skål. Vispa äggulorna med strösockret i en tredje stor skål och rör ner färskosten. Vänd försiktigt, med en slickepott, ner grädden och äggvitorna i äggulevispet. Blanda ner polkagrismixet i smeten. Häll smeten över botten. Frys kakan i minst 5 timmar.",
+        "Topping: Krossa polkagrisar i en mortel och hacka chokladen.",
+        "Ta ut cheesecaken ca 15 minuter innan servering. Garnera kakan med krossade polkagrisar och hackad choklad."
+      ],
+      "mealType": ["Dessert"],
+      "tags": ["dessert", "swedish", "polkagris", "cheesecake"]
+    },
+    {
+      "id": 9,
+      "name": "Blåbärspaj",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_182602/cf_259/blabarspaj.jpg",
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 30,
+      "caloriesPerServing": 500,
+      "rating": 4,
+      "reviewCount": 800,
+      "difficulty": "Easy",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "1 liter blåbär",
+        "1 dl socker till fyllningen",
+        "5 dl vispgrädde",
+        "2 msk potatismjöl ",
+        "150 g smör",
+        "3/4 socker till smuldegen",
+        "3 dl vetemjöl",
+        "vaniljsås eller glass till servering"
+      ],
+      "instructions": [
+        "Värm ugnen till 200°C.",
+        "Fyllning: Skölj och rensa bären. Blanda dem med socker och potatismjöl.",
+        "Smuldeg: Smält smöret till smuldegen. Rör ner socker och mjöl. Rör tills det blivit en deg. Låt svalna något.",
+        "Bottna en pajform med blåbären. Smula över degen. Grädda pajen 15-20 minuter i ugnen."
+      ],
+      "mealType": ["Dessert"],
+      "tags": ["dessert", "swedish", "paj", "blåbär"]
+    },
+    {
+      "id": 10,
+      "name": "Varm choklad med After Eight",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_192241/cf_259/varm_choklad_med_after_eight.jpg",
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 5,
+      "caloriesPerServing": 400,
+      "rating": 4,
+      "reviewCount": 14,
+      "difficulty": "Easy",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "4 msk kakao",
+        "4 tsk strösocker",
+        "4 dl mjölk",
+        "4 bitar After Eight (+ ev extra till garnering ) ",
+        "minimarshmallows till topping",
+        "vispad grädde till topping"
+      ],
+      "instructions": [
+        "Blanda kakao, socker i en kastrull och rör ut i lite av mjölken. Tillsätt resten av mjölken och värm under omrörning.",
+        "Fördela After Eight i kopparna. Häll på den varma chokladen.",
+        "Till servering: Toppa med minimarshmallows eller vispad grädde och garnera gärna med After Eight."
+      ],
+      "mealType": ["Beverage"],
+      "tags": ["beverage", "chocolate", "drink"]
+    },
+    {
+      "id": 11,
+      "name": "Bubblig lemonad",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_62913/cf_259/bubblig_lemonad.jpg",
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 5,
+      "caloriesPerServing": 200,
+      "rating": 4.8,
+      "reviewCount": 14,
+      "difficulty": "Medium",
+      "cuisine": "American",
+      "ingredients": [
+        "2 dl vatten",
+        "1 dl socker",
+        "1 dl färskpressad lime- eller citronjuice",
+        "1 citron eller lime i tunna skivor (1 citron motsvarar 2 lime)",
+        "1 l kolsyrat vatten",
+        "isbitar"
+      ],
+      "instructions": [
+        "Koka upp vatten och socker i en kastrull. Rör så att sockret löses upp. Ta från värmen. Låt kallna.",
+        "Tillsätt lime- eller citronjuice och citrusskivor. Blanda med kolsyrat vatten och is strax före servering. Servera lemonaden väl kyld."
+      ],
+      "mealType": ["Beverage"],
+      "tags": ["beverage", "lemonade", "drink", "lemon"]
+    },
+    {
+      "id": 12,
+      "name": "Äppellemonad",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_250313/cf_259/appellemonad.jpg",
+      "prepTimeMinutes": 50,
+      "cookTimeMinutes": 5,
+      "caloriesPerServing": 200,
+      "rating": 4.8,
+      "reviewCount": 14,
+      "difficulty": "Easy",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "5 äpplen gärna röda (5 äpplen motsvarar ca 700 g)",
+        "1 dl socker",
+        "15 dl vatten",
+        "1 dl färskpressad citronjuice",
+        "isbitar"
+      ],
+      "instructions": [
+        "Dela, kärna ur och riv äpplena grovt. Lägg i en kastrull med citronjuice, vatten och socker. Låt koka ca 5 minuter. Låt svalna.",
+        "Sila genom en finmaskig sil. Ställ i kylen. Servera lemonaden väl kyld med is."
+      ],
+      "mealType": ["Beverage"],
+      "tags": ["beverage", "lemonade", "drink", "apple"]
+    },
+    {
+      "id": 13,
+      "name": "kladdig kladdkaka",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_221660/cf_259/kladdig_kladdkaka.jpg",
+      "prepTimeMinutes": 30,
+      "cookTimeMinutes": 14,
+      "caloriesPerServing": 300,
+      "rating": 4.6,
+      "reviewCount": 29000,
+      "difficulty": "Medium",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "smör till formen",
+        "ströbröd till formen",
+        "100 g smör",
+        "2 st ägg",
+        "2 1/2 dl strösocker",
+        "3 msk kakao",
+        "2 tsk vaniljsocker",
+        "1 1/2 dl vetemjöl",
+        "1 krm salt",
+        "2 dl vispgrädde"
+      ],
+      "instructions": [
+        "Sätt ugnen på 200°C.",
+        "Smörj och bröa en form med löstagbar kant, ca 24 cm i diameter (för 8 bitar) eller spänn fast ett bakplåtspapper på botten.",
+        "Smält smöret i kastrull, låt svalna något.",
+        "Vispa ihop ägg och socker (använd inte en elvisp).",
+        "Blanda kakao, vaniljsocker, vetemjöl och salt i en bunke och rör ner i äggblandningen.",
+        "Tillsätt det smälta smöret och blanda försiktigt ihop till en jämn smet och häll sedan över smeten i formen.",
+        "Grädda mitt i ugnen i ca 10-15 minuter (öka eller minska tiden vid behov beroende på hur kladdig du vill ha den).",
+        "Ta ut kladdkakan och låt svalna.",
+        "Sikta florsocker över om så önskas. Servera med vispad grädde och färska bär."
+      ],
+      "mealType": ["Dessert"],
+      "tags": ["kladdkaka", "choklad", "dessert"]
+    },
+    {
+      "id": 14,
+      "name": "Blåbärsmuffins",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_243358/cf_259/blabarsmuffins.jpg",
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 20,
+      "caloriesPerServing": 300,
+      "rating": 4.6,
+      "reviewCount": 950,
+      "difficulty": "Medium",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "4 dl vetemjöl",
+        "100 g smält smör",
+        "2 st ägg",
+        "2 dl strösocker",
+        "2 tsk bakpulver",
+        "1 dl mjölk",
+        "2 krm salt",
+        "2 dl frysta blåbär",
+        "lite socker"
+      ],
+      "instructions": [
+        "Sätt ugnen på 200°C.",
+        "Blanda mjöl, socker, salt och bakpulver i en skål. Tillsätt det smälta matfettet.",
+        "Vispa ihop mjölk och ägg och rör ner i smeten. Vänd försiktigt i blåbären (spara några till garnering). Ställ muffinsformar i en muffinsplåt och fördela smeten i formarna.",
+        "Strö några lättsockrade blåbär på toppen. Grädda i 20 minuter."
+      ],
+      "mealType": ["Dessert"],
+      "tags": ["muffins", "blåbär"]
+    },
+    {
+      "id": 15,
+      "name": "Fläskpannkaka",
+      "image": "https://res.cloudinary.com/coopsverige/image/upload/f_auto,fl_progressive,q_90,g_center,h_800,w_800/v1601545721/409319.jpg",
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 25,
+      "caloriesPerServing": 500,
+      "rating": 4.6,
+      "reviewCount": 197,
+      "difficulty": "Easy",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "8 dl mjölk",
+        "4 st ägg",
+        "300 g stekfläsk eller bacon",
+        "4 dl vetemjöl",
+        "1 tsk salt",
+        "lingonsylt"
+      ],
+      "instructions": [
+        "Sätt ugnen på 200°C.",
+        "Häll hälften av mjölken i en skål. Vispa ner mjöl och salt till en jämn smet. Häll i resten av mjölken. Vispa sist ner äggen.",
+        "Skär fläsket i små tärningar. Bryn dem i en stekpanna. Fördela fläsket och stekfettet i en långpanna, 30x40 cm (för 4 port, bilden visar fläskpannkaka för 2 port) gärna med bakplåtspapper, fukta plåten lite och lägg på bakplåtspappret så ligger det still. Häll smeten över fläsktärningarna.",
+        "Grädda i mitten av ugnen ca 25 min. Servera med lingonsylt."
+      ],
+      "mealType": ["Lunch"],
+      "tags": ["fläskpannkaka", "husman", "fläsk"]
+    },
+    {
+      "id": 16,
+      "name": "Äppelglögg",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_104525/cf_259/appelglogg.jpg",
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 30,
+      "caloriesPerServing": 200,
+      "rating": 3.6,
+      "reviewCount": 71,
+      "difficulty": "Easy",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "1 bit ingefära (ca 3cm)",
+        "2 st kanelstänger",
+        "1/2 tsk kardemummakärnor eller kardemummakapslar (1/2 tsk kärnor motsvarar 1 tsk kapslar)",
+        "1 dl råsocker",
+        "2 dl vatten",
+        "1 apelsin",
+        "1 L äppelmust",
+        "1 äpple"
+      ],
+      "instructions": [
+        "Skala och skiva ingefäran tunt. Lägg ingefära, kanel och kardemumma i en kastrull tillsammans med socker och vatten. Koka upp och låt det koka 3-4 minuter.",
+        "Skölj apelsinen, skala försiktigt av skalet med en potatisskalare (det vita ska inte vara med).",
+        "Pressa apelsinen, blanda apelsinsaften med kryddsockerlagen, äppelmust och apelsinskalet. Låt glöggen stå och dra några timmar.",
+        "Till servering: Värm glöggen, skär äpplet i bitar och servera i glöggen."
+      ],
+      "mealType": ["Beverage"],
+      "tags": ["glögg", "äpple", "jul"]
+    },
+    {
+      "id": 17,
+      "name": "Svartvinbärssaft",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_101518/cf_259/svartvinbarssaft.jpg",
+      "prepTimeMinutes": 30,
+      "cookTimeMinutes": 30,
+      "caloriesPerServing": 200,
+      "rating": 3.6,
+      "reviewCount": 41,
+      "difficulty": "Medium",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "5 l färska eller frysta, tinade svarta vinbär (1 l motsvarar ca 500 g)",
+        "2 1/2 l vatten",
+        "5 dl strösocker /liter avrunnen saft",
+        "2 krm natriumbensoat per liter saft"
+      ],
+      "instructions": [
+        "Rensa och skölj bären. Koka upp dem med vattnet i en kastrull.",
+        "Låt bären rinna av i en silduk eller genom en kökshandduk i ett durkslag.",
+        "Mät den avrunna saften och beräkna sockermängden. Häll tillbaka saften i en ren kastrull och tillsätt sockret. Koka upp och skumma av.",
+        "Mät saften och beräkna mängden natriumbensoat. Rör ner natriumbensoat i 1 dl av saften och blanda sedan med resten.",
+        "Låt svalna och häll upp i väl rengjorda och steriliserade flaskor (se länk ovan). Förvara mörkt och svalt."
+      ],
+      "mealType": ["Beverage"],
+      "tags": ["saft", "svarta vinbär", "sommar"]
+    },
+    {
+      "id": 18,
+      "name": "Rabarbersaft",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_178585/cf_259/hemgjord_rabarbersaft.jpg",
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 10,
+      "caloriesPerServing": 200,
+      "rating": 4.6,
+      "reviewCount": 8,
+      "difficulty": "Easy",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "400 g rabarber",
+        "3 dl sockerlag",
+        "3 dl färskpressad citronjuice"
+      ],
+      "instructions": [
+        "Hacka rabarbern och häll i en mixer eller blender.",
+        "Fyll upp med Sockerlag och citronjuice.",
+        "Blenda ihop allt och sila av.",
+        "Använd gärna saften som en bas till exempelvis den goda öldrinken RabarBeer."
+      ],
+      "mealType": ["Beverage"],
+      "tags": ["saft", "rabarber", "sommar"]
+    },
+    {
+      "id": 19,
+      "name": "Iskaffe vanilj",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_239360/cf_259/iskaffe_vanilj.jpg",
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 10,
+      "caloriesPerServing": 300,
+      "rating": 4.6,
+      "reviewCount": 22,
+      "difficulty": "Easy",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "2 dl starkt kallt kaffe",
+        "1 msk vaniljsocker",
+        "isbitar",
+        "4 dl mjölk eller mjölkdryck (gärna havredryck)"
+      ],
+      "instructions": [
+        "Blanda kaffe och vaniljsocker. Låt kaffet kallna.",
+        "Fyll två stora glas med is och fyll på med kaffet och havredrycken."
+      ],
+      "mealType": ["Beverage"],
+      "tags": ["kaffe", "vanilj"]
+    },
+    {
+      "id": 20,
+      "name": "Stekta nudlar",
+      "image": "https://img.koket.se/standard-mega/stekta-nudlar-filip-poons-recept.png.webp",
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 15,
+      "caloriesPerServing": 500,
+      "rating": 4.6,
+      "reviewCount": 83,
+      "difficulty": "Easy",
+      "cuisine": "Asian",
+      "ingredients": [
+        "200-300 g äggnudlar",
+        "2-3 kycklinglårfilé",
+        "2 kyftor vitlök, hackade",
+        "2-3 blas salladskål eller vitkål, strimlade på längden",
+        "5 salladslökar, skuren i tunna stavar",
+        "1 morot, skuren i tunna stavar",
+        "1 dl böngroddar",
+        "2-3 msk japansk soja",
+        "1 msk sesamolja",
+        "2 msk ostronsås",
+        "2 tsk strösocker",
+        "0,5 tsk salt, till stekning",
+        "rapsolja",
+        "färsk koriander (eventuellt)"
+      ],
+      "instructions": [
+        "Koka nudlarna i 2–3 minuter, de får inte bli klara. Häll av vattnet och spola nudlarna i kallt vatten. Ställ åt sidan så länge.",
+        "Gnid in kycklingen med rapsolja och smaksätt med vitpeppar och salt. Stek på hög värme i en wok- eller stekpanna tills köttet fått fin färg. Ta upp kycklingen och ställ åt sidan så länge.",
+        "Torka ur wokpannan, häll i lite rapsolja och stek vitlöken i 20 sekunder. Tillsätt salladskål, salladslök samt morot och stek på hög värme i 1–2 minuter. Blanda i böngroddar, soja, sesamolja, ostronsås, socker, salt eller MSG och peppar.",
+        "Koka upp och lägg i kyckling och nudlar. Rör om i någon minut, toppa eventuellt med koriander och servera direkt!"
+      ],
+      "mealType": ["Lunch", "Dinner"],
+      "tags": ["nudlar", "kyckling", "snabbt"]
+    },
+    {
+      "id": 21,
+      "name": "Raggmunkar med fläsk",
+      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_250994/cf_259/raggmunk_med_flask.jpg",
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 25,
+      "caloriesPerServing": 500,
+      "rating": 4.6,
+      "reviewCount": 662,
+      "difficulty": "Easy",
+      "cuisine": "Swedish",
+      "ingredients": [
+        "2 dl vetemjöl",
+        "4 dl mjölk",
+        "2 ägg",
+        "1/2 tesked salt",
+        "900 g fast potatis",
+        "ca 375 g stekfläsk",
+        "2 msk smör",
+        "morötter",
+        "lingonsylt"
+      ],
+      "instructions": [
+        "Sätt ugnen på 125°C och sätt in en plåt.",
+        "Raggmunk: Vispa mjölet med hälften av mjölken till en slät smet i en bunke. Vispa ner resten av mjölken, äggen och saltet.",
+        "Skala och riv potatisen grovt. Krama ur vätskan och vänd ner den i smeten genast så att den inte mörknar.",
+        "Strimla och stek fläsket krispigt i en stekpanna. Lägg det på plåten i ugnen och håll det varmt.",
+        "Hetta upp lite av matfettet i en stekpanna och klicka ner smeten och stek raggmunkarna i omgångar. Håll dem varma på plåten i ugnen.",
+        "Skala morötterna och skär i stavar.",
+        "Till servering: Servera fläsket med raggmunkar, morötter och lingonsylt."
+      ],
+      "mealType": ["Lunch", "Dinner"],
+      "tags": ["raggmunkar", "potatis", "fläsk"]
+    },
+    {
+      "id": 22,
       "name": "Classic Margherita Pizza",
       "ingredients": [
         "Pizza dough",
@@ -33,7 +654,7 @@
       "mealType": ["Dinner"]
     },
     {
-      "id": 2,
+      "id": 23,
       "name": "Vegetarian Stir-Fry",
       "ingredients": [
         "Tofu, cubed",
@@ -68,7 +689,7 @@
       "mealType": ["Lunch"]
     },
     {
-      "id": 3,
+      "id": 24,
       "name": "Chocolate Chip Cookies",
       "ingredients": [
         "All-purpose flour",
@@ -105,7 +726,7 @@
       "mealType": ["Snack", "Dessert"]
     },
     {
-      "id": 4,
+      "id": 25,
       "name": "Chicken Alfredo Pasta",
       "ingredients": [
         "Fettuccine pasta",
@@ -140,7 +761,7 @@
       "mealType": ["Lunch", "Dinner"]
     },
     {
-      "id": 5,
+      "id": 26,
       "name": "Mango Salsa Chicken",
       "ingredients": [
         "Chicken thighs",
@@ -173,7 +794,7 @@
       "mealType": ["Dinner"]
     },
     {
-      "id": 6,
+      "id": 27,
       "name": "Quinoa Salad with Avocado",
       "ingredients": [
         "Quinoa, cooked",
@@ -205,7 +826,7 @@
       "mealType": ["Lunch", "Side Dish"]
     },
     {
-      "id": 7,
+      "id": 28,
       "name": "Tomato Basil Bruschetta",
       "ingredients": [
         "Baguette, sliced",
@@ -238,7 +859,7 @@
       "mealType": ["Appetizer"]
     },
     {
-      "id": 8,
+      "id": 29,
       "name": "Beef and Broccoli Stir-Fry",
       "ingredients": [
         "Beef sirloin, thinly sliced",
@@ -273,7 +894,7 @@
       "mealType": ["Dinner"]
     },
     {
-      "id": 9,
+      "id": 30,
       "name": "Caprese Salad",
       "ingredients": [
         "Tomatoes, sliced",
@@ -304,7 +925,7 @@
       "mealType": ["Lunch"]
     },
     {
-      "id": 10,
+      "id": 31,
       "name": "Shrimp Scampi Pasta",
       "ingredients": [
         "Linguine pasta",
@@ -339,7 +960,7 @@
       "mealType": ["Dinner"]
     },
     {
-      "id": 11,
+      "id": 32,
       "name": "Chicken Biryani",
       "ingredients": [
         "Basmati rice",
@@ -377,7 +998,7 @@
         "Pakistani",
         "Asian"
       ],
-      "userId": 133,
+      "userId": 33,
       "image": "https://cdn.dummyjson.com/recipe-images/11.webp",
       "rating": 5,
       "reviewCount": 32,
@@ -428,7 +1049,7 @@
       "mealType": ["Lunch", "Dinner"]
     },
     {
-      "id": 13,
+      "id": 34,
       "name": "Aloo Keema",
       "ingredients": [
         "Ground beef",
@@ -466,7 +1087,7 @@
       "mealType": ["Lunch", "Dinner"]
     },
     {
-      "id": 14,
+      "id": 35,
       "name": "Chapli Kebabs",
       "ingredients": [
         "Ground beef",
@@ -504,7 +1125,7 @@
       "mealType": ["Lunch", "Dinner", "Snacks"]
     },
     {
-      "id": 15,
+      "id": 36,
       "name": "Japanese Ramen Soup",
       "ingredients": [
         "Ramen noodles",
@@ -541,7 +1162,7 @@
       "mealType": ["Dinner"]
     },
     {
-      "id": 16,
+      "id": 37,
       "name": "Moroccan Chickpea Tagine",
       "ingredients": [
         "Chickpeas, cooked",
@@ -579,7 +1200,7 @@
       "mealType": ["Dinner"]
     },
     {
-      "id": 17,
+      "id": 38,
       "name": "Korean Bibimbap",
       "ingredients": [
         "Cooked white rice",
@@ -615,7 +1236,7 @@
       "mealType": ["Dinner"]
     },
     {
-      "id": 18,
+      "id": 39,
       "name": "Greek Moussaka",
       "ingredients": [
         "Eggplants, sliced",
@@ -658,7 +1279,7 @@
       "mealType": ["Dinner"]
     },
     {
-      "id": 19,
+      "id": 40,
       "name": "Thai Green Curry",
       "ingredients": [
         "Chicken thighs, boneless and skinless",
@@ -692,7 +1313,7 @@
       "mealType": ["Dinner"]
     },
     {
-      "id": 20,
+      "id": 41,
       "name": "Mango Lassi",
       "ingredients": [
         "Ripe mango, peeled and diced",
@@ -723,7 +1344,7 @@
       "mealType": ["Beverage"]
     },
     {
-      "id": 21,
+      "id": 42,
       "name": "Italian Tiramisu",
       "ingredients": [
         "Espresso, brewed and cooled",
@@ -757,7 +1378,7 @@
       "mealType": ["Dessert"]
     },
     {
-      "id": 22,
+      "id": 43,
       "name": "Turkish Kebabs",
       "ingredients": [
         "Ground lamb or beef",
@@ -791,7 +1412,7 @@
       "mealType": ["Dinner"]
     },
     {
-      "id": 23,
+      "id": 44,
       "name": "Blueberry Banana Smoothie",
       "ingredients": [
         "Blueberries, fresh or frozen",
@@ -821,7 +1442,7 @@
       "mealType": ["Breakfast", "Beverage"]
     },
     {
-      "id": 24,
+      "id": 45,
       "name": "Mexican Street Corn (Elote)",
       "ingredients": [
         "Corn on the cob",
@@ -850,7 +1471,7 @@
       "mealType": ["Snack", "Side Dish"]
     },
     {
-      "id": 25,
+      "id": 46,
       "name": "Russian Borscht",
       "ingredients": [
         "Beets, peeled and shredded",
@@ -885,7 +1506,7 @@
       "mealType": ["Dinner"]
     },
     {
-      "id": 26,
+      "id": 47,
       "name": "South Indian Masala Dosa",
       "ingredients": [
         "Dosa batter (fermented rice and urad dal batter)",
@@ -921,7 +1542,7 @@
       "mealType": ["Breakfast"]
     },
     {
-      "id": 27,
+      "id": 48,
       "name": "Lebanese Falafel Wrap",
       "ingredients": [
         "Falafel balls",
@@ -954,7 +1575,7 @@
       "mealType": ["Lunch"]
     },
     {
-      "id": 28,
+      "id": 49,
       "name": "Brazilian Caipirinha",
       "ingredients": [
         "Cachaça (Brazilian sugarcane spirit)",
@@ -981,355 +1602,6 @@
       "rating": 4.4,
       "reviewCount": 55,
       "mealType": ["Beverage"]
-    },
-    {
-      "id": 29,
-      "name": "Julköttbullar",
-      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_222382/cf_259/julkottbullar.jpg",
-      "prepTimeMinutes": 20,
-      "cookTimeMinutes": 15,
-      "caloriesPerServing": 300,
-      "rating": 4.6,
-      "reviewCount": 100,
-      "difficulty": "Medium",
-      "cuisine": "Swedish",
-      "ingredients": [
-        "2 stora lökar",
-        "2 msk smör",
-        "1 dl vispgrädde",
-        "1 dl mjölk (3%)",
-        "1 dl ströbröd",
-        "2 ägg",
-        "1 1/2 salt",
-        "2 krm kryddpeppar",
-        "1 1/2 socker",
-        "1 kg blandfärs",
-        "3-4 msk smör till stekning"
-      ],
-      "instructions": [
-        "Skala och skär löken i bitar. Stek den mjuk i smöret, låt svalna",
-        "Blanda löken med grädde, mjölk och ströbröd i en bunke. Mixa slätt och låt svälla 10 minuter",
-        "Blanda ner ägg, kryddpeppar, salt och socker. Rör ner färsen och blanda hastigt ihop till en jämn smet.",
-        "Rulla färsen till köttbullar med oljade händer eller lägg färsen i en spritspåse och tryck ut bullar direkt i stekpannan. Stek köttbullarna i omgångar i smör i en stekpanna ca 8 minuter eller tills de är genomstekta."
-      ],
-      "mealType": ["Dinner", "Lunch"],
-      "tags": ["köttbullar", "swedish", "jul"]
-    },
-    {
-      "id": 30,
-      "name": "Saffranskladdkaka",
-      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_104454/cf_259/saffranskladdkaka.jpg",
-      "prepTimeMinutes": 25,
-      "cookTimeMinutes": 15,
-      "caloriesPerServing": 400,
-      "rating": 4.6,
-      "reviewCount": 98,
-      "difficulty": "Medium",
-      "cuisine": "Swedish",
-      "ingredients": [
-        "100 g smör",
-        "1 förp saffran (0.5 g)",
-        "100 g vit choklad",
-        "2 ägg",
-        "2 dl vetemjöl",
-        "2 dl socker",
-        "smör till formen"
-      ],
-      "instructions": [
-        "Sätt ugnen på 175°C.",
-        "Smörj en form med löstagbar kant, ca 24 cm i diameter (för 12 bitar).",
-        "Smält smöret i en kastrull, ta kastrullen från plattan. Rör ner saffranet. Bryt chokladen i mindre bitar och lägg ner dem i smöret, rör om så att chokladen smälter.",
-        "Blanda ägg och socker i en skål. Rör ner smörblandningen och vänd ner mjölet. Häll smeten i formen.",
-        "Grädda kakan mitt i ugnen 13-14 minuter. Låt svalna i formen på galler. Låt kakan bli ordentligt kall innan den serveras."
-      ],
-      "mealType": ["Dessert"],
-      "tags": ["kladdkaka", "swedish", "jul"]
-    },
-    {
-      "id": 31,
-      "name": "Griljerad julskinka",
-      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_234396/cf_259/griljerad_julskinka.jpg",
-      "prepTimeMinutes": 20,
-      "cookTimeMinutes": 15,
-      "caloriesPerServing": 200,
-      "rating": 4.6,
-      "reviewCount": 155,
-      "difficulty": "Medium",
-      "cuisine": "Swedish",
-      "ingredients": [
-        "1 äggula",
-        "1/2 dl senap",
-        "1/2 dl majsstärkelse",
-        "2 msk ströbröd",
-        "1 kg färdigkokt julskinka"
-      ],
-      "instructions": [
-        "Sätt ugnen på 225°C.",
-        "Griljering: Rör ihop äggula och senap.",
-        "Lägg den kokta skinkan på ett ugnssäkert fat. Ta bort nätet.",
-        "Torka av skinkan med hushållspapper. Sikta över majsstärkelse. Bred griljeringen över skinkan och strö på ströbrödet.",
-        "Griljera skinkan mitt i ugnen 10- 15 minuter eller tills den fått fin färg. Låt den kallna."
-      ],
-      "mealType": ["Lunch", "Dinner"],
-      "tags": ["julskinka", "Swedish", "jul"]
-    },
-    {
-      "id": 32,
-      "name": "Spagetti Carbonara",
-      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/s3xwefear9kaybmvulme.jpg",
-      "prepTimeMinutes": 15,
-      "cookTimeMinutes": 10,
-      "caloriesPerServing": 500,
-      "rating": 4.3,
-      "reviewCount": 522,
-      "difficulty": "Medium",
-      "cuisine": "Italian",
-      "ingredients": [
-        "400 g spagetti",
-        "4 äggulor",
-        "200 g pancetta",
-        "30 g pecorinoost, finriven ",
-        "30 g parmesanost, finriven",
-        "svartpeppar, nymalen",
-        "salt"
-      ],
-      "instructions": [
-        "Koka spaghettin ca 3 minuter kortare än anvisningen på förpackningen säger.",
-        "Skär pancettan i små bitar.",
-        "Stek pancettan i en wokpanna eller en stekpanna med höga kanter utan fett tills den blivit krispig. Lyft upp och lägg åt sidan. Låt fettet vara kvar i pannan.",
-        "Vispa ihop äggulorna med den fint rivna osten och rikligt med nymalen svartpeppar i en skål.",
-        "Sätt på värmen igen på pannan med stekfettet, häll i ca 3 dl av pastavattnet och låt koka.",
-        "Häll av spagettin och lägg i pannan med pancettan. Precis som när man kokar risotto i en buljong ska pastan få koka i stekfettet. Låt koka ca 2-3 minuter och rör om hela tiden, det gör att stärkelsen från pastan utsöndras och det blir en krämig sås.",
-        "När vattnet börjar koka in och det är någon matsked kvar, ta pannan från värmen. Tillsätt äggsmeten, rör runt tills det blir krämigt, tillsätt lite vatten om det blir torrt. Smaka av med salt och peppar."
-      ],
-      "mealType": ["Lunch", "Dinner"],
-      "tags": ["pasta", "italian"]
-    },
-    {
-      "id": 33,
-      "name": "Snabb äppelkaka i glas",
-      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_206699/cf_259/snabb_appelkaka_i_glas.jpg",
-      "prepTimeMinutes": 10,
-      "cookTimeMinutes": 5,
-      "caloriesPerServing": 500,
-      "rating": 4.5,
-      "reviewCount": 14,
-      "difficulty": "Easy",
-      "cuisine": "Swedish",
-      "ingredients": [
-        "2-3 röda äpplen",
-        "2 msk smör",
-        "2 msk socker",
-        "1/2 tsk malen kanel ",
-        "1 1/2 dl vispgrädde",
-        "1 tsk vaniljsocker",
-        "1 - 2 dl smulor av kakor (t.ex havrekakor)"
-      ],
-      "instructions": [
-        "Dela och kärna ut äpplena. Skär i mindre bitar. Stek i smör med socker och kanel tills de mjuknar.",
-        "Vispa grädden med vaniljsocker. Varva äpplen, vaniljgrädde och kaksmulor i glas."
-      ],
-      "mealType": ["Dessert"],
-      "tags": ["dessert", "apple"]
-    },
-    {
-      "id": 34,
-      "name": "Daimpannacotta",
-      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_172429/cf_259/daimpannacotta.jpg",
-      "prepTimeMinutes": 10,
-      "cookTimeMinutes": 60,
-      "caloriesPerServing": 500,
-      "rating": 4.7,
-      "reviewCount": 36,
-      "difficulty": "Medium",
-      "cuisine": "Swedish",
-      "ingredients": [
-        "2 gelatinblad",
-        "1 vaniljstång",
-        "5 dl vispgrädde",
-        "200 g mjölkchoklad med daim ",
-        "1 dubbeldaim"
-      ],
-      "instructions": [
-        "Lägg gelatinbladen i kallt vatten ca 5 minuter.",
-        "Skär ett snitt i vaniljstången och skrapa ur fröna. Koka upp grädden tillsammans med frön och vaniljstång och låt sjuda några minuter.",
-        "Ta upp vaniljstången. Bryt ner chokladen i grädden, rör tills chokladen smält.",
-        "Ta upp gelatinbladen ur vattnet och rör ner dem i grädden och låt smälta till en slät smet och att allt blandats ordentligt.",
-        "Häll upp i glas eller små burkar. Låt stelna i kylskåp minst 4 timmar.",
-        "Hacka daimen och strö den över pannacottorna vid servering."
-      ],
-      "mealType": ["Dessert"],
-      "tags": ["dessert", "daim"]
-    },
-    {
-      "id": 35,
-      "name": "Pannacotta",
-      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_243738/cf_259/pannacotta.jpg",
-      "prepTimeMinutes": 10,
-      "cookTimeMinutes": 60,
-      "caloriesPerServing": 500,
-      "rating": 5,
-      "reviewCount": 24,
-      "difficulty": "Medium",
-      "cuisine": "Italian",
-      "ingredients": [
-        "2 gelatinblad",
-        "1 vaniljstång",
-        "5 dl vispgrädde",
-        "1/2 dl strösocker ",
-        "färska bär"
-      ],
-      "instructions": [
-        "Lägg gelatinbladen i kallt vatten.",
-        "Häll grädden i en kastrull. Dela vaniljstången på längden och skrapa ur fröna. Lägg fröna och stången i grädden tillsammans med sockret.",
-        "Koka upp grädden och koka den sakta i ca 2 minuter. Vispa så att vaniljfröna blandar sig med grädden. Ta upp vaniljstången.",
-        "Ta upp gelatinbladen och lägg ner dem i den varma grädden. Rör försiktigt så att gelatinbladen löser sig.",
-        "Fördela grädden i portionsglas eller formar.",
-        "Sätt formarna i kylen, minst 5 timmar."
-      ],
-      "mealType": ["Dessert"],
-      "tags": ["dessert", "italian", "pannacotta"]
-    },
-    {
-      "id": 36,
-      "name": "Polkagrischeesecake",
-      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_190108/cf_259/polkagrischeesecake.jpg",
-      "prepTimeMinutes": 10,
-      "cookTimeMinutes": 60,
-      "caloriesPerServing": 500,
-      "rating": 4.5,
-      "reviewCount": 24,
-      "difficulty": "Medium",
-      "cuisine": "Swedish",
-      "ingredients": [
-        "100 g smör",
-        "200 g digestivekex",
-        "2 dl krossade polkagrisar",
-        "3 dl vispgrädde",
-        "1 tsk vaniljsocker",
-        "3 äggvitor",
-        "3 äggulor",
-        "2 dl strösocker",
-        "200 g cream cheese",
-        "1 dl krossade polkagrisar",
-        "50 g vit choklad"
-      ],
-      "instructions": [
-        "Botten: Smält smöret i en kastrull. Mixa kexen i en matberedare. Häll på smöret och kör ihop till en smulig massa. Tryck ut massan försiktigt (packa inte hårt) i en form med löstagbar kant, ca 24 cm i diameter (för 12 port).",
-        "Fyllning: Mixa polkagrisarna i en matberedare eller med en mixer. Vispa grädden med vaniljsockret i en skål. Vispa äggvitorna till ett hårt skum i en annan skål. Vispa äggulorna med strösockret i en tredje stor skål och rör ner färskosten. Vänd försiktigt, med en slickepott, ner grädden och äggvitorna i äggulevispet. Blanda ner polkagrismixet i smeten. Häll smeten över botten. Frys kakan i minst 5 timmar.",
-        "Topping: Krossa polkagrisar i en mortel och hacka chokladen.",
-        "Ta ut cheesecaken ca 15 minuter innan servering. Garnera kakan med krossade polkagrisar och hackad choklad."
-      ],
-      "mealType": ["Dessert"],
-      "tags": ["dessert", "swedish", "polkagris", "cheesecake"]
-    },
-    {
-      "id": 37,
-      "name": "Blåbärspaj",
-      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_182602/cf_259/blabarspaj.jpg",
-      "prepTimeMinutes": 10,
-      "cookTimeMinutes": 30,
-      "caloriesPerServing": 500,
-      "rating": 4,
-      "reviewCount": 800,
-      "difficulty": "Easy",
-      "cuisine": "Swedish",
-      "ingredients": [
-        "1 liter blåbär",
-        "1 dl socker till fyllningen",
-        "5 dl vispgrädde",
-        "2 msk potatismjöl ",
-        "150 g smör",
-        "3/4 socker till smuldegen",
-        "3 dl vetemjöl",
-        "vaniljsås eller glass till servering"
-      ],
-      "instructions": [
-        "Värm ugnen till 200°C.",
-        "Fyllning: Skölj och rensa bären. Blanda dem med socker och potatismjöl.",
-        "Smuldeg: Smält smöret till smuldegen. Rör ner socker och mjöl. Rör tills det blivit en deg. Låt svalna något.",
-        "Bottna en pajform med blåbären. Smula över degen. Grädda pajen 15-20 minuter i ugnen."
-      ],
-      "mealType": ["Dessert"],
-      "tags": ["dessert", "swedish", "paj", "blåbär"]
-    },
-    {
-      "id": 38,
-      "name": "Varm choklad med After Eight",
-      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_192241/cf_259/varm_choklad_med_after_eight.jpg",
-      "prepTimeMinutes": 10,
-      "cookTimeMinutes": 5,
-      "caloriesPerServing": 400,
-      "rating": 4,
-      "reviewCount": 14,
-      "difficulty": "Easy",
-      "cuisine": "Swedish",
-      "ingredients": [
-        "4 msk kakao",
-        "4 tsk strösocker",
-        "4 dl mjölk",
-        "4 bitar After Eight (+ ev extra till garnering ) ",
-        "minimarshmallows till topping",
-        "vispad grädde till topping"
-      ],
-      "instructions": [
-        "Blanda kakao, socker i en kastrull och rör ut i lite av mjölken. Tillsätt resten av mjölken och värm under omrörning.",
-        "Fördela After Eight i kopparna. Häll på den varma chokladen.",
-        "Till servering: Toppa med minimarshmallows eller vispad grädde och garnera gärna med After Eight."
-      ],
-      "mealType": ["Beverage"],
-      "tags": ["beverage", "chocolate", "drink"]
-    },
-    {
-      "id": 39,
-      "name": "Bubblig lemonad",
-      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_62913/cf_259/bubblig_lemonad.jpg",
-      "prepTimeMinutes": 10,
-      "cookTimeMinutes": 5,
-      "caloriesPerServing": 200,
-      "rating": 4.8,
-      "reviewCount": 14,
-      "difficulty": "Medium",
-      "cuisine": "American",
-      "ingredients": [
-        "2 dl vatten",
-        "1 dl socker",
-        "1 dl färskpressad lime- eller citronjuice",
-        "1 citron eller lime i tunna skivor (1 citron motsvarar 2 lime)",
-        "1 l kolsyrat vatten",
-        "isbitar"
-      ],
-      "instructions": [
-        "Koka upp vatten och socker i en kastrull. Rör så att sockret löses upp. Ta från värmen. Låt kallna.",
-        "Tillsätt lime- eller citronjuice och citrusskivor. Blanda med kolsyrat vatten och is strax före servering. Servera lemonaden väl kyld."
-      ],
-      "mealType": ["Beverage"],
-      "tags": ["beverage", "lemonade", "drink", "lemon"]
-    },
-    {
-      "id": 40,
-      "name": "Äppellemonad",
-      "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_250313/cf_259/appellemonad.jpg",
-      "prepTimeMinutes": 50,
-      "cookTimeMinutes": 5,
-      "caloriesPerServing": 200,
-      "rating": 4.8,
-      "reviewCount": 14,
-      "difficulty": "Easy",
-      "cuisine": "Swedish",
-      "ingredients": [
-        "5 äpplen gärna röda (5 äpplen motsvarar ca 700 g)",
-        "1 dl socker",
-        "15 dl vatten",
-        "1 dl färskpressad citronjuice",
-        "isbitar"
-      ],
-      "instructions": [
-        "Dela, kärna ur och riv äpplena grovt. Lägg i en kastrull med citronjuice, vatten och socker. Låt koka ca 5 minuter. Låt svalna.",
-        "Sila genom en finmaskig sil. Ställ i kylen. Servera lemonaden väl kyld med is."
-      ],
-      "mealType": ["Beverage"],
-      "tags": ["beverage", "lemonade", "drink", "apple"]
     }
   ]
 }

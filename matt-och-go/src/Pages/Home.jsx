@@ -31,10 +31,6 @@ export function HomePage({ levelImg }) {
   if (!recipes) {
     return <p>Laddar...</p>; // om det inte finns några recept
   }
-  let arrowImg;
-  const handleScroll = () => {
-    arrowImg = "display-none";
-  };
 
   return (
     <>
