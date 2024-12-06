@@ -48,7 +48,7 @@ export function Header() {
             Hem
           </NavLink>
           <NavLink className="link" to="category">
-            Världens kök
+            Kategorier
           </NavLink>
           <NavLink className="link" to="saved-recipes">
             Sparade recept

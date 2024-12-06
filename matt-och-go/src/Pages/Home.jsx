@@ -36,28 +36,32 @@ export function HomePage({ levelImg }) {
     <>
       <div className="home-container">
         <div className="hero">
-        <h2 className="hero-text">Vad är du sugen på?</h2> 
+          <h2 className="hero-text">Vad är du sugen på?</h2>
           <form className="form-pop" onChange={sortCards}>
             <input
               className="input-search"
               value={smallValue}
               onChange={(event) => setSmallValue(event.target.value)}
               type="text"
-              placeholder="Skriv in det här!"
+              placeholder="Skriv in det här..."
             />
-          <div className={smallValue ? "drop-down-search" : "display-none"}>
-            <p className={smallCards.length > 0 ? "display-none" : "no-match"}>Inga resultat hittades</p>
-            <div className="drop-box">
-              {smallCards.map((short, index) => (
-                <SmallCards key={index} short={short} />
-              ))}
-            </div>
+            <div className={smallValue ? "drop-down-search" : "display-none"}>
+              <p
+                className={smallCards.length > 0 ? "display-none" : "no-match"}
+              >
+                Inga resultat hittades
+              </p>
+              <div className="drop-box">
+                {smallCards.map((short, index) => (
+                  <SmallCards key={index} short={short} />
+                ))}
+              </div>
               <img
                 className={smallCards.length > 5 ? "img-pop" : "display-none"}
                 src="/arrow.svg"
                 alt=""
               />
-          </div>
+            </div>
           </form>
         </div>
         <h2 className="h2-title">Färdigt på under 40 min!</h2>

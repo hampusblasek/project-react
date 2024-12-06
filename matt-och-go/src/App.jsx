@@ -27,6 +27,7 @@ function App() {
   const [ratingState, SetRatingState] = useRecoilState(ratingsState);
   const [catData, setCatData] = useState([]);
   const [title, setTitle] = useState("");
+  const [title2, setTitle2] = useState("");
 
   useEffect(() => {
     getRecipes().then(setRecipes); // Lägger in recept i globalstaten från api:et
@@ -41,6 +42,8 @@ function App() {
         catData={catData}
         setTitle={setTitle}
         title={title}
+        setTitle2={setTitle2}
+        title2={title2}
       />
     </>
   );

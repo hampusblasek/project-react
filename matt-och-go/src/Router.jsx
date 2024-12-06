@@ -8,11 +8,12 @@ import { SavedRecipes } from "./Pages/save";
 import { Error } from "./Components/error-loading/errorPage";
 
 export function NavigatePage({
-  levelImg,
   setCatData,
   catData,
   title,
   setTitle,
+  setTitle2,
+  title2
 }) {
   return (
     <>
@@ -29,6 +30,8 @@ export function NavigatePage({
                   catData={catData}
                   setTitle={setTitle}
                   title={title}
+                  setTitle2={setTitle2}
+                  title2={title2}
                 />
               }
             ></Route>
@@ -49,13 +52,12 @@ export function NavigatePage({
                   catData={catData}
                   setTitle={setTitle}
                   title={title}
+                  setTitle2={setTitle2}
+                  title2={title2}
                 />
               }
             ></Route>
-            <Route
-              path="saved-recipes"
-              element={<SavedRecipes />}
-            ></Route>
+            <Route path="saved-recipes" element={<SavedRecipes />}></Route>
             <Route path="about-us" element={<AboutUs />}></Route>
             <Route path="*" element={<Error />}></Route>
           </Route>
