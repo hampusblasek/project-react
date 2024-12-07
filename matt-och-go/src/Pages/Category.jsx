@@ -1,8 +1,12 @@
 import "../CSS/category.css";
 import { Cards } from "../Components/cards";
 import { useRecoilState } from "recoil";
-import { recipeState } from "../App";
-import { useState } from "react";
+import {
+  recipeState,
+  globalAllState,
+  globalCuisineState,
+  globalTypeState,
+} from "../App";
 
 export function Categories({
   setCatData,
@@ -13,9 +17,9 @@ export function Categories({
   title2,
 }) {
   const [recipes] = useRecoilState(recipeState);
-  const [cuisineState, setCuisineState] = useState(false);
-  const [typeState, setTypeState] = useState(false);
-  const [allState ,setAllState] = useState(false);
+  const [cuisineState, setCuisineState] = useRecoilState(globalCuisineState);
+  const [typeState, setTypeState] = useRecoilState(globalTypeState);
+  const [allState, setAllState] = useRecoilState(globalAllState);
 
   const cuisineList = [];
   for (let recipe of recipes) {
@@ -45,6 +49,8 @@ export function Categories({
     return catData;
   };
   const mainFilter = (value) => {
+    setCatData([]);
+    setTitle("");
     if (value === "cuisine") {
       setCuisineState(true);
       setTypeState(false);
