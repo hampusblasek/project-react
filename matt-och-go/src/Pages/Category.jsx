@@ -29,14 +29,12 @@ export function Categories({
     }
   }
   const filterCuisine = (category) => {
-    setCatData("");
     setCatData(recipes.filter((value) => value.cuisine === category)); // Här filtreras alla recept ut som inte stämmer överräns med vald kategori
     setTitle(category); // Sätter titeln efter vald kategori
 
     return catData;
   };
   const filterType = (type) => {
-    setCatData("");
     setCatData(recipes.filter((value) => value.mealType.includes(type))); // Här filtreras alla recept ut som inte stämmer överräns med vald kategori
     if (type == "Dinner") {
       setTitle("Middag"); // Sätter titeln efter vald kategori
