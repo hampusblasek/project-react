@@ -7,7 +7,7 @@ export function AfterFood({ recipes }) {
   const [scrollState, setScrollState] = useState(0);
   const scroll = useRef();
 
-  const scrollDirection = (direction) => {
+  const scrollDirection = (direction) => { // funktion som styr karusellen för något sött på startsidan.
     if (direction === "left") {
       scroll ? (scroll.current.scrollLeft -= 290) : null;
       setScrollState(scrollState - 1);

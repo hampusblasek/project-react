@@ -1,7 +1,7 @@
 import { useRecoilState } from "recoil";
 import levelImg from "../functions/levelImg";
 import { recipeState, saveRecState } from "../App";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { BasicRating } from "../Components/Recipepage/Rating";
 import { useState } from "react";
 import { MessurementConverter } from "../Components/Recipepage/Converter";
@@ -12,6 +12,7 @@ import { CheckList } from "../Components/Recipepage/Divider";
 import Box from "@mui/material/Box";
 import Snackbar from "@mui/material/Snackbar";
 import { HeartIcon } from "../Components/Recipepage/Save-recipe";
+import { Navigate } from "react-router-dom";
 import "../CSS/recipe.css";
 
 export function RecipePage() {
@@ -26,12 +27,14 @@ export function RecipePage() {
   });
   const { vertical, horizontal, snackOpen } = snackState;
 
+  const navigate = useNavigate();
+
   //Söker igenom URL:en efter ett id
   const params = useParams();
   const food = recipes.find(
     (recipe) => recipe.id === Number.parseInt(params.id)
   );
-//om inte receptet hittas.
+  //om inte receptet hittas.
   if (!food) {
     return <Loading />;
   }
@@ -131,6 +134,14 @@ export function RecipePage() {
                 Måttomvandlare
               </button>
             </div>
+
+            <img
+              onClick={() => navigate(-1)}
+              className="arrow-back"
+              src="/back-arrow.svg"
+              alt="Tillbakapil"
+              title="Tillbaka"
+            />
           </div>
 
           {/* Här börjar sektionen bild och instruktioner-----------------------------------------*/}

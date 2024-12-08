@@ -32,6 +32,10 @@ export const globalAllState = atom({ // GlobalState som änvänds i category
   key: "all",
   default: false,
 })
+export const globalCatData = atom({ // GlobalState som visar recepten i category
+  key: "catData",
+  default: [],
+})
 
 function App() {
   const [recipes, setRecipes] = useRecoilState(recipeState);
@@ -40,7 +44,7 @@ function App() {
   const [cuisineState, setCuisineState] = useRecoilState(globalCuisineState);
   const [typeState, setTypeState] = useRecoilState(globalTypeState);
   const [allState, setAllState] = useRecoilState(globalAllState);
-  const [catData, setCatData] = useState([]);
+  const [catData, setCatData] = useRecoilState(globalCatData);
   const [title, setTitle] = useState("");
   const [title2, setTitle2] = useState("");
 
@@ -53,8 +57,6 @@ function App() {
   return (
     <>
       <NavigatePage
-        setCatData={setCatData}
-        catData={catData}
         setTitle={setTitle}
         title={title}
         setTitle2={setTitle2}

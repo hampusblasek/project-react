@@ -7,7 +7,7 @@ export function Drinks({ recipes }) {
   const [scrollState, setScrollState] = useState(0);
   const scroll = useRef();
 
-  const scrollDirection = (direction) => {
+  const scrollDirection = (direction) => { // funktion som styr karusellen för dricka på startsidan
     if (direction === "left") {
       scroll ? (scroll.current.scrollLeft -= 290) : null;
       setScrollState(scrollState - 1);
@@ -62,11 +62,6 @@ export function Drinks({ recipes }) {
           </button>
         )}
       </div>
-      {/* <div className="drink-box">
-        {drinkList.map((food, index) => (
-          <Cards key={index} food={food} levelImg={levelImg} />
-        ))}
-      </div> */}
     </>
   );
 }
