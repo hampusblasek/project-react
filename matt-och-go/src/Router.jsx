@@ -8,8 +8,6 @@ import { SavedRecipes } from "./Pages/save";
 import { Error } from "./Components/error-loading/errorPage";
 
 export function NavigatePage({
-  setCatData,
-  catData,
   title,
   setTitle,
   setTitle2,
@@ -26,8 +24,6 @@ export function NavigatePage({
               path="/category"
               element={
                 <Categories
-                  setCatData={setCatData}
-                  catData={catData}
                   setTitle={setTitle}
                   title={title}
                   setTitle2={setTitle2}
@@ -48,8 +44,6 @@ export function NavigatePage({
               path="saved-recipes/category"
               element={
                 <Categories
-                  setCatData={setCatData}
-                  catData={catData}
                   setTitle={setTitle}
                   title={title}
                   setTitle2={setTitle2}

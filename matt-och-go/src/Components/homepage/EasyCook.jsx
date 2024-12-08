@@ -16,7 +16,7 @@ export function EasyCook({ recipes }) {
   );
   const easySlice = easyList.slice(0,10)
 
-  const scrollDirection = (direction) => {
+  const scrollDirection = (direction) => { // funktion som styr karusellen för lättlagat på startsidan
     if (direction === "left") {
       scroll ? (scroll.current.scrollLeft -= 290) : null;
       setScrollState(scrollState - 1);

@@ -6,17 +6,17 @@ import {
   globalAllState,
   globalCuisineState,
   globalTypeState,
+  globalCatData
 } from "../App";
 
 export function Categories({
-  setCatData,
-  catData,
   setTitle,
   title,
   setTitle2,
   title2,
 }) {
   const [recipes] = useRecoilState(recipeState);
+  const [catData, setCatData] = useRecoilState(globalCatData);
   const [cuisineState, setCuisineState] = useRecoilState(globalCuisineState);
   const [typeState, setTypeState] = useRecoilState(globalTypeState);
   const [allState, setAllState] = useRecoilState(globalAllState);
