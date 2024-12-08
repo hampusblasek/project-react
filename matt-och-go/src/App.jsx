@@ -32,7 +32,7 @@ export const globalAllState = atom({ // GlobalState som änvänds i category
   key: "all",
   default: false,
 })
-export const globalCatData = atom({
+export const globalCatData = atom({ // GlobalState som visar recepten i category
   key: "catData",
   default: [],
 })
