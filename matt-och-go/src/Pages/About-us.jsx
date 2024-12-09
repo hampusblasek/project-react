@@ -1,4 +1,4 @@
-import { AccordionUsage } from "../Components/DropDown";
+import { AccordionUsage } from "../components/DropDown";
 import "../CSS/about-us.css";
 
 export function AboutUs() {

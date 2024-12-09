@@ -1,5 +1,5 @@
 import { Navigate, useNavigate } from "react-router-dom";
-import levelImg from "../../Functions/levelImg";
+import levelImg from "../../functions/levelImg";
 
 export function SmallCards({ short }) {
   const navigate = useNavigate();

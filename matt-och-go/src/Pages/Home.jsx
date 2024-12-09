@@ -1,10 +1,10 @@
-import { Under40 } from "../Components/Homepage/Under40";
-import { EasyCook } from "../Components/Homepage/EasyCook";
-import { AfterFood } from "../Components/Homepage/After";
-import { Drinks } from "../Components/Homepage/Drinks";
+import { Under40 } from "../components/homepage/Under40";
+import { EasyCook } from "../components/homepage/EasyCook";
+import { AfterFood } from "../components/homepage/After";
+import { Drinks } from "../components/homepage/Drinks";
 import { useRecoilState } from "recoil";
 import { recipeState } from "../App";
-import { SmallCards } from "../Components/Homepage/Small-cards";
+import { SmallCards } from "../components/homepage/Small-cards";
 import { useState } from "react";
 
 export function HomePage({ levelImg }) {

@@ -1,17 +1,17 @@
 import { useRecoilState } from "recoil";
-import levelImg from "../Functions/levelImg";
+import levelImg from "../functions/levelImg";
 import { recipeState, saveRecState } from "../App";
 import { useNavigate, useParams } from "react-router-dom";
-import { BasicRating } from "../Components/Recipepage/Rating";
+import { BasicRating } from "../components/recipepage/Rating";
 import { useState } from "react";
-import { MessurementConverter } from "../Components/Recipepage/Converter";
-import { Loading } from "../Components/Error-loading/Loading";
+import { MessurementConverter } from "../components/recipepage/Converter";
+import { Loading } from "../components/error-loading/Loading";
 import * as React from "react";
 import List from "@mui/material/List";
-import { CheckList } from "../Components/Recipepage/Divider";
+import { CheckList } from "../components/recipepage/Divider";
 import Box from "@mui/material/Box";
 import Snackbar from "@mui/material/Snackbar";
-import { HeartIcon } from "../Components/Recipepage/Save-recipe";
+import { HeartIcon } from "../components/recipepage/Save-recipe";
 import { Navigate } from "react-router-dom";
 import "../CSS/recipe.css";
 

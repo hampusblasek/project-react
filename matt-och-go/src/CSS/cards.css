@@ -6,14 +6,6 @@
   box-shadow: 1px 1px 6px 1px;
   animation: fadeIn 1s;
 }
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .h2-title {
   text-align: center;
   margin-top: 70px;
@@ -68,4 +60,13 @@ h3 {
 }
 .card-img:hover {
   scale: 1.15;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

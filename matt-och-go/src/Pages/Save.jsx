@@ -1,8 +1,7 @@
 import { useRecoilState } from "recoil";
 import { saveRecState } from "../App";
-import { Cards } from "../Components/Cards";
+import { Cards } from "../components/Cards";
 import Button from "@mui/material/Button";
-import { NavLink } from "react-router-dom";
 import "../CSS/save.css";
 
 export function SavedRecipes({ levelImg }) {

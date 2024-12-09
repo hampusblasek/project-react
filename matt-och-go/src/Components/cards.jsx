@@ -1,6 +1,6 @@
 import { Navigate, useNavigate } from "react-router-dom";
-import { Loading } from "./Error-loading/Loading";
-import levelImg from "../Functions/levelImg";
+import { Loading } from "./error-loading/Loading";
+import levelImg from "../functions/levelImg";
 import "../CSS/cards.css";
 
 export function Cards({ food }) {
