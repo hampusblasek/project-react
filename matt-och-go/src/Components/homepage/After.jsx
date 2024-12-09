@@ -1,4 +1,4 @@
-import { Cards } from "../cards";
+import { Cards } from "../Cards";
 import { useRef } from "react";
 import { useState } from "react";
 import "../../CSS/home.css";
@@ -7,7 +7,8 @@ export function AfterFood({ recipes }) {
   const [scrollState, setScrollState] = useState(0);
   const scroll = useRef();
 
-  const scrollDirection = (direction) => { // funktion som styr karusellen för något sött på startsidan.
+  const scrollDirection = (direction) => {
+    // funktion som styr karusellen för något sött på startsidan.
     if (direction === "left") {
       scroll ? (scroll.current.scrollLeft -= 290) : null;
       setScrollState(scrollState - 1);
@@ -21,12 +22,12 @@ export function AfterFood({ recipes }) {
       recipe // sparar ner alla recept som uppfyller filtreringen
     ) => recipe.mealType.includes("Dessert")
   );
-  const afterSlice = afterList.slice(0,10)
+  const afterSlice = afterList.slice(0, 10);
 
   return (
     <>
       <div className="under40-container">
-      {scrollState > 0 ? (
+        {scrollState > 0 ? (
           <button
             onClick={() => scrollDirection("left")}
             className="scroll-btn-next"

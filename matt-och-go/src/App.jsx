@@ -1,50 +1,51 @@
 import { useState } from "react";
-import { Header } from "./Components/Header";
-import { Footer } from "./Components/Footer";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 import { useEffect } from "react";
-import { getRecipes } from "./API/api";
+import { getRecipes } from "./api/api";
 import { Outlet } from "react-router-dom";
 import { atom, useRecoilState } from "recoil";
 import { NavigatePage } from "./Router";
 import "./App.css";
 
-export const recipeState = atom({ //Globalstate som innehåller alla recept
+export const recipeState = atom({
+  //Globalstate som innehåller alla recept
   key: "recipe",
   default: [],
 });
-export const saveRecState = atom({ // Globalstate som innehåller alla sparade recept
+export const saveRecState = atom({
+  // Globalstate som innehåller alla sparade recept
   key: "save",
   default: [],
 });
-export const ratingsState = atom({ // Globalstate som innehåller alla betyg
+export const ratingsState = atom({
+  // Globalstate som innehåller alla betyg
   key: "rating",
   default: [],
 });
-export const globalCuisineState = atom({ // GlobalState som änvänds i category
+export const globalCuisineState = atom({
+  // GlobalState som änvänds i category
   key: "cuisine",
   default: false,
-})
-export const globalTypeState = atom({ // GlobalState som änvänds i category
+});
+export const globalTypeState = atom({
+  // GlobalState som änvänds i category
   key: "type",
   default: false,
-})
-export const globalAllState = atom({ // GlobalState som änvänds i category
+});
+export const globalAllState = atom({
+  // GlobalState som änvänds i category
   key: "all",
   default: false,
-})
-export const globalCatData = atom({ // GlobalState som visar recepten i category
+});
+export const globalCatData = atom({
+  // GlobalState som visar recepten i category
   key: "catData",
   default: [],
-})
+});
 
 function App() {
   const [recipes, setRecipes] = useRecoilState(recipeState);
-  const [saveRec, setSaveRec] = useRecoilState(saveRecState);
-  const [ratingState, SetRatingState] = useRecoilState(ratingsState);
-  const [cuisineState, setCuisineState] = useRecoilState(globalCuisineState);
-  const [typeState, setTypeState] = useRecoilState(globalTypeState);
-  const [allState, setAllState] = useRecoilState(globalAllState);
-  const [catData, setCatData] = useRecoilState(globalCatData);
   const [title, setTitle] = useState("");
   const [title2, setTitle2] = useState("");
 

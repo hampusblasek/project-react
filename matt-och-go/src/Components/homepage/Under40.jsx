@@ -1,4 +1,4 @@
-import { Cards } from "../cards";
+import { Cards } from "../Cards";
 import "../../CSS/home.css";
 import { useRef, useState } from "react";
 
@@ -15,7 +15,8 @@ export function Under40({ recipes }) {
   );
   const fastSlice = fastList.slice(0, 10);
 
-  const scrollDirection = (direction) => { // funktion som styr karusellen för under 40 min på startsidan
+  const scrollDirection = (direction) => {
+    // funktion som styr karusellen för under 40 min på startsidan
     if (direction === "left") {
       scroll ? (scroll.current.scrollLeft -= 290) : null;
       setScrollState(scrollState - 1);

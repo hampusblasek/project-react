@@ -1,5 +1,5 @@
 import "../CSS/category.css";
-import { Cards } from "../Components/cards";
+import { Cards } from "../components/Cards";
 import { useRecoilState } from "recoil";
 import {
   recipeState,

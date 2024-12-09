@@ -1,18 +1,13 @@
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import { Layout } from "./App";
-import { Categories } from "./Pages/Category";
-import { HomePage } from "./Pages/Home";
-import { RecipePage } from "./Pages/Recipe";
-import { AboutUs } from "./Pages/about-us";
-import { SavedRecipes } from "./Pages/save";
-import { Error } from "./Components/error-loading/errorPage";
+import { Categories } from "./pages/Category";
+import { HomePage } from "./pages/Home";
+import { RecipePage } from "./pages/Recipe";
+import { AboutUs } from "./pages/about-us";
+import { SavedRecipes } from "./pages/save";
+import { Error } from "./components/error-loading/ErrorPage";
 
-export function NavigatePage({
-  title,
-  setTitle,
-  setTitle2,
-  title2
-}) {
+export function NavigatePage({ title, setTitle, setTitle2, title2 }) {
   return (
     <>
       <BrowserRouter>

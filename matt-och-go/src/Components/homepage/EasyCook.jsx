@@ -1,4 +1,4 @@
-import { Cards } from "../cards";
+import { Cards } from "../Cards";
 import { useRef } from "react";
 import { useState } from "react";
 import "../../CSS/home.css";
@@ -14,9 +14,10 @@ export function EasyCook({ recipes }) {
       !recipe.mealType.includes("Dessert") &&
       !recipe.mealType.includes("Beverage")
   );
-  const easySlice = easyList.slice(0,10)
+  const easySlice = easyList.slice(0, 10);
 
-  const scrollDirection = (direction) => { // funktion som styr karusellen för lättlagat på startsidan
+  const scrollDirection = (direction) => {
+    // funktion som styr karusellen för lättlagat på startsidan
     if (direction === "left") {
       scroll ? (scroll.current.scrollLeft -= 290) : null;
       setScrollState(scrollState - 1);
