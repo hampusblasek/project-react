@@ -5,14 +5,9 @@ import { HomePage } from "./Pages/Home";
 import { RecipePage } from "./Pages/Recipe";
 import { AboutUs } from "./Pages/about-us";
 import { SavedRecipes } from "./Pages/save";
-import { Error } from "./Components/error-loading/errorPage";
+import { Error } from "./Components/Error-loading/ErrorPage";
 
-export function NavigatePage({
-  title,
-  setTitle,
-  setTitle2,
-  title2
-}) {
+export function NavigatePage({ title, setTitle, setTitle2, title2 }) {
   return (
     <>
       <BrowserRouter>

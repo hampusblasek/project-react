@@ -1,6 +1,6 @@
 import { useRecoilState } from "recoil";
 import { saveRecState } from "../App";
-import { Cards } from "../Components/cards";
+import { Cards } from "../Components/Cards";
 import Button from "@mui/material/Button";
 import { NavLink } from "react-router-dom";
 import "../CSS/save.css";
@@ -23,7 +23,11 @@ export function SavedRecipes({ levelImg }) {
               <div key={index}>
                 <Cards food={food} levelImg={levelImg} />
                 <div className="btn-box">
-                  <Button onClick={() => deleteFood(food.id)} variant="contained" color="error">
+                  <Button
+                    onClick={() => deleteFood(food.id)}
+                    variant="contained"
+                    color="error"
+                  >
                     Ta bort
                   </Button>
                 </div>
@@ -43,11 +47,7 @@ export function SavedRecipes({ levelImg }) {
             <p className="save-text">
               Tryck på hjärtat i ett recept för att spara ett recept
             </p>
-            <div className="link-box">
-              {/* <NavLink className="save-link" to="category">
-              Till ny inspiration!
-            </NavLink> */}
-            </div>
+            <div className="link-box"></div>
           </div>
           <img className="save-img" src="/Cooking.svg" alt="" />
         </div>

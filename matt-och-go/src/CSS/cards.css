@@ -1,7 +1,5 @@
 .card-box {
-  /* background-color: rgba(226, 226, 226, 0.753); */
   background-color: rgba(255, 255, 255, 0.705);
-  /* border-radius: 20px; */
   overflow: hidden;
   text-align: center;
   cursor: pointer;
@@ -47,10 +45,7 @@ h3 {
 .card-bottom {
   background-color: rgba(1, 158, 1, 0.374);
   width: 100%;
-  /*  width: 90%; */
   height: 50px;
-  /*  margin: 10px auto; */
-  /* border-radius: 15px; */
   display: flex;
   justify-content: center;
   align-items: center;

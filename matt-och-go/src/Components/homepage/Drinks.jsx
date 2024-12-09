@@ -1,4 +1,4 @@
-import { Cards } from "../cards";
+import { Cards } from "../Cards";
 import { useRef } from "react";
 import { useState } from "react";
 import "../../CSS/home.css";
@@ -7,7 +7,8 @@ export function Drinks({ recipes }) {
   const [scrollState, setScrollState] = useState(0);
   const scroll = useRef();
 
-  const scrollDirection = (direction) => { // funktion som styr karusellen för dricka på startsidan
+  const scrollDirection = (direction) => {
+    // funktion som styr karusellen för dricka på startsidan
     if (direction === "left") {
       scroll ? (scroll.current.scrollLeft -= 290) : null;
       setScrollState(scrollState - 1);
@@ -22,12 +23,12 @@ export function Drinks({ recipes }) {
       recipe // sparar ner alla recept som uppfyller filtreringen
     ) => recipe.mealType.includes("Beverage")
   );
-  const drinkSlice = drinkList.slice(0,10)
+  const drinkSlice = drinkList.slice(0, 10);
 
   return (
     <>
       <div className="under40-container">
-      {scrollState > 0 ? (
+        {scrollState > 0 ? (
           <button
             onClick={() => scrollDirection("left")}
             className="scroll-btn-next"

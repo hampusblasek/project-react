@@ -21,7 +21,6 @@
 }
 .rec-info {
   background-color: rgba(231, 231, 231, 0.489);
-  /* background-color: rgba(224, 224, 224, 0.502); */
   width: 40%;
   height: auto;
 }
@@ -185,7 +184,7 @@
   border-radius: 10px;
   z-index: 2;
 }
-.arrow-back{
+.arrow-back {
   width: 50px;
   padding-left: 30px;
   padding-bottom: 20px;
@@ -193,7 +192,6 @@
   transition: ease 0.3s;
   align-self: end;
 }
-.arrow-back:hover{
+.arrow-back:hover {
   scale: 1.1;
 }
-

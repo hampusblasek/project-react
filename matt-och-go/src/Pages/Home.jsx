@@ -1,10 +1,10 @@
-import { Under40 } from "../Components/homepage/Under40";
-import { EasyCook } from "../Components/homepage/EasyCook";
-import { AfterFood } from "../Components/homepage/After";
-import { Drinks } from "../Components/homepage/Drinks";
+import { Under40 } from "../Components/Homepage/Under40";
+import { EasyCook } from "../Components/Homepage/EasyCook";
+import { AfterFood } from "../Components/Homepage/After";
+import { Drinks } from "../Components/Homepage/Drinks";
 import { useRecoilState } from "recoil";
 import { recipeState } from "../App";
-import { SmallCards } from "../Components/homepage/Small-cards";
+import { SmallCards } from "../Components/Homepage/Small-cards";
 import { useState } from "react";
 
 export function HomePage({ levelImg }) {
@@ -17,13 +17,8 @@ export function HomePage({ levelImg }) {
     setIsOpen(true);
     e.preventDefault();
 
-    const filterCards = recipes.filter(
-      (recipe) =>
-        recipe.name
-          .toUpperCase()
-          .includes(
-            smallValue.toUpperCase()
-          ) /*  || recipe.tags.map((tag) => tag.toUpperCase()).includes(smallValue.toUpperCase()) */
+    const filterCards = recipes.filter((recipe) =>
+      recipe.name.toUpperCase().includes(smallValue.toUpperCase())
     );
     setSmallCards(filterCards);
   };
