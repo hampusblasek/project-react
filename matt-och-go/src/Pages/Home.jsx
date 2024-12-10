@@ -30,19 +30,22 @@ export function HomePage({ levelImg }) {
     (food) =>
       food.mealType.includes("Dinner") || food.mealType.includes("Lunch")
   );
+  
   const coldFood = recipes.filter((food) => food.mealType.includes("Dessert"))
-  console.log(coldFood);
   
   let food;
   const randomHotFood = () => {
-    let randomNumber = Math.floor(Math.random() * 25);
+    let randomNumber = Math.floor(Math.random() * 26);
     food = hotFood.find((food, index) => index == randomNumber);
     setRandomHot(food);
+    console.log(randomHot);
+    
   };
   const randomColdFood = () => {
-    let randomNumber = Math.floor(Math.random() * 11);
+    let randomNumber = Math.floor(Math.random() * 10);
     food = coldFood.find((food, index) => index == randomNumber);
     setRandomCold(food);
+    console.log(randomCold);
   };
 
   if (!recipes) {
@@ -94,14 +97,15 @@ export function HomePage({ levelImg }) {
         <Drinks recipes={recipes} />
 
         <h2 className="h2-title">Vad ska vi äta?</h2>
+          {randomHot || randomCold ? "" : <p className="random-text">Svårt att bestämma vad du ska äta? Tryck på någon av knapparna nedan så ger vi dig tips! </p>}
         <div className="random-box">
           <div className="random-card-box">
-            {randomHot ? <Cards food={randomHot} /> : <p className="random-text">Tryck på slumpa varmrätt för att få ett tips på Varmrätt! </p>}
-            <button className="random-btn" onClick={() => randomHotFood()}>Slumpa Varmrätt</button>
+            {randomHot ? <Cards food={randomHot} /> : ""}
+            <button className="random-btn" onClick={() => randomHotFood()}>Tips på Varmrätt</button>
           </div>
           <div className="random-card-box">
-            {randomCold ? <Cards food={randomCold} /> : <p className="random-text">Tryck på slumpa dessert för att få ett tips på Dessert! </p>}
-            <button className="random-btn" onClick={() => randomColdFood()}>Slumpa Dessert</button>
+            {randomCold ? <Cards food={randomCold} /> : ""}
+            <button className="random-btn" onClick={() => randomColdFood()}>Tips på Dessert</button>
           </div>
         </div>
       </div>
