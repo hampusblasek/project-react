@@ -9,7 +9,7 @@ import { SmallCards } from "../components/homepage/Small-cards";
 import { useState } from "react";
 
 
-export function HomePage({ levelImg }) {
+export function HomePage() {
   const [recipes] = useRecoilState(recipeState); // state som innehåller alla recept
   const [smallValue, setSmallValue] = useState("");
   const [smallCards, setSmallCards] = useState([]);
@@ -26,26 +26,24 @@ export function HomePage({ levelImg }) {
     );
     setSmallCards(filterCards);
   };
-  const hotFood = recipes.filter(
+  const hotFood = recipes.filter( // Skapar en lista som innehåller varmrätter
     (food) =>
       food.mealType.includes("Dinner") || food.mealType.includes("Lunch")
   );
   
-  const coldFood = recipes.filter((food) => food.mealType.includes("Dessert"))
+  const coldFood = recipes.filter((food) => food.mealType.includes("Dessert")) // Skapar en lista som innehåller desserter
   
   let food;
-  const randomHotFood = () => {
+  const randomHotFood = () => { // funktion som slumpar fram en varmrätt och lagrar den i staten
     let randomNumber = Math.floor(Math.random() * 26);
     food = hotFood.find((food, index) => index == randomNumber);
-    setRandomHot(food);
-    console.log(randomHot);
-    
+    setRandomHot(food); 
   };
-  const randomColdFood = () => {
+
+  const randomColdFood = () => { // funktion som slumpar fram en dessert och lagrar den i staten
     let randomNumber = Math.floor(Math.random() * 10);
     food = coldFood.find((food, index) => index == randomNumber);
     setRandomCold(food);
-    console.log(randomCold);
   };
 
   if (!recipes) {
