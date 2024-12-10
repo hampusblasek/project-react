@@ -43,6 +43,14 @@ export const globalCatData = atom({
   key: "catData",
   default: [],
 });
+export const randomHotState = atom({ // Globalstates som används i homepage
+  key: "hot",
+  default: "",
+})
+export const randomColdState = atom({ // Globalstates som används i homepage
+  key: "cold",
+  default: "",
+})
 
 function App() {
   const [recipes, setRecipes] = useRecoilState(recipeState);

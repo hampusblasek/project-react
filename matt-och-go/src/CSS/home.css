@@ -110,6 +110,14 @@
   padding-top: 60px;
   gap: 30px;
 }
+.random-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  gap: 100px;
+
+}
 .home-box::-webkit-scrollbar {
   display: none;
 }
@@ -153,6 +161,27 @@
 }
 .display-none {
   display: none;
+}
+.random-card-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.random-btn{
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.random-text{
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 20px;
 }
 
 @keyframes fadeIn {
