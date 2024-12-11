@@ -8,7 +8,7 @@ import {
   globalTypeState,
   globalCatData,
 } from "../App";
-
+//Kategorisidan
 export function Categories({ setTitle, title, setTitle2, title2 }) {
   const [recipes] = useRecoilState(recipeState);
   const [catData, setCatData] = useRecoilState(globalCatData);
@@ -70,10 +70,7 @@ export function Categories({ setTitle, title, setTitle2, title2 }) {
         <h1 className="category-title">Välj en kategori</h1>
         <h2 className="text-title2">{title2}</h2>
         <div className="category-btn-box">
-          <button
-            className="category-btn"
-            onClick={() => mainFilter("cuisine")}
-          >
+          <button className="category-btn" onClick={() => mainFilter("cuisine")}>
             Världens kök
           </button>
           <button className="category-btn" onClick={() => mainFilter("type")}>

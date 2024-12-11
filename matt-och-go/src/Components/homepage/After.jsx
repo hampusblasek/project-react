@@ -2,7 +2,7 @@ import { Cards } from "../Cards";
 import { useRef } from "react";
 import { useState } from "react";
 import "../../CSS/home.css";
-
+//Desserter i homepage
 export function AfterFood({ recipes }) {
   const [scrollState, setScrollState] = useState(0);
   const scroll = useRef();

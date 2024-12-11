@@ -1,6 +1,6 @@
 import { useRecoilState } from "recoil";
 import { saveRecState } from "../../App";
-
+//Sparade recept
 export function HeartIcon({ setSnackState, food }) {
   const [saveRec, setSaveRec] = useRecoilState(saveRecState); // state som lagrar sparade recept
 

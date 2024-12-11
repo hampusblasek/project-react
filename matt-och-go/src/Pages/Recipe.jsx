@@ -14,7 +14,7 @@ import Snackbar from "@mui/material/Snackbar";
 import { HeartIcon } from "../components/recipepage/Save-recipe";
 import { Navigate } from "react-router-dom";
 import "../CSS/recipe.css";
-
+//Receptsidan
 export function RecipePage() {
   const [recipes] = useRecoilState(recipeState); // state som innehåller recepten
   const [saveRec] = useRecoilState(saveRecState); // state som lagrar sparade recept

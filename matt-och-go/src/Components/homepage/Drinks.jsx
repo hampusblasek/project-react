@@ -2,7 +2,7 @@ import { Cards } from "../Cards";
 import { useRef } from "react";
 import { useState } from "react";
 import "../../CSS/home.css";
-
+// Något att dricka i homepage
 export function Drinks({ recipes }) {
   const [scrollState, setScrollState] = useState(0);
   const scroll = useRef();

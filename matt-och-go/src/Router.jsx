@@ -6,7 +6,7 @@ import { RecipePage } from "./pages/Recipe";
 import { AboutUs } from "./pages/about-us";
 import { SavedRecipes } from "./pages/save";
 import { Error } from "./components/error-loading/ErrorPage";
-
+//Routing
 export function NavigatePage({ title, setTitle, setTitle2, title2 }) {
   return (
     <>

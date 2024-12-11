@@ -1,6 +1,6 @@
 import { Navigate, useNavigate } from "react-router-dom";
 import levelImg from "../../functions/levelImg";
-
+// Små kort i sökfältet på homepage
 export function SmallCards({ short }) {
   const navigate = useNavigate();
 

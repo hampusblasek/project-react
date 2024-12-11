@@ -1,7 +1,7 @@
 import { Cards } from "../Cards";
 import "../../CSS/home.css";
 import { useRef, useState } from "react";
-
+// Färdigt på under 40 minuter i homepage
 export function Under40({ recipes }) {
   const [scrollState, setScrollState] = useState(0);
   const scroll = useRef();

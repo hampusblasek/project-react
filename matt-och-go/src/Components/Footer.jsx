@@ -7,7 +7,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import { red, blue, purple } from "@mui/material/colors";
 import "../CSS/footer.css";
-
+//Footer
 export function Footer() {
   const preventDefault = (event) => event.preventDefault();
   //Hämtar färgerna till ikonerna

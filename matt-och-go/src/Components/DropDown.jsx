@@ -3,7 +3,7 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-
+//Vanliga frågor i about us-sidan
 export function AccordionUsage() {
     const icon = <ArrowDownwardIcon/>
   return (

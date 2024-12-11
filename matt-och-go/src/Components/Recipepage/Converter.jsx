@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../../CSS/converter.css";
-
+//Måttomvandlaren
 export function MessurementConverter({ open, setOpen }) {
   const [value1, setValue1] = useState(null); // state som håller det första värdet av selectmenyn
   const [value2, setValue2] = useState(null); // state som håller det andra värdet av selectmenyn

@@ -7,8 +7,7 @@ import { useRecoilState } from "recoil";
 import { randomColdState, randomHotState, recipeState } from "../App";
 import { SmallCards } from "../components/homepage/Small-cards";
 import { useState } from "react";
-
-
+//Homepage
 export function HomePage() {
   const [recipes] = useRecoilState(recipeState); // state som innehåller alla recept
   const [smallValue, setSmallValue] = useState("");
@@ -26,21 +25,23 @@ export function HomePage() {
     );
     setSmallCards(filterCards);
   };
-  const hotFood = recipes.filter( // Skapar en lista som innehåller varmrätter
-    (food) =>
-      food.mealType.includes("Dinner") || food.mealType.includes("Lunch")
+  const hotFood = recipes.filter(
+    // Skapar en lista som innehåller varmrätter
+    (food) => food.mealType.includes("Dinner") || food.mealType.includes("Lunch")
   );
-  
-  const coldFood = recipes.filter((food) => food.mealType.includes("Dessert")) // Skapar en lista som innehåller desserter
-  
+
+  const coldFood = recipes.filter((food) => food.mealType.includes("Dessert")); // Skapar en lista som innehåller desserter
+
   let food;
-  const randomHotFood = () => { // funktion som slumpar fram en varmrätt och lagrar den i staten
+  const randomHotFood = () => {
+    // funktion som slumpar fram en varmrätt och lagrar den i staten
     let randomNumber = Math.floor(Math.random() * 26);
     food = hotFood.find((food, index) => index == randomNumber);
-    setRandomHot(food); 
+    setRandomHot(food);
   };
 
-  const randomColdFood = () => { // funktion som slumpar fram en dessert och lagrar den i staten
+  const randomColdFood = () => {
+    // funktion som slumpar fram en dessert och lagrar den i staten
     let randomNumber = Math.floor(Math.random() * 10);
     food = coldFood.find((food, index) => index == randomNumber);
     setRandomCold(food);
@@ -64,9 +65,7 @@ export function HomePage() {
               placeholder="Skriv in det här..."
             />
             <div className={smallValue ? "drop-down-search" : "display-none"}>
-              <p
-                className={smallCards.length > 0 ? "display-none" : "no-match"}
-              >
+              <p className={smallCards.length > 0 ? "display-none" : "no-match"}>
                 Inga resultat hittades
               </p>
               <div className="drop-box">
@@ -95,15 +94,25 @@ export function HomePage() {
         <Drinks recipes={recipes} />
 
         <h2 className="h2-title">Vad ska vi äta?</h2>
-          {randomHot || randomCold ? "" : <p className="random-text">Svårt att bestämma vad du ska äta? Tryck på någon av knapparna nedan så ger vi dig tips! </p>}
+        {randomHot || randomCold ? (
+          ""
+        ) : (
+          <p className="random-text">
+            Svårt att bestämma vad du ska äta? Tryck på någon av knapparna nedan så ger vi dig tips!{" "}
+          </p>
+        )}
         <div className="random-box">
           <div className="random-card-box">
             {randomHot ? <Cards food={randomHot} /> : ""}
-            <button className="random-btn" onClick={() => randomHotFood()}>Tips på Varmrätt</button>
+            <button className="random-btn" onClick={() => randomHotFood()}>
+              Tips på Varmrätt
+            </button>
           </div>
           <div className="random-card-box">
             {randomCold ? <Cards food={randomCold} /> : ""}
-            <button className="random-btn" onClick={() => randomColdFood()}>Tips på Dessert</button>
+            <button className="random-btn" onClick={() => randomColdFood()}>
+              Tips på Dessert
+            </button>
           </div>
         </div>
       </div>

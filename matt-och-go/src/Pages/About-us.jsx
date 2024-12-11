@@ -1,6 +1,6 @@
 import { AccordionUsage } from "../components/DropDown";
 import "../CSS/about-us.css";
-
+//Om-oss sidan
 export function AboutUs() {
   return (
     <>

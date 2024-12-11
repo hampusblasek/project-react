@@ -5,7 +5,7 @@ import { useRecoilState } from "recoil";
 import { ratingsState } from "../../App";
 import { useState } from "react";
 import "../../CSS/ratingStar.css";
-
+//Rating-stjärnor i receptsidan
 export function BasicRating({ food }) {
   const [value, setValue] = useState(0); // state som tar emot värdet på betyget
   const [ratingState, SetRatingState] = useRecoilState(ratingsState); // state som innehåller alla betyg

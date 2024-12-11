@@ -7,7 +7,7 @@ import { green } from "@mui/material/colors";
 import "../../CSS/error.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+//Laddning och felhanterare i receptsidan
 export function Loading() {
   const [isLoading, setIsLoading] = useState(false) // State som avgör om felmeddelande ska visas eller inte
 

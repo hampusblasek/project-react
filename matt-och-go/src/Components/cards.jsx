@@ -2,7 +2,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 import { Loading } from "./error-loading/Loading";
 import levelImg from "../functions/levelImg";
 import "../CSS/cards.css";
-
+//Receptkort som används inom i stort sätt alla sidor
 export function Cards({ food }) {
   const navigate = useNavigate();
 
