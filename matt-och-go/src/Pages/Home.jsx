@@ -29,20 +29,24 @@ export function HomePage() {
     // Skapar en lista som innehåller varmrätter
     (food) => food.mealType.includes("Dinner") || food.mealType.includes("Lunch")
   );
+  console.log(hotFood);
+  
 
   const coldFood = recipes.filter((food) => food.mealType.includes("Dessert")); // Skapar en lista som innehåller desserter
+  console.log(coldFood);
+  
 
   let food;
   const randomHotFood = () => {
     // funktion som slumpar fram en varmrätt och lagrar den i staten
-    let randomNumber = Math.floor(Math.random() * 26);
+    let randomNumber = Math.floor(Math.random() * 25);
     food = hotFood.find((food, index) => index == randomNumber);
     setRandomHot(food);
   };
 
   const randomColdFood = () => {
     // funktion som slumpar fram en dessert och lagrar den i staten
-    let randomNumber = Math.floor(Math.random() * 10);
+    let randomNumber = Math.floor(Math.random() * 9);
     food = coldFood.find((food, index) => index == randomNumber);
     setRandomCold(food);
   };
