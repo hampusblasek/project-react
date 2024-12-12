@@ -29,12 +29,8 @@ export function HomePage() {
     // Skapar en lista som innehåller varmrätter
     (food) => food.mealType.includes("Dinner") || food.mealType.includes("Lunch")
   );
-  console.log(hotFood);
-  
 
   const coldFood = recipes.filter((food) => food.mealType.includes("Dessert")); // Skapar en lista som innehåller desserter
-  console.log(coldFood);
-  
 
   let food;
   const randomHotFood = () => {
@@ -106,18 +102,16 @@ export function HomePage() {
           </p>
         )}
         <div className="random-box">
-          <div className="random-card-box">
-            {randomHot ? <Cards food={randomHot} /> : ""}
-            <button className="random-btn" onClick={() => randomHotFood()}>
-              Tips på Varmrätt
-            </button>
-          </div>
-          <div className="random-card-box">
-            {randomCold ? <Cards food={randomCold} /> : ""}
-            <button className="random-btn" onClick={() => randomColdFood()}>
-              Tips på Dessert
-            </button>
-          </div>
+          <div className="random-card-box">{randomHot ? <Cards food={randomHot} /> : ""}</div>
+          <div className="random-card-box">{randomCold ? <Cards food={randomCold} /> : ""}</div>
+        </div>
+        <div className="random-btn-box">
+          <button className="random-btn" onClick={() => randomHotFood()}>
+            Tips på Varmrätt
+          </button>
+          <button className="random-btn" onClick={() => randomColdFood()}>
+            Tips på Dessert
+          </button>
         </div>
       </div>
     </>
